@@ -1,3 +1,14 @@
+### =========================================================================
+### The updateObject() generic and related utilities 
+### -------------------------------------------------------------------------
+###
+### An "updateObject" default method + methods for some standard types are
+### also provided.
+###
+
+
+### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+### Utilities.
 ###
 
 getObjectSlots <- function(object)  # object, rather than class defn, slots
@@ -90,6 +101,11 @@ updateObjectFromSlots <- function(object, objclass=class(object),
              class(object), "'")
     res
 }
+
+
+### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+### updateObject()
+###
 
 setGeneric("updateObject", signature="object",
     function(object, ..., verbose=FALSE)
