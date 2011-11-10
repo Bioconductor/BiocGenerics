@@ -17,10 +17,7 @@
 }
 
 \usage{
-table(..., exclude = if (useNA == "no") c(NA, NaN),
-           useNA = c("no", "ifany", "always"),
-           dnn = list.names(...),
-           deparse.level = 1) 
+table(...)
 }
 
 \arguments{
@@ -28,9 +25,6 @@ table(..., exclude = if (useNA == "no") c(NA, NaN),
     One or more R objects which can be interpreted as factors
     (including character strings), or a list (or data frame)
     whose components can be so interpreted.
-  }
-  \item{exclude, useNA, dnn, deparse.level}{
-    See \code{?base::\link[base]{table}} for the details.
   }
 }
 
