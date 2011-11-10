@@ -107,7 +107,18 @@ getObjectSlots(object)
 }
 
 \seealso{
-  \code{\link[Biobase]{updateObjectTo}}
+  \code{\link[Biobase]{updateObjectTo}} in the Biobase package for
+  updating an object to the class definition of a template (might
+  be useful for updating a virtual superclass).
+
+  \code{\link[methods]{validObject}} for testing the validity of an
+  object.
+
+  \code{\link[methods]{showMethods}} for displaying a summary of the
+  methods defined for a given generic function.
+
+  \code{\link[methods]{selectMethod}} for getting the definition of
+  a specific method.
 }
 
 \examples{
