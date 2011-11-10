@@ -8,6 +8,9 @@ export(
     ## from R/paste.R:
     paste,
 
+    ## from R/table.R:
+    table,
+
     ## from R/updateObject.R:
     updateObject,
     updateObjectFromSlots,

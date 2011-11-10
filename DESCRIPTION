@@ -10,5 +10,6 @@ Suggests: Biobase, IRanges
 License: Artistic-2.0
 Collate: cbind.R
 	paste.R
+	table.R
 	updateObject.R
 	zzz.R
