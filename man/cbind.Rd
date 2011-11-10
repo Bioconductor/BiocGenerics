@@ -50,7 +50,7 @@ rbind(..., deparse.level=1)
   \code{\link[methods]{selectMethod}} for getting the definition of
   a specific method.
 
-  \code{\link[IRanges]{cbind,DataFrame-method}} in the IRanges paackage
+  \code{\link[IRanges]{cbind,DataFrame-method}} in the IRanges package
   for the method for \link[IRanges]{DataFrame} objects.
 }
 

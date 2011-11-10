@@ -10,14 +10,11 @@
   Generic functions that are needed by many other packages.
 }
 
-\details{
-~~ An overview of how to use the package, including the most important ~~
-~~ functions ~~
-}
-
 \author{The Bioconductor Dev Team}
 
-\seealso{
+\examples{
+## List all the symbols defined in this package:
+ls('package:BiocGenerics')
 }
 
 \keyword{package}
