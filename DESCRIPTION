@@ -4,6 +4,9 @@ Description: Generic functions that are needed by many other packages.
 Version: 0.0.1
 Author: The Bioconductor Dev Team
 Maintainer: Bioconductor Package Maintainer <maintainer@bioconductor.org>
+biocViews: Infrastructure
 Imports: methods
+Suggests: IRanges
 License: Artistic-2.0
-Collate: zzz.R
+Collate: cbind.R
+	 zzz.R

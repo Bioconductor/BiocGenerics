@@ -1,2 +1,7 @@
 import(methods)
-exportPattern("^[[:alpha:]]+")
+
+export(
+    cbind,
+    rbind
+)
+
