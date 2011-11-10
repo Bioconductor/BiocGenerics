@@ -6,7 +6,8 @@ Author: The Bioconductor Dev Team
 Maintainer: Bioconductor Package Maintainer <maintainer@bioconductor.org>
 biocViews: Infrastructure
 Imports: methods
-Suggests: IRanges
+Suggests: Biobase, IRanges
 License: Artistic-2.0
 Collate: cbind.R
-	 zzz.R
+	updateObject.R
+	zzz.R

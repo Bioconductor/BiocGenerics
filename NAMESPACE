@@ -1,7 +1,18 @@
 import(methods)
 
 export(
+    ## from R/cbind.R:
     cbind,
-    rbind
+    rbind,
+
+    ## from R/updateObject.R:
+    updateObject,
+    updateObjectFromSlots,
+    getObjectSlots
+)
+
+exportMethods(
+    ## from R/updateObject.R:
+    updateObject
 )
 
