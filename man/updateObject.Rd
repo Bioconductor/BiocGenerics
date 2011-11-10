@@ -121,20 +121,23 @@ data(sample.ExpressionSet)
 obj <- updateObject(sample.ExpressionSet)
 
 setClass("UpdtA", representation(x="numeric"), contains="data.frame")
-setMethod("updateObject", signature(object="UpdtA"),
-          function(object, ..., verbose=FALSE) {
-              if (verbose) message("updateObject object = 'A'")
-              object <- callNextMethod()
-              object@x <- -object@x
-              object
-})
+setMethod("updateObject", "UpdtA",
+    function(object, ..., verbose=FALSE)
+    {
+        if (verbose)
+            message("updateObject object = 'A'")
+        object <- callNextMethod()
+        object@x <- -object@x
+        object
+    }
+)
 
 a <- new("UpdtA", x=1:10)
 ## See steps involved
 updateObject(a)
 
-removeClass("UpdtA")
 removeMethod("updateObject", "UpdtA")
+removeClass("UpdtA")
 }
 
 \keyword{methods}
