@@ -5,6 +5,9 @@ export(
     cbind,
     rbind,
 
+    ## from R/paste.R:
+    paste,
+
     ## from R/updateObject.R:
     updateObject,
     updateObjectFromSlots,

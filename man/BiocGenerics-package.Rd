@@ -7,7 +7,7 @@
 \title{Generic functions for Bioconductor}
 
 \description{
-  Generic functions that are needed by many other packages.
+  Generic functions that are needed by many other Bioconductor packages.
 }
 
 \details{
@@ -15,6 +15,7 @@
   \itemize{
     \item \code{\link[BiocGenerics]{cbind}}
     \item \code{\link[BiocGenerics]{rbind}}
+    \item \code{\link[BiocGenerics]{paste}}
   }
 
   Bioconductor specific generics:
