@@ -5,6 +5,9 @@ export(
     cbind,
     rbind,
 
+    ## from R/order.R:
+    order,
+
     ## from R/paste.R:
     paste,
 

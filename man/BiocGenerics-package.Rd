@@ -15,6 +15,7 @@
   \itemize{
     \item \code{\link[BiocGenerics]{cbind}}
     \item \code{\link[BiocGenerics]{rbind}}
+    \item \code{\link[BiocGenerics]{order}}
     \item \code{\link[BiocGenerics]{paste}}
     \item \code{\link[BiocGenerics]{table}}
   }
