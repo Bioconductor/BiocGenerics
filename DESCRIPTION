@@ -12,5 +12,6 @@ Collate: cbind.R
 	order.R
 	paste.R
 	table.R
+	union.R
 	updateObject.R
 	zzz.R

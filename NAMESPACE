@@ -2,8 +2,7 @@ import(methods)
 
 export(
     ## from R/cbind.R:
-    cbind,
-    rbind,
+    cbind, rbind,
 
     ## from R/order.R:
     order,
@@ -13,6 +12,9 @@ export(
 
     ## from R/table.R:
     table,
+
+    ## from R/union.R:
+    union, intersect, setdiff,
 
     ## from R/updateObject.R:
     updateObject,

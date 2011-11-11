@@ -11,8 +11,8 @@
 
   This man page is for the \code{cbind} and \code{rbind} S4 generic
   functions defined in the BiocGenerics package.
-  See \code{?base::\link[base]{cbind}} and \code{?base::\link[base]{rbind}}
-  for the default methods (defined in the base package).
+  See \code{?base::\link[base]{cbind}} for the default methods (defined
+  in the base package).
   Bioconductor packages can define specific methods for objects
   (typically vector-like or table-like) not supported by the default
   methods.

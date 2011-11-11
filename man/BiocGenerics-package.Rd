@@ -13,11 +13,18 @@
 \details{
   Standard R functions explicitely promoted to generics:
   \itemize{
-    \item \code{\link[BiocGenerics]{cbind}}
-    \item \code{\link[BiocGenerics]{rbind}}
+    \item \code{\link[BiocGenerics]{cbind}},
+          \code{\link[BiocGenerics]{rbind}}
+
     \item \code{\link[BiocGenerics]{order}}
+
     \item \code{\link[BiocGenerics]{paste}}
+
     \item \code{\link[BiocGenerics]{table}}
+
+    \item \code{\link[BiocGenerics]{union}},
+          \code{\link[BiocGenerics]{intersect}},
+          \code{\link[BiocGenerics]{setdiff}}
   }
 
   Bioconductor specific generics:
