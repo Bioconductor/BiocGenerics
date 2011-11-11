@@ -19,6 +19,9 @@ export(
     ## from R/union.R:
     union, intersect, setdiff,
 
+    ## from R/combine.R:
+    combine,
+
     ## from R/updateObject.R:
     updateObject,
     updateObjectFromSlots,
@@ -26,6 +29,9 @@ export(
 )
 
 exportMethods(
+    ## from R/combine.R:
+    combine,
+
     ## from R/updateObject.R:
     updateObject
 )

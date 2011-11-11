@@ -31,6 +31,8 @@
 
   Bioconductor specific generics:
   \itemize{
+    \item \code{\link[BiocGenerics]{combine}}
+
     \item \code{\link[BiocGenerics]{updateObject}}
   }
 }

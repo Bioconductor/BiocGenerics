@@ -1,5 +1,5 @@
 ### =========================================================================
-### The updateObject() generic and related utilities 
+### The updateObject() generic and related utilities
 ### -------------------------------------------------------------------------
 ###
 ### An "updateObject" default method + methods for some standard types are
