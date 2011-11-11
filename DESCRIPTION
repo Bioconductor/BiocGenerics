@@ -11,6 +11,7 @@ License: Artistic-2.0
 Collate: cbind.R
 	order.R
 	paste.R
+	rep.R
 	table.R
 	union.R
 	updateObject.R

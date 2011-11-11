@@ -20,6 +20,8 @@
 
     \item \code{\link[BiocGenerics]{paste}}
 
+    \item \code{\link[BiocGenerics]{rep.int}}
+
     \item \code{\link[BiocGenerics]{table}}
 
     \item \code{\link[BiocGenerics]{union}},

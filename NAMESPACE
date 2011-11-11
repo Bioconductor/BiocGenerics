@@ -10,6 +10,9 @@ export(
     ## from R/paste.R:
     paste,
 
+    ## from R/rep.R:
+    rep.int,
+
     ## from R/table.R:
     table,
 
