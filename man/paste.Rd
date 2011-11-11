@@ -50,7 +50,7 @@ paste(..., sep=" ", collapse=NULL)
   \link[IRanges]{paste,Rle-method} in the IRanges package
   for the method defined for \link[IRanges]{Rle} objects.
 
-  \link{BiocGenerics-package} for a summary of all the generics defined
+  \link{BiocGenerics} for a summary of all the generics defined
   in the BiocGenerics package.
 }
 

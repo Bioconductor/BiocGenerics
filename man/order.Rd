@@ -14,8 +14,7 @@
   See \code{?base::\link[base]{order}} for the default method (defined
   in the base package).
   Bioconductor packages can define specific methods for objects
-  (typically vector-like objects containing strings) not supported by
-  the default method.
+  (typically vector-like objects) not supported by the default method.
 }
 
 \usage{
@@ -69,7 +68,7 @@ order(..., na.last=TRUE, decreasing=FALSE)
   \link[IRanges]{order,Ranges-method} in the IRanges package
   for the method defined for \link[IRanges]{Ranges} objects.
 
-  \link{BiocGenerics-package} for a summary of all the generics defined
+  \link{BiocGenerics} for a summary of all the generics defined
   in the BiocGenerics package.
 }
 

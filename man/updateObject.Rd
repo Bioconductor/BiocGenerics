@@ -120,7 +120,7 @@ getObjectSlots(object)
   \code{\link[methods]{selectMethod}} for getting the definition of
   a specific method.
 
-  \link{BiocGenerics-package} for a summary of all the generics defined
+  \link{BiocGenerics} for a summary of all the generics defined
   in the BiocGenerics package.
 }
 
