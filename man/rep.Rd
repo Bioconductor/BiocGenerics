@@ -27,7 +27,7 @@ rep.int(x, ...)
     R object (typically vector-like).
   }
   \item{...}{
-    Additional arguments, for use in specific methods.
+    Additional arguments, for use in specific \code{rep.int} methods.
   }
 }
 
