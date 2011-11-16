@@ -11,8 +11,8 @@
 
   This man page is for the \code{xtabs} S4 generic function defined
   in the BiocGenerics package.
-  See \code{?base::\link[base]{xtabs}} for the default method (defined
-  in the base package).
+  See \code{?stats::\link[stats]{xtabs}} for the default method (defined
+  in the stats package).
   Bioconductor packages can define specific methods for objects
   not supported by the default method.
 }
@@ -24,7 +24,7 @@ xtabs(formula=~., data=parent.frame(), subset, sparse=FALSE,
 
 \arguments{
   \item{formula, subset, sparse, na.action, exclude, drop.unused.levels}{
-    See \code{?base::\link[base]{xtabs}} for the details.
+    See \code{?stats::\link[stats]{xtabs}} for the details.
   }
   \item{data}{
     A data-frame-like R object.
@@ -32,7 +32,7 @@ xtabs(formula=~., data=parent.frame(), subset, sparse=FALSE,
 }
 
 \value{
-  See \code{?base::\link[base]{xtabs}} for the value returned by the
+  See \code{?stats::\link[stats]{xtabs}} for the value returned by the
   default method.
 
   Specific methods defined in other Bioconductor packages should also
@@ -40,7 +40,7 @@ xtabs(formula=~., data=parent.frame(), subset, sparse=FALSE,
 }
 
 \seealso{
-  \code{\link[base]{xtabs}} for the default \code{xtabs} method.
+  \code{\link[stats]{xtabs}} for the default \code{xtabs} method.
 
   \code{\link[methods]{showMethods}} for displaying a summary of the
   methods defined for a given generic function.
