@@ -58,7 +58,7 @@ eval(expr, envir=parent.frame(),
 
   \link[IRanges]{eval,expression,List-method} in the IRanges
   package for the method defined for when the \code{expr} and \code{envir}
-  arguments are \link[IRanges]{expression} and \link[IRanges]{List}
+  arguments are \link[base]{expression} and \link[IRanges]{List}
   objects, respectively.
 
   \link{BiocGenerics} for a summary of all the generics defined
