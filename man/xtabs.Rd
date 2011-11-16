@@ -57,7 +57,7 @@ xtabs(formula=~., data=parent.frame(), subset, sparse=FALSE,
 
 \examples{
 xtabs
-showMethods("xtabs")
+showMethods("xtabs")  # note the dispatch on the 'data' arg only
 selectMethod("xtabs", "ANY")  # the default method
 }
 

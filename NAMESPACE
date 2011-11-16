@@ -4,6 +4,9 @@ export(
     ## from R/cbind.R:
     cbind, rbind,
 
+    ## from R/eval.R:
+    eval,
+
     ## from R/order.R:
     order,
 

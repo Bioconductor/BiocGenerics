@@ -16,6 +16,8 @@
     \item \code{\link[BiocGenerics]{cbind}},
           \code{\link[BiocGenerics]{rbind}}
 
+    \item \code{\link[BiocGenerics]{eval}}
+
     \item \code{\link[BiocGenerics]{order}}
 
     \item \code{\link[BiocGenerics]{paste}}
