@@ -65,8 +65,8 @@ eval(expr, envir=parent.frame(),
 }
 
 \examples{
-eval
-showMethods("eval")  # note the dispatch on 'expr' and 'envir' args only
+eval  # note the dispatch on 'expr' and 'envir' args only
+showMethods("eval")
 selectMethod("eval", c("ANY", "ANY"))  # the default method
 }
 
