@@ -19,6 +19,9 @@ export(
     ## from R/union.R:
     union, intersect, setdiff,
 
+    ## from R/xtabs.R:
+    xtabs,
+
     ## from R/combine.R:
     combine,
 

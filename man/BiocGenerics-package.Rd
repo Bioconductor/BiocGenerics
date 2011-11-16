@@ -27,6 +27,8 @@
     \item \code{\link[BiocGenerics]{union}},
           \code{\link[BiocGenerics]{intersect}},
           \code{\link[BiocGenerics]{setdiff}}
+
+    \item \code{\link[BiocGenerics]{xtabs}}
   }
 
   Bioconductor specific generics:

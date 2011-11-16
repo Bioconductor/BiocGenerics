@@ -1,7 +1,7 @@
 Package: BiocGenerics
 Title: Generic functions for Bioconductor
 Description: Generic functions that are needed by many other Bioconductor packages.
-Version: 0.1.0
+Version: 0.1.1
 Author: The Bioconductor Dev Team
 Maintainer: Bioconductor Package Maintainer <maintainer@bioconductor.org>
 biocViews: Infrastructure
@@ -14,6 +14,7 @@ Collate: cbind.R
 	rep.R
 	table.R
 	union.R
+	xtabs.R
 	combine.R
 	updateObject.R
 	testPackage.R
