@@ -56,9 +56,10 @@ eval(expr, envir=parent.frame(),
   \code{\link[methods]{selectMethod}} for getting the definition of
   a specific method.
 
-  \link[IRanges]{eval,expressionORlanguage,List-method} in the IRanges
-  package for the method defined for an \link[IRanges]{expressionORlanguage}
-  \code{expr} argument and a \link[IRanges]{List} \code{envir} argument.
+  \link[IRanges]{eval,expression,List-method} in the IRanges
+  package for the method defined for when the \code{expr} and \code{envir}
+  arguments are \link[IRanges]{expression} and \link[IRanges]{List}
+  objects, respectively.
 
   \link{BiocGenerics} for a summary of all the generics defined
   in the BiocGenerics package.
