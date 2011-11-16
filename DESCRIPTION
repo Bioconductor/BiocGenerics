@@ -5,6 +5,7 @@ Version: 0.1.1
 Author: The Bioconductor Dev Team
 Maintainer: Bioconductor Package Maintainer <maintainer@bioconductor.org>
 biocViews: Infrastructure
+Depends: methods, stats
 Imports: methods
 Suggests: Biobase, IRanges, RUnit
 License: Artistic-2.0
