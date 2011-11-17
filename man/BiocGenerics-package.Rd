@@ -18,6 +18,9 @@
 
     \item \code{\link[BiocGenerics]{eval}}
 
+    \item \code{\link[BiocGenerics]{lapply}},
+          \code{\link[BiocGenerics]{sapply}}
+
     \item \code{\link[BiocGenerics]{pmax}},
           \code{\link[BiocGenerics]{pmin}},
           \code{\link[BiocGenerics]{pmax.int}},

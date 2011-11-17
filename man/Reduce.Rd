@@ -10,22 +10,22 @@
 
 \description{
   \code{Reduce} uses a binary function to successively combine the
-  elements of a given vector-like or list-like R object and a possibly
+  elements of a given list-like or vector-like R object and a possibly
   given initial value.
-  \code{Filter} extracts the elements of a vector-like or list-like
+  \code{Filter} extracts the elements of a list-like or vector-like
   R object for which a predicate (logical) function gives true.
   \code{Find} and \code{Position} give the first or last such element
   and its position in the object, respectively.
   \code{Map} applies a function to the corresponding elements of given
-  vector-like or list-like R objects.
+  list-like or vector-like R objects.
 
-  This man page is for the \code{Reduce}, \code{Filter}, \code{Find},
-  \code{Map} and \code{Position} S4 generic functions defined
-  in the BiocGenerics package.
-  See \code{?base::\link[base]{Reduce}} for the default methods (defined
-  in the base package).
+  NOTE: This man page is for the \code{Reduce}, \code{Filter},
+  \code{Find}, \code{Map} and \code{Position} S4 generic functions
+  defined in the BiocGenerics package.
+  See \code{?base::\link[base]{Reduce}} for the default methods
+  (defined in the base package).
   Bioconductor packages can define specific methods for objects
-  (typically vector-like or list-like) not supported by the
+  (typically list-like or vector-like) not supported by the
   default methods.
 }
 
@@ -42,10 +42,10 @@ Position(f, x, right=FALSE, nomatch=NA_integer_)
     See \code{?base::\link[base]{Reduce}} for the details.
   }
   \item{x}{
-    A vector-like or list-like R object.
+    A list-like or vector-like R object.
   }
   \item{...}{
-    One or more vector-like or list-like R objects.
+    One or more list-like or vector-like R objects.
   }
 }
 

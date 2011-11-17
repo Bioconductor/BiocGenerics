@@ -7,6 +7,9 @@ export(
     ## from R/eval.R:
     eval,
 
+    ## from R/lapply.R:
+    lapply, sapply,
+
     ## from R/max.R:
     pmax, pmin, pmax.int, pmin.int,
 

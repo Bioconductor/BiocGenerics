@@ -7,10 +7,10 @@
 \description{
   \code{rep.int} replicates the elements in \code{x}.
 
-  This man page is for the \code{rep.int} S4 generic function defined
-  in the BiocGenerics package.
-  See \code{?base::\link[base]{rep.int}} for the default method (defined
-  in the base package).
+  NOTE: This man page is for the \code{rep.int} S4 generic function
+  defined in the BiocGenerics package.
+  See \code{?base::\link[base]{rep.int}} for the default method
+  (defined in the base package).
   Bioconductor packages can define specific methods for objects
   (typically vector-like) not supported by the default method.
 }

@@ -10,10 +10,10 @@
   Performs \emph{set} union, intersection and (asymmetric!) difference
   on two vector-like R objects.
 
-  This man page is for the \code{union}, \code{intersect} and
+  NOTE: This man page is for the \code{union}, \code{intersect} and
   \code{setdiff} S4 generic functions defined in the BiocGenerics package.
-  See \code{?base::\link[base]{union}} for the default methods (defined
-  in the base package).
+  See \code{?base::\link[base]{union}} for the default methods
+  (defined in the base package).
   Bioconductor packages can define specific methods for objects
   (typically vector-like) not supported by the default methods.
 }

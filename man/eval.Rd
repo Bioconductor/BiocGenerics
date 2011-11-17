@@ -7,10 +7,10 @@
 \description{
   \code{eval} evaluates an R expression in a specified environment.
 
-  This man page is for the \code{eval} S4 generic function defined
-  in the BiocGenerics package.
-  See \code{?base::\link[base]{eval}} for the default method (defined
-  in the base package).
+  NOTE: This man page is for the \code{eval} S4 generic function
+  defined in the BiocGenerics package.
+  See \code{?base::\link[base]{eval}} for the default method
+  (defined in the base package).
   Bioconductor packages can define specific methods for objects
   not supported by the default method.
 }
@@ -43,8 +43,8 @@ eval(expr, envir=parent.frame(),
   See \code{?base::\link[base]{eval}} for the value returned by the
   default method.
 
-  Specific methods defined in other Bioconductor packages should also
-  return the type of object returned by the default method.
+  Specific methods defined in other Bioconductor packages should
+  behave as consistently as possible with the default method.
 }
 
 \seealso{

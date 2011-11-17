@@ -8,10 +8,10 @@
   \code{table} uses the cross-classifying factors to build a contingency
   table of the counts at each combination of factor levels.
 
-  This man page is for the \code{table} S4 generic function defined
-  in the BiocGenerics package.
-  See \code{?base::\link[base]{table}} for the default method (defined
-  in the base package).
+  NOTE: This man page is for the \code{table} S4 generic function
+  defined in the BiocGenerics package.
+  See \code{?base::\link[base]{table}} for the default method
+  (defined in the base package).
   Bioconductor packages can define specific methods for objects
   not supported by the default method.
 }

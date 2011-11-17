@@ -8,10 +8,10 @@
   \code{paste} concatenates vectors of strings or vector-like objects
   containing strings.
 
-  This man page is for the \code{paste} S4 generic function defined
-  in the BiocGenerics package.
-  See \code{?base::\link[base]{paste}} for the default method (defined
-  in the base package).
+  NOTE: This man page is for the \code{paste} S4 generic function
+  defined in the BiocGenerics package.
+  See \code{?base::\link[base]{paste}} for the default method
+  (defined in the base package).
   Bioconductor packages can define specific methods for objects
   (typically vector-like objects containing strings) not supported by
   the default method.

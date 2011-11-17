@@ -3,7 +3,7 @@
 ### -------------------------------------------------------------------------
 ###
 ### Need to explicitly define this generic otherwise the implicit generic in
-### package "base" would dispatch on all the arguments. Here we set dispatch
+### package "base" would dispatch on all its arguments. Here we set dispatch
 ### on the first two args (the 'expr' and 'envir' args) only!
 
 setGeneric("eval", signature=c("expr", "envir"),

@@ -9,10 +9,10 @@
   cross-classifying factors, usually contained in a data-frame-like object,
   using a formula interface.
 
-  This man page is for the \code{xtabs} S4 generic function defined
-  in the BiocGenerics package.
-  See \code{?stats::\link[stats]{xtabs}} for the default method (defined
-  in the stats package).
+  NOTE: This man page is for the \code{xtabs} S4 generic function
+  defined in the BiocGenerics package.
+  See \code{?stats::\link[stats]{xtabs}} for the default method
+  (defined in the stats package).
   Bioconductor packages can define specific methods for objects
   not supported by the default method.
 }

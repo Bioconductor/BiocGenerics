@@ -9,10 +9,10 @@
   \code{cbind} and \code{rbind} take a sequence of R objects arguments
   and combine them by columns or rows, respectively.
 
-  This man page is for the \code{cbind} and \code{rbind} S4 generic
-  functions defined in the BiocGenerics package.
-  See \code{?base::\link[base]{cbind}} for the default methods (defined
-  in the base package).
+  NOTE: This man page is for the \code{cbind} and \code{rbind}
+  S4 generic functions defined in the BiocGenerics package.
+  See \code{?base::\link[base]{cbind}} for the default methods
+  (defined in the base package).
   Bioconductor packages can define specific methods for objects
   (typically vector-like or table-like) not supported by the default
   methods.
