@@ -14,7 +14,7 @@
   See \code{?base::\link[base]{order}} for the default method (defined
   in the base package).
   Bioconductor packages can define specific methods for objects
-  (typically vector-like objects) not supported by the default method.
+  (typically vector-like) not supported by the default method.
 }
 
 \usage{

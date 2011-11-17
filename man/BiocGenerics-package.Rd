@@ -27,6 +27,12 @@
 
     \item \code{\link[BiocGenerics]{paste}}
 
+    \item \code{\link[BiocGenerics]{Reduce}},
+          \code{\link[BiocGenerics]{Filter}},
+          \code{\link[BiocGenerics]{Find}},
+          \code{\link[BiocGenerics]{Map}},
+          \code{\link[BiocGenerics]{Position}}
+
     \item \code{\link[BiocGenerics]{rep.int}}
 
     \item \code{\link[BiocGenerics]{table}}

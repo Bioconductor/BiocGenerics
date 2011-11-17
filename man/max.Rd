@@ -56,7 +56,7 @@ pmin.int(..., na.rm=FALSE)
   a specific method.
 
   \link[IRanges]{pmax,Rle-method} in the IRanges package
-  for the method defined for \link[IRanges]{Rle} objects.
+  for the \code{pmax} method defined for \link[IRanges]{Rle} objects.
 
   \link{BiocGenerics} for a summary of all the generics defined
   in the BiocGenerics package.

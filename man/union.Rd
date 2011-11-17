@@ -54,7 +54,7 @@ setdiff(x, y, ...)
   a specific method.
 
   \link[IRanges]{union,IRanges,IRanges-method} in the IRanges package
-  for the method defined for \link[IRanges]{IRanges} objects.
+  for the \code{union} method defined for \link[IRanges]{IRanges} objects.
 
   \link{BiocGenerics} for a summary of all the generics defined
   in the BiocGenerics package.

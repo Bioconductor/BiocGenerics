@@ -14,6 +14,7 @@ Collate: cbind.R
 	max.R
 	order.R
 	paste.R
+	Reduce.R
 	rep.R
 	table.R
 	union.R

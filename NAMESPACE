@@ -16,6 +16,9 @@ export(
     ## from R/paste.R:
     paste,
 
+    ## from R/Reduce.R:
+    Reduce, Filter, Find, Map, Position,
+
     ## from R/rep.R:
     rep.int,
 
