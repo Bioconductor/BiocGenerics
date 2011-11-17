@@ -13,6 +13,7 @@ Collate: cbind.R
 	duplicated.R
 	eval.R
 	lapply.R
+	mapply.R
 	max.R
 	order.R
 	paste.R

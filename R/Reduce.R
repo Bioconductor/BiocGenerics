@@ -19,6 +19,7 @@ setGeneric("Find", signature="x",
     function(f, x, right=FALSE, nomatch=NULL) standardGeneric("Find")
 )
 
+### Note that dispatching on '...' is supported starting with R 2.8.0 only.
 setGeneric("Map", signature="...",
     function(f, ...) standardGeneric("Map")
 )

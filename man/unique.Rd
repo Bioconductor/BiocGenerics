@@ -39,11 +39,15 @@ unique(x, incomparables=FALSE, ...)
   Specific methods defined in other Bioconductor packages will typically
   return an object of the same class as the input object.
 
-  \code{unique} should always behave consistently with \code{duplicated}.
+  \code{unique} should always behave consistently with
+  \code{\link[BiocGenerics]{duplicated}}.
 }
 
 \seealso{
   \code{\link[base]{unique}} for the default \code{unique} method.
+
+  \code{\link[BiocGenerics]{duplicated}} for determining duplicate
+  elements.
 
   \code{\link[methods]{showMethods}} for displaying a summary of the
   methods defined for a given generic function.

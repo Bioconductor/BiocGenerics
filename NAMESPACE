@@ -13,6 +13,9 @@ export(
     ## from R/lapply.R:
     lapply, sapply,
 
+    ## from R/mapply.R:
+    mapply,
+
     ## from R/max.R:
     pmax, pmin, pmax.int, pmin.int,
 
