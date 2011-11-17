@@ -18,6 +18,11 @@
 
     \item \code{\link[BiocGenerics]{eval}}
 
+    \item \code{\link[BiocGenerics]{pmax}},
+          \code{\link[BiocGenerics]{pmin}},
+          \code{\link[BiocGenerics]{pmax.int}},
+          \code{\link[BiocGenerics]{pmin.int}}
+
     \item \code{\link[BiocGenerics]{order}}
 
     \item \code{\link[BiocGenerics]{paste}}

@@ -18,7 +18,7 @@
 ###
 ###   > setGeneric("rep", function(x, ...) standardGeneric("rep"))
 ###   Error in setGeneric("rep", function(x, ...) standardGeneric("rep")) :
-###      ‘rep’ is a primitive function;  methods can be defined, but the
+###     ‘rep’ is a primitive function;  methods can be defined, but the
 ###   generic function is implicit, and cannot be changed.
 ###
 #setGeneric("rep", function(x, ...) standardGeneric("rep"))

@@ -11,6 +11,7 @@ Suggests: Biobase, IRanges, RUnit
 License: Artistic-2.0
 Collate: cbind.R
 	eval.R
+	max.R
 	order.R
 	paste.R
 	rep.R
