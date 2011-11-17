@@ -75,7 +75,7 @@ pmax.int
 showMethods("pmax.int")
 selectMethod("pmax.int", "ANY")  # the default method
 
-pmin
+pmin.int
 showMethods("pmin.int")
 selectMethod("pmin.int", "ANY")  # the default method
 }
