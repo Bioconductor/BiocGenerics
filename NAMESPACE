@@ -28,6 +28,9 @@ export(
     ## from R/table.R:
     table,
 
+    ## from R/tapply.R:
+    tapply,
+
     ## from R/union.R:
     union, intersect, setdiff,
 

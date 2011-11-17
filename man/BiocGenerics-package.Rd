@@ -40,6 +40,8 @@
 
     \item \code{\link[BiocGenerics]{table}}
 
+    \item \code{\link[BiocGenerics]{tapply}}
+
     \item \code{\link[BiocGenerics]{union}},
           \code{\link[BiocGenerics]{intersect}},
           \code{\link[BiocGenerics]{setdiff}}

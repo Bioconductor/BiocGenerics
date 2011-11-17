@@ -18,6 +18,7 @@ Collate: cbind.R
 	Reduce.R
 	rep.R
 	table.R
+	tapply.R
 	union.R
 	xtabs.R
 	combine.R
