@@ -34,7 +34,8 @@ pmin.int(..., na.rm=FALSE)
     One or more vector-like R objects.
   }
   \item{na.rm}{
-    See \code{?base::\link[base]{pmax}} for the details.
+    See \code{?base::\link[base]{pmax}} for a description of
+    this argument.
   }
 }
 

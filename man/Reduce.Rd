@@ -39,7 +39,8 @@ Position(f, x, right=FALSE, nomatch=NA_integer_)
 
 \arguments{
   \item{f, init, right, accumulate, nomatch}{
-    See \code{?base::\link[base]{Reduce}} for the details.
+    See \code{?base::\link[base]{Reduce}} for a description of
+    these arguments.
   }
   \item{x}{
     A list-like or vector-like R object.

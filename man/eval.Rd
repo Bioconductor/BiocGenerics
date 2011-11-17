@@ -35,7 +35,8 @@ eval(expr, envir=parent.frame(),
     methods defined in Bioconductor packages.
   }
   \item{enclos}{
-    See \code{?base::\link[base]{eval}} for the details.
+    See \code{?base::\link[base]{eval}} for a description of
+    this argument.
   }
 }
 

@@ -35,7 +35,8 @@ sapply(X, FUN, ..., simplify=TRUE, USE.NAMES=TRUE)
     A list-like or vector-like R object.
   }
   \item{FUN, ..., simplify, USE.NAMES}{
-    See \code{?base::\link[base]{lapply}} for the details.
+    See \code{?base::\link[base]{lapply}} for a description of
+    these arguments.
   }
 }
 

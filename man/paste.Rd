@@ -26,7 +26,8 @@ paste(..., sep=" ", collapse=NULL)
     One or more vector-like R objects containing strings.
   }
   \item{sep, collapse}{
-    See \code{?base::\link[base]{paste}} for the details.
+    See \code{?base::\link[base]{paste}} for a description of
+    these arguments.
   }
 }
 

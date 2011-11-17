@@ -24,7 +24,8 @@ xtabs(formula=~., data=parent.frame(), subset, sparse=FALSE,
 
 \arguments{
   \item{formula, subset, sparse, na.action, exclude, drop.unused.levels}{
-    See \code{?stats::\link[stats]{xtabs}} for the details.
+    See \code{?stats::\link[stats]{xtabs}} for a description of
+    these arguments.
   }
   \item{data}{
     A data-frame-like R object.

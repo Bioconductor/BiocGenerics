@@ -26,7 +26,8 @@ order(..., na.last=TRUE, decreasing=FALSE)
     One or more vector-like R objects, all of the same length.
   }
   \item{na.last, decreasing}{
-    See \code{?base::\link[base]{order}} for the details.
+    See \code{?base::\link[base]{order}} for a description of
+    these arguments.
   }
 }
 

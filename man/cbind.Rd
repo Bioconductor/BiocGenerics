@@ -28,7 +28,8 @@ rbind(..., deparse.level=1)
     R objects. These can be given as named arguments.
   }
   \item{deparse.level}{
-    See \code{?base::\link[base]{cbind}} for the details.
+    See \code{?base::\link[base]{cbind}} for a description of
+    this argument.
   }
 }
 
