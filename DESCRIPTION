@@ -10,6 +10,7 @@ Imports: methods
 Suggests: Biobase, IRanges, RUnit
 License: Artistic-2.0
 Collate: cbind.R
+	duplicated.R
 	eval.R
 	lapply.R
 	max.R

@@ -16,6 +16,9 @@
     \item \code{\link[BiocGenerics]{cbind}},
           \code{\link[BiocGenerics]{rbind}}
 
+    \item \code{\link[BiocGenerics]{duplicated}},
+          \code{\link[BiocGenerics]{anyDuplicated}}
+
     \item \code{\link[BiocGenerics]{eval}}
 
     \item \code{\link[BiocGenerics]{lapply}},
