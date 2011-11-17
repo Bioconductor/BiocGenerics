@@ -37,6 +37,9 @@ export(
     ## from R/union.R:
     union, intersect, setdiff,
 
+    ## from R/unique.R:
+    unique,
+
     ## from R/xtabs.R:
     xtabs,
 

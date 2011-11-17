@@ -21,6 +21,7 @@ Collate: cbind.R
 	table.R
 	tapply.R
 	union.R
+	unique.R
 	xtabs.R
 	combine.R
 	updateObject.R

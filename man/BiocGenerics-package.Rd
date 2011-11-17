@@ -49,6 +49,8 @@
           \code{\link[BiocGenerics]{intersect}},
           \code{\link[BiocGenerics]{setdiff}}
 
+    \item \code{\link[BiocGenerics]{unique}}
+
     \item \code{\link[BiocGenerics]{xtabs}}
   }
 

@@ -79,6 +79,10 @@ anyDuplicated(x, incomparables=FALSE, ...)
 duplicated
 showMethods("duplicated")
 selectMethod("duplicated", "ANY")  # the default method
+
+anyDuplicated
+showMethods("anyDuplicated")
+selectMethod("anyDuplicated", "ANY")  # the default method
 }
 
 \keyword{methods}
