@@ -7,7 +7,7 @@
 \title{Generic functions for Bioconductor}
 
 \description{
-  Generic functions that are needed by many other Bioconductor packages.
+  S4 generic functions needed by many other Bioconductor packages.
 }
 
 \details{
