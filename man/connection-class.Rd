@@ -3,6 +3,7 @@
 \alias{characterORconnection-class}
 \alias{file-class}
 \alias{gzfile-class}
+\alias{gzcon-class}
 \alias{pipe-class}
 \alias{sockconn-class}
 \alias{unz-class}
@@ -12,7 +13,6 @@
 
 \title{S4 connection classes}
 \description{ These are S4 representations of the S3 connection classes
-  in R. They exist only to support method dispatch. }
-\author{ Michael Lawrence }
+  in R. They exist only to support method dispatch on connection types. }
+
 \keyword{classes}
-\keyword{internal}

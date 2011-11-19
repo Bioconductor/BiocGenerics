@@ -26,6 +26,7 @@ Collate: cbind.R
 	xtabs.R
 	combine.R
 	updateObject.R
+        connection-classes.R
 	testPackage.R
 	test_BiocGenerics_package.R
 	zzz.R

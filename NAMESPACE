@@ -63,3 +63,8 @@ exportMethods(
     updateObject
 )
 
+exportClasses(
+    ## from R/connection-classes.R:
+    connection, file, url, gzfile, unz, pipe, sockconn, terminal,
+    textConnection, gzcon, characterORconnection
+)
