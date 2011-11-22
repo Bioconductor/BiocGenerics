@@ -8,8 +8,5 @@
 ###
 ### Note that dispatching on '...' is supported starting with R 2.8.0 only.
 
-setGeneric("mapply", signature="...",
-    function(FUN, ..., MoreArgs=NULL, SIMPLIFY=TRUE, USE.NAMES=TRUE)
-        standardGeneric("mapply")
-)
+setGeneric("mapply", signature="...")
 

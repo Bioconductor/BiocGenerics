@@ -6,26 +6,14 @@
 ### in package "base" would dispatch on all their arguments. Here we set
 ### dispatch on the 2nd arg (the 'x' or '...' arg) only!
 
-setGeneric("Reduce", signature="x",
-    function(f, x, init, right=FALSE, accumulate=FALSE)
-        standardGeneric("Reduce")
-)
+setGeneric("Reduce", signature="x")
 
-setGeneric("Filter", signature="x",
-    function(f, x) standardGeneric("Filter")
-)
+setGeneric("Filter", signature="x")
 
-setGeneric("Find", signature="x",
-    function(f, x, right=FALSE, nomatch=NULL) standardGeneric("Find")
-)
+setGeneric("Find", signature="x")
 
 ### Note that dispatching on '...' is supported starting with R 2.8.0 only.
-setGeneric("Map", signature="...",
-    function(f, ...) standardGeneric("Map")
-)
+setGeneric("Map", signature="...")
 
-setGeneric("Position", signature="x",
-    function(f, x, right=FALSE, nomatch=NA_integer_)
-        standardGeneric("Position")
-)
+setGeneric("Position", signature="x")
 

@@ -6,7 +6,5 @@
 ### package "base" would dispatch on all its arguments. Here we set dispatch
 ### on the 1st arg (the 'X' arg) only!
 
-setGeneric("tapply", signature="X",
-    function(X, INDEX, FUN=NULL, ..., simplify=TRUE) standardGeneric("tapply")
-)
+setGeneric("tapply", signature="X")
 

@@ -6,11 +6,7 @@
 ### in package "base" would dispatch on ('x', 'incomparables'). Here we set
 ### dispatch on the 1st arg (the 'x' arg) only!
 
-setGeneric("duplicated", signature="x",
-    function(x, incomparables=FALSE, ...) standardGeneric("duplicated")
-)
+setGeneric("duplicated", signature="x")
 
-setGeneric("anyDuplicated", signature="x",
-    function(x, incomparables=FALSE, ...) standardGeneric("anyDuplicated")
-)
+setGeneric("anyDuplicated", signature="x")
 

@@ -7,7 +7,5 @@
 ###
 ### Note that dispatching on '...' is supported starting with R 2.8.0 only.
 
-setGeneric("paste", signature="...",
-    function(..., sep=" ", collapse=NULL) standardGeneric("paste")
-)
+setGeneric("paste", signature="...")
 

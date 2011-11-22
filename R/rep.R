@@ -14,14 +14,7 @@
 ###   > isGeneric("rep")
 ###   [1] TRUE
 ###
-### Also trying to make it a generic "again" fails:
-###
-###   > setGeneric("rep", function(x, ...) standardGeneric("rep"))
-###   Error in setGeneric("rep", function(x, ...) standardGeneric("rep")) :
-###     ‘rep’ is a primitive function;  methods can be defined, but the
-###   generic function is implicit, and cannot be changed.
-###
-#setGeneric("rep", function(x, ...) standardGeneric("rep"))
+#setGeneric("rep")
 
 ### A more natural (and cleaner) thing to do for this generic would be to
 ### use the same arguments as base::rep.int() (i.e. 'x', 'times') but then

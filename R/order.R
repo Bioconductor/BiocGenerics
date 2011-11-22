@@ -7,7 +7,5 @@
 ###
 ### Note that dispatching on '...' is supported starting with R 2.8.0 only.
 
-setGeneric("order", signature="...",
-    function(..., na.last=TRUE, decreasing=FALSE) standardGeneric("order")
-)
+setGeneric("order", signature="...")
 

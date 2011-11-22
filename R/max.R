@@ -8,33 +8,18 @@
 ### Note that dispatching on '...' is supported starting with R 2.8.0 only.
 
 ### setGeneric() cannot be used on "max" and "min":
-###   > setGeneric("max", signature="...",
-###   +     function (..., na.rm=FALSE) standardGeneric("max")
-###   + )
-###   Error in setGeneric("max", signature = "...",
-###   function(..., na.rm = FALSE) standardGeneric("max")) : 
+###   > setGeneric("max", signature="...")
+###   Error in setGeneric("max", signature = "...") : 
 ###     ‘max’ is a primitive function;  methods can be defined, but the
 ###   generic function is implicit, and cannot be changed.
-#setGeneric("max", signature="...",
-#    function (..., na.rm=FALSE) standardGeneric("max")
-#)
-#setGeneric("min", signature="...",
-#    function (..., na.rm=FALSE) standardGeneric("min")
-#)
+#setGeneric("max", signature="...")
+#setGeneric("min", signature="...")
 
-setGeneric("pmax", signature="...",
-    function (..., na.rm=FALSE) standardGeneric("pmax")
-)
+setGeneric("pmax", signature="...")
 
-setGeneric("pmin", signature="...",
-    function (..., na.rm=FALSE) standardGeneric("pmin")
-)
+setGeneric("pmin", signature="...")
 
-setGeneric("pmax.int", signature="...",
-    function (..., na.rm=FALSE) standardGeneric("pmax.int")
-)
+setGeneric("pmax.int", signature="...")
 
-setGeneric("pmin.int", signature="...",
-    function (..., na.rm=FALSE) standardGeneric("pmin.int")
-)
+setGeneric("pmin.int", signature="...")
 

@@ -7,11 +7,7 @@
 ###
 ### Note that dispatching on '...' is supported starting with R 2.8.0 only.
 
-setGeneric("cbind", signature="...",
-    function(..., deparse.level=1) standardGeneric("cbind")
-)
+setGeneric("cbind", signature="...")
 
-setGeneric("rbind", signature="...",
-    function(..., deparse.level=1) standardGeneric("rbind")
-)
+setGeneric("rbind", signature="...")
 
