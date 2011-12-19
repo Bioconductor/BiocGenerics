@@ -5,8 +5,8 @@
 \title{Concatenate strings}
 
 \description{
-  \code{paste} concatenates vectors of strings or vector-like objects
-  containing strings.
+  \code{paste} concatenates vectors of strings or vector-like R
+  objects containing strings.
 
   NOTE: This man page is for the \code{paste} S4 generic function
   defined in the BiocGenerics package.

@@ -18,7 +18,7 @@
   See \code{?base::\link[base]{pmax}} for the default methods
   (defined in the base package).
   Bioconductor packages can define specific methods for objects
-  (typically vector-like or table-like) not supported by the default
+  (typically vector-like or matrix-like) not supported by the default
   methods.
 }
 
@@ -32,7 +32,7 @@ pmin.int(..., na.rm=FALSE)
 
 \arguments{
   \item{...}{
-    One or more vector-like R objects.
+    One or more vector-like or matrix-like R objects.
   }
   \item{na.rm}{
     See \code{?base::\link[base]{pmax}} for a description of

@@ -31,6 +31,9 @@ export(
     ## from R/rep.R:
     rep.int,
 
+    ## from R/row_colnames.R:
+    rownames, colnames,
+
     ## from R/sets.R:
     union, intersect, setdiff,
 

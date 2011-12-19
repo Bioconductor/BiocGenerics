@@ -14,7 +14,7 @@
   See \code{?base::\link[base]{cbind}} for the default methods
   (defined in the base package).
   Bioconductor packages can define specific methods for objects
-  (typically vector-like or table-like) not supported by the default
+  (typically vector-like or matrix-like) not supported by the default
   methods.
 }
 
@@ -25,7 +25,8 @@ rbind(..., deparse.level=1)
 
 \arguments{
   \item{...}{
-    R objects. These can be given as named arguments.
+    One or more vector-like or matrix-like R objects. These can be given as
+    named arguments.
   }
   \item{deparse.level}{
     See \code{?base::\link[base]{cbind}} for a description of

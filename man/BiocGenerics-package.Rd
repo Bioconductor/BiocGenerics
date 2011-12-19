@@ -45,6 +45,10 @@
 
     \item \code{\link[BiocGenerics]{rep.int}}
 
+    \item row+colnames:
+          \code{\link[BiocGenerics]{rownames}},
+          \code{\link[BiocGenerics]{colnames}}
+
     \item sets:
           \code{\link[BiocGenerics]{union}},
           \code{\link[BiocGenerics]{intersect}},

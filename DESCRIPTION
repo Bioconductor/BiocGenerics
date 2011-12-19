@@ -19,6 +19,7 @@ Collate: cbind.R
 	order.R
 	paste.R
 	rep.R
+	row_colnames.R
 	sets.R
 	table.R
 	tapply.R
