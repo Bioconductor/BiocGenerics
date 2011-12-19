@@ -21,35 +21,38 @@
 
     \item \code{\link[BiocGenerics]{eval}}
 
-    \item \code{\link[BiocGenerics]{lapply}},
-          \code{\link[BiocGenerics]{sapply}}
-
-    \item \code{\link[BiocGenerics]{mapply}}
-
-    \item \code{\link[BiocGenerics]{pmax}},
+    \item Extremes:
+          \code{\link[BiocGenerics]{pmax}},
           \code{\link[BiocGenerics]{pmin}},
           \code{\link[BiocGenerics]{pmax.int}},
           \code{\link[BiocGenerics]{pmin.int}}
 
-    \item \code{\link[BiocGenerics]{order}}
-
-    \item \code{\link[BiocGenerics]{paste}}
-
-    \item \code{\link[BiocGenerics]{Reduce}},
+    \item funprog:
+          \code{\link[BiocGenerics]{Reduce}},
           \code{\link[BiocGenerics]{Filter}},
           \code{\link[BiocGenerics]{Find}},
           \code{\link[BiocGenerics]{Map}},
           \code{\link[BiocGenerics]{Position}}
 
+    \item \code{\link[BiocGenerics]{lapply}},
+          \code{\link[BiocGenerics]{sapply}}
+
+    \item \code{\link[BiocGenerics]{mapply}}
+
+    \item \code{\link[BiocGenerics]{order}}
+
+    \item \code{\link[BiocGenerics]{paste}}
+
     \item \code{\link[BiocGenerics]{rep.int}}
+
+    \item sets:
+          \code{\link[BiocGenerics]{union}},
+          \code{\link[BiocGenerics]{intersect}},
+          \code{\link[BiocGenerics]{setdiff}}
 
     \item \code{\link[BiocGenerics]{table}}
 
     \item \code{\link[BiocGenerics]{tapply}}
-
-    \item \code{\link[BiocGenerics]{union}},
-          \code{\link[BiocGenerics]{intersect}},
-          \code{\link[BiocGenerics]{setdiff}}
 
     \item \code{\link[BiocGenerics]{unique}}
 

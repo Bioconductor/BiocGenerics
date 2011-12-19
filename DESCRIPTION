@@ -12,16 +12,16 @@ License: Artistic-2.0
 Collate: cbind.R
 	duplicated.R
 	eval.R
+	Extremes.R
+	funprog.R
 	lapply.R
 	mapply.R
-	max.R
 	order.R
 	paste.R
-	Reduce.R
 	rep.R
+	sets.R
 	table.R
 	tapply.R
-	union.R
 	unique.R
 	xtabs.R
 	combine.R

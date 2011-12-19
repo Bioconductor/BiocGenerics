@@ -1,5 +1,6 @@
-\name{union}
+\name{sets}
 
+\alias{sets}
 \alias{union}
 \alias{intersect}
 \alias{setdiff}

@@ -1,5 +1,6 @@
-\name{Reduce}
+\name{funprog}
 
+\alias{funprog}
 \alias{Reduce}
 \alias{Filter}
 \alias{Find}

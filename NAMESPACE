@@ -10,14 +10,17 @@ export(
     ## from R/eval.R:
     eval,
 
+    ## from R/Extremes.R:
+    pmax, pmin, pmax.int, pmin.int,
+
+    ## from R/funprog.R:
+    Reduce, Filter, Find, Map, Position,
+
     ## from R/lapply.R:
     lapply, sapply,
 
     ## from R/mapply.R:
     mapply,
-
-    ## from R/max.R:
-    pmax, pmin, pmax.int, pmin.int,
 
     ## from R/order.R:
     order,
@@ -25,20 +28,17 @@ export(
     ## from R/paste.R:
     paste,
 
-    ## from R/Reduce.R:
-    Reduce, Filter, Find, Map, Position,
-
     ## from R/rep.R:
     rep.int,
+
+    ## from R/sets.R:
+    union, intersect, setdiff,
 
     ## from R/table.R:
     table,
 
     ## from R/tapply.R:
     tapply,
-
-    ## from R/union.R:
-    union, intersect, setdiff,
 
     ## from R/unique.R:
     unique,

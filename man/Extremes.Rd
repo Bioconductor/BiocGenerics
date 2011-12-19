@@ -1,5 +1,6 @@
-\name{max}
+\name{Extremes}
 
+\alias{Extremes}
 \alias{pmax}
 \alias{pmin}
 \alias{pmax.int}
