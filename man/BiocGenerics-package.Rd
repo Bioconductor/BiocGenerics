@@ -11,63 +11,76 @@
 }
 
 \details{
-  Standard R functions explicitely promoted to generics:
-  \itemize{
-    \item \code{\link[BiocGenerics]{cbind}},
-          \code{\link[BiocGenerics]{rbind}}
+  We divide the generic functions defined in the BiocGenerics package in
+  2 categories: (1) functions already defined in base R and explicitly
+  promoted to generics in BiocGenerics, and (2) Bioconductor specific
+  generics.
 
-    \item \code{\link[BiocGenerics]{duplicated}},
-          \code{\link[BiocGenerics]{anyDuplicated}}
+  \subsection{(1) Functions defined in base R and explicitly promoted to
+              generics in the BiocGenerics package}{
 
-    \item \code{\link[BiocGenerics]{eval}}
+    From package base:
+    \itemize{
+      \item \code{\link[BiocGenerics]{cbind}},
+            \code{\link[BiocGenerics]{rbind}}
 
-    \item Extremes:
-          \code{\link[BiocGenerics]{pmax}},
-          \code{\link[BiocGenerics]{pmin}},
-          \code{\link[BiocGenerics]{pmax.int}},
-          \code{\link[BiocGenerics]{pmin.int}}
+      \item \code{\link[BiocGenerics]{duplicated}},
+            \code{\link[BiocGenerics]{anyDuplicated}}
 
-    \item funprog:
-          \code{\link[BiocGenerics]{Reduce}},
-          \code{\link[BiocGenerics]{Filter}},
-          \code{\link[BiocGenerics]{Find}},
-          \code{\link[BiocGenerics]{Map}},
-          \code{\link[BiocGenerics]{Position}}
+      \item \code{\link[BiocGenerics]{eval}}
 
-    \item \code{\link[BiocGenerics]{lapply}},
-          \code{\link[BiocGenerics]{sapply}}
+      \item Extremes:
+            \code{\link[BiocGenerics]{pmax}},
+            \code{\link[BiocGenerics]{pmin}},
+            \code{\link[BiocGenerics]{pmax.int}},
+            \code{\link[BiocGenerics]{pmin.int}}
 
-    \item \code{\link[BiocGenerics]{mapply}}
+      \item funprog:
+            \code{\link[BiocGenerics]{Reduce}},
+            \code{\link[BiocGenerics]{Filter}},
+            \code{\link[BiocGenerics]{Find}},
+            \code{\link[BiocGenerics]{Map}},
+            \code{\link[BiocGenerics]{Position}}
 
-    \item \code{\link[BiocGenerics]{order}}
+      \item \code{\link[BiocGenerics]{lapply}},
+            \code{\link[BiocGenerics]{sapply}}
 
-    \item \code{\link[BiocGenerics]{paste}}
+      \item \code{\link[BiocGenerics]{mapply}}
 
-    \item \code{\link[BiocGenerics]{rep.int}}
+      \item \code{\link[BiocGenerics]{order}}
 
-    \item row+colnames:
-          \code{\link[BiocGenerics]{rownames}},
-          \code{\link[BiocGenerics]{colnames}}
+      \item \code{\link[BiocGenerics]{paste}}
 
-    \item sets:
-          \code{\link[BiocGenerics]{union}},
-          \code{\link[BiocGenerics]{intersect}},
-          \code{\link[BiocGenerics]{setdiff}}
+      \item \code{\link[BiocGenerics]{rep.int}}
 
-    \item \code{\link[BiocGenerics]{table}}
+      \item row+colnames:
+            \code{\link[BiocGenerics]{rownames}},
+            \code{\link[BiocGenerics]{colnames}}
 
-    \item \code{\link[BiocGenerics]{tapply}}
+      \item sets:
+            \code{\link[BiocGenerics]{union}},
+            \code{\link[BiocGenerics]{intersect}},
+            \code{\link[BiocGenerics]{setdiff}}
 
-    \item \code{\link[BiocGenerics]{unique}}
+      \item \code{\link[BiocGenerics]{table}}
 
-    \item \code{\link[BiocGenerics]{xtabs}}
+      \item \code{\link[BiocGenerics]{tapply}}
+
+      \item \code{\link[BiocGenerics]{unique}}
+    }
+
+    From package stats:
+    \itemize{
+      \item \code{\link[BiocGenerics]{xtabs}}
+    }
   }
 
-  Bioconductor specific generics:
-  \itemize{
-    \item \code{\link[BiocGenerics]{combine}}
+  \subsection{(2) Bioconductor specific generics}{
+    \itemize{
+      \item \code{\link[BiocGenerics]{combine}}
 
-    \item \code{\link[BiocGenerics]{updateObject}}
+      \item \code{\link[BiocGenerics]{updateObject}}
+    }
   }
 }
 
