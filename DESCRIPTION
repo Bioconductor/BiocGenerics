@@ -1,12 +1,12 @@
 Package: BiocGenerics
 Title: Generic functions for Bioconductor
 Description: S4 generic functions needed by many other Bioconductor packages.
-Version: 0.1.4
+Version: 0.1.5
 Author: The Bioconductor Dev Team
 Maintainer: Bioconductor Package Maintainer <maintainer@bioconductor.org>
 biocViews: Infrastructure
-Depends: methods, stats
-Imports: methods
+Depends: methods, graphics, stats
+Imports: methods, graphics, stats
 Suggests: Biobase, IRanges, RUnit
 License: Artistic-2.0
 Collate: cbind.R
@@ -18,9 +18,11 @@ Collate: cbind.R
 	mapply.R
 	order.R
 	paste.R
+	plot.R
 	rep.R
 	row_colnames.R
 	sets.R
+	summary.R
 	table.R
 	tapply.R
 	unique.R

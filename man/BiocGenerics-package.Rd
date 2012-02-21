@@ -62,11 +62,18 @@
             \code{\link[BiocGenerics]{intersect}},
             \code{\link[BiocGenerics]{setdiff}}
 
+      \item \code{\link[BiocGenerics]{summary}}
+
       \item \code{\link[BiocGenerics]{table}}
 
       \item \code{\link[BiocGenerics]{tapply}}
 
       \item \code{\link[BiocGenerics]{unique}}
+    }
+
+    From package graphics:
+    \itemize{
+      \item \code{\link[BiocGenerics]{plot}}
     }
 
     From package stats:
