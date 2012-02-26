@@ -1,7 +1,7 @@
 Package: BiocGenerics
 Title: Generic functions for Bioconductor
 Description: S4 generic functions needed by many other Bioconductor packages.
-Version: 0.1.6
+Version: 0.1.7
 Author: The Bioconductor Dev Team
 Maintainer: Bioconductor Package Maintainer <maintainer@bioconductor.org>
 biocViews: Infrastructure
