@@ -33,8 +33,8 @@ colnames(x, do.NULL=TRUE, prefix="col")
 }
 
 \value{
-  \code{NULL} or a character vector of length \code{\link[base]{nrow}(x)}
-  for \code{rownames} and \code{\link[base]{ncol}(x)} for \code{colnames(x)}.
+  \code{NULL} or a character vector of length \code{\link{nrow}(x)}
+  for \code{rownames} and \code{\link{ncol}(x)} for \code{colnames(x)}.
   See \code{?base::\link[base]{rownames}} for more information about the
   default methods.
 
@@ -43,7 +43,7 @@ colnames(x, do.NULL=TRUE, prefix="col")
 }
 
 \seealso{
-  \code{\link[base]{rownames}} for the default \code{rownames} and
+  \code{base::\link[base]{rownames}} for the default \code{rownames} and
   \code{colnames} methods.
 
   \code{\link[methods]{showMethods}} for displaying a summary of the

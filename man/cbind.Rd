@@ -43,7 +43,7 @@ rbind(..., deparse.level=1)
 }
 
 \seealso{
-  \code{\link[base]{cbind}} for the default \code{cbind} and
+  \code{base::\link[base]{cbind}} for the default \code{cbind} and
   \code{rbind} methods.
 
   \code{\link[methods]{showMethods}} for displaying a summary of the

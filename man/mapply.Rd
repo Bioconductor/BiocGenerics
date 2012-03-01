@@ -44,7 +44,7 @@ mapply(FUN, ..., MoreArgs=NULL, SIMPLIFY=TRUE, USE.NAMES=TRUE)
 }
 
 \seealso{
-  \code{\link[base]{mapply}} for the default \code{mapply} method.
+  \code{base::\link[base]{mapply}} for the default \code{mapply} method.
 
   \code{\link[methods]{showMethods}} for displaying a summary of the
   methods defined for a given generic function.

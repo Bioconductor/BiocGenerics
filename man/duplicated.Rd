@@ -59,7 +59,7 @@ anyDuplicated(x, incomparables=FALSE, ...)
 }
 
 \seealso{
-  \code{\link[base]{duplicated}} for the default \code{duplicated}
+  \code{base::\link[base]{duplicated}} for the default \code{duplicated}
   and \code{anyDuplicated} methods.
 
   \code{\link[methods]{showMethods}} for displaying a summary of the

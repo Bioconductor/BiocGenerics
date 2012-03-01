@@ -44,7 +44,7 @@ unique(x, incomparables=FALSE, ...)
 }
 
 \seealso{
-  \code{\link[base]{unique}} for the default \code{unique} method.
+  \code{base::\link[base]{unique}} for the default \code{unique} method.
 
   \code{\link[BiocGenerics]{duplicated}} for determining duplicate
   elements.

@@ -49,7 +49,7 @@ pmin.int(..., na.rm=FALSE)
 }
 
 \seealso{
-  \code{\link[base]{pmax}} for the default \code{pmax}, \code{pmin},
+  \code{base::\link[base]{pmax}} for the default \code{pmax}, \code{pmin},
   \code{pmax.int} and \code{pmin.int} methods.
 
   \code{\link[methods]{showMethods}} for displaying a summary of the

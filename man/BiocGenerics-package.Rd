@@ -47,14 +47,18 @@
 
       \item \code{\link[BiocGenerics]{mapply}}
 
+      \item \code{\link[BiocGenerics]{nrow}},
+            \code{\link[BiocGenerics]{ncol}},
+            \code{\link[BiocGenerics]{NROW}},
+            \code{\link[BiocGenerics]{NCOL}}
+
       \item \code{\link[BiocGenerics]{order}}
 
       \item \code{\link[BiocGenerics]{paste}}
 
       \item \code{\link[BiocGenerics]{rep.int}}
 
-      \item row+colnames:
-            \code{\link[BiocGenerics]{rownames}},
+      \item \code{\link[BiocGenerics]{rownames}},
             \code{\link[BiocGenerics]{colnames}}
 
       \item sets:

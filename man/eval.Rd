@@ -49,7 +49,7 @@ eval(expr, envir=parent.frame(),
 }
 
 \seealso{
-  \code{\link[base]{eval}} for the default \code{eval} method.
+  \code{base::\link[base]{eval}} for the default \code{eval} method.
 
   \code{\link[methods]{showMethods}} for displaying a summary of the
   methods defined for a given generic function.

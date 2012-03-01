@@ -40,7 +40,7 @@ paste(..., sep=" ", collapse=NULL)
 }
 
 \seealso{
-  \code{\link[base]{paste}} for the default \code{paste} method.
+  \code{base::\link[base]{paste}} for the default \code{paste} method.
 
   \code{\link[methods]{showMethods}} for displaying a summary of the
   methods defined for a given generic function.

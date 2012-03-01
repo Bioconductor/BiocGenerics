@@ -24,6 +24,9 @@ export(
     ## from R/mapply.R:
     mapply,
 
+    ## from R/nrow.R:
+    nrow, ncol, NROW, NCOL,
+
     ## from R/order.R:
     order,
 

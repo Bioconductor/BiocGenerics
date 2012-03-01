@@ -58,7 +58,7 @@ order(..., na.last=TRUE, decreasing=FALSE)
 }
 
 \seealso{
-  \code{\link[base]{order}} for the default \code{order} method.
+  \code{base::\link[base]{order}} for the default \code{order} method.
 
   \code{\link[methods]{showMethods}} for displaying a summary of the
   methods defined for a given generic function.

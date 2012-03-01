@@ -37,7 +37,7 @@ table(...)
 }
 
 \seealso{
-  \code{\link[base]{table}} for the default \code{table} method.
+  \code{base::\link[base]{table}} for the default \code{table} method.
 
   \code{\link[methods]{showMethods}} for displaying a summary of the
   methods defined for a given generic function.

@@ -51,7 +51,7 @@ sapply(X, FUN, ..., simplify=TRUE, USE.NAMES=TRUE)
 }
 
 \seealso{
-  \code{\link[base]{lapply}} for the default \code{lapply} and
+  \code{base::\link[base]{lapply}} for the default \code{lapply} and
   \code{sapply} methods.
 
   \code{\link[methods]{showMethods}} for displaying a summary of the

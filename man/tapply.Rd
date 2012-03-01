@@ -41,7 +41,7 @@ tapply(X, INDEX, FUN=NULL, ..., simplify=TRUE)
 }
 
 \seealso{
-  \code{\link[base]{tapply}} for the default \code{tapply} method.
+  \code{base::\link[base]{tapply}} for the default \code{tapply} method.
 
   \code{\link[methods]{showMethods}} for displaying a summary of the
   methods defined for a given generic function.

@@ -60,8 +60,8 @@ Position(f, x, right=FALSE, nomatch=NA_integer_)
 }
 
 \seealso{
-  \code{\link[base]{Reduce}} for the default \code{Reduce}, \code{Filter},
-  \code{Find}, \code{Map} and \code{Position} methods.
+  \code{base::\link[base]{Reduce}} for the default \code{Reduce},
+  \code{Filter}, \code{Find}, \code{Map} and \code{Position} methods.
 
   \code{\link[methods]{showMethods}} for displaying a summary of the
   methods defined for a given generic function.

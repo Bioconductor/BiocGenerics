@@ -45,7 +45,7 @@ setdiff(x, y, ...)
 }
 
 \seealso{
-  \code{\link[base]{union}} for the default \code{union},
+  \code{base::\link[base]{union}} for the default \code{union},
   \code{intersect}, and \code{setdiff} methods.
 
   \code{\link[methods]{showMethods}} for displaying a summary of the

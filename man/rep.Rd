@@ -40,7 +40,7 @@ rep.int(x, ...)
 }
 
 \seealso{
-  \code{\link[base]{rep.int}} for the default \code{rep.int},
+  \code{base::\link[base]{rep.int}} for the default \code{rep.int},
   \code{intersect}, and \code{setdiff} methods.
 
   \code{\link[methods]{showMethods}} for displaying a summary of the

@@ -41,7 +41,7 @@ xtabs(formula=~., data=parent.frame(), subset, sparse=FALSE,
 }
 
 \seealso{
-  \code{\link[stats]{xtabs}} for the default \code{xtabs} method.
+  \code{stats::\link[stats]{xtabs}} for the default \code{xtabs} method.
 
   \code{\link[methods]{showMethods}} for displaying a summary of the
   methods defined for a given generic function.
