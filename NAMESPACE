@@ -30,9 +30,6 @@ export(
     ## from R/paste.R:
     paste,
 
-    ## from R/plot.R:
-    plot,
-
     ## from R/rep.R:
     rep.int,
 
@@ -41,9 +38,6 @@ export(
 
     ## from R/sets.R:
     union, intersect, setdiff,
-
-    ## from R/summary.R:
-    summary,
 
     ## from R/table.R:
     table,
