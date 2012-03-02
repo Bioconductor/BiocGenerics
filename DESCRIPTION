@@ -7,13 +7,15 @@ Maintainer: Bioconductor Package Maintainer <maintainer@bioconductor.org>
 biocViews: Infrastructure
 Depends: methods, graphics, stats
 Imports: methods, graphics, stats
-Suggests: Biobase, IRanges, RUnit
+Suggests: Biobase, IRanges, oligoClasses, oligo, RUnit
 License: Artistic-2.0
-Collate: cbind.R
+Collate: boxplot.R
+	cbind.R
 	duplicated.R
 	eval.R
 	Extremes.R
 	funprog.R
+	image.R
 	lapply.R
 	mapply.R
 	nrow.R

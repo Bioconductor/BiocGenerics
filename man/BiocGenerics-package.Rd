@@ -73,6 +73,13 @@
       \item \code{BiocGenerics::\link[BiocGenerics]{unique}}
     }
 
+    From package graphics:
+    \itemize{
+      \item \code{BiocGenerics::\link[BiocGenerics]{boxplot}}
+
+      \item \code{BiocGenerics::\link[BiocGenerics]{image}}
+    }
+
     From package stats:
     \itemize{
       \item \code{BiocGenerics::\link[BiocGenerics]{xtabs}}

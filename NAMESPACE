@@ -3,6 +3,9 @@ import(graphics)
 import(stats)
 
 export(
+    ## from R/boxplot.R:
+    boxplot,
+
     ## from R/cbind.R:
     cbind, rbind,
 
@@ -17,6 +20,9 @@ export(
 
     ## from R/funprog.R:
     Reduce, Filter, Find, Map, Position,
+
+    ## from R/image.R:
+    image,
 
     ## from R/lapply.R:
     lapply, sapply,
