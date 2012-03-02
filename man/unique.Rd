@@ -40,14 +40,14 @@ unique(x, incomparables=FALSE, ...)
   return an object of the same class as the input object.
 
   \code{unique} should always behave consistently with
-  \code{\link[BiocGenerics]{duplicated}}.
+  \code{BiocGenerics::\link[BiocGenerics]{duplicated}}.
 }
 
 \seealso{
   \code{base::\link[base]{unique}} for the default \code{unique} method.
 
-  \code{\link[BiocGenerics]{duplicated}} for determining duplicate
-  elements.
+  \code{BiocGenerics::\link[BiocGenerics]{duplicated}} for determining
+  duplicate elements.
 
   \code{\link[methods]{showMethods}} for displaying a summary of the
   methods defined for a given generic function.

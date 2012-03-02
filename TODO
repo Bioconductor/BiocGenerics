@@ -1,4 +1,3 @@
-
 o Functions defined in base R that would need to be explicitly promoted
   to generics in the BiocGenerics package (currently they are implicitly
   made generics by the IRanges package):

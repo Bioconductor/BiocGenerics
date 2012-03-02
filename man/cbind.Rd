@@ -61,11 +61,11 @@ rbind(..., deparse.level=1)
 }
 
 \examples{
-cbind
+cbind  # note the dispatch on the '...' arg only
 showMethods("cbind")
 selectMethod("cbind", "ANY")  # the default method
 
-rbind
+rbind  # note the dispatch on the '...' arg only
 showMethods("rbind")
 selectMethod("rbind", "ANY")  # the default method
 }

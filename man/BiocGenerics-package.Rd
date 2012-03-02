@@ -21,61 +21,61 @@
 
     From package base:
     \itemize{
-      \item \code{\link[BiocGenerics]{cbind}},
-            \code{\link[BiocGenerics]{rbind}}
+      \item \code{BiocGenerics::\link[BiocGenerics]{cbind}},
+            \code{BiocGenerics::\link[BiocGenerics]{rbind}}
 
-      \item \code{\link[BiocGenerics]{duplicated}},
-            \code{\link[BiocGenerics]{anyDuplicated}}
+      \item \code{BiocGenerics::\link[BiocGenerics]{duplicated}},
+            \code{BiocGenerics::\link[BiocGenerics]{anyDuplicated}}
 
-      \item \code{\link[BiocGenerics]{eval}}
+      \item \code{BiocGenerics::\link[BiocGenerics]{eval}}
 
       \item Extremes:
-            \code{\link[BiocGenerics]{pmax}},
-            \code{\link[BiocGenerics]{pmin}},
-            \code{\link[BiocGenerics]{pmax.int}},
-            \code{\link[BiocGenerics]{pmin.int}}
+            \code{BiocGenerics::\link[BiocGenerics]{pmax}},
+            \code{BiocGenerics::\link[BiocGenerics]{pmin}},
+            \code{BiocGenerics::\link[BiocGenerics]{pmax.int}},
+            \code{BiocGenerics::\link[BiocGenerics]{pmin.int}}
 
       \item funprog:
-            \code{\link[BiocGenerics]{Reduce}},
-            \code{\link[BiocGenerics]{Filter}},
-            \code{\link[BiocGenerics]{Find}},
-            \code{\link[BiocGenerics]{Map}},
-            \code{\link[BiocGenerics]{Position}}
+            \code{BiocGenerics::\link[BiocGenerics]{Reduce}},
+            \code{BiocGenerics::\link[BiocGenerics]{Filter}},
+            \code{BiocGenerics::\link[BiocGenerics]{Find}},
+            \code{BiocGenerics::\link[BiocGenerics]{Map}},
+            \code{BiocGenerics::\link[BiocGenerics]{Position}}
 
-      \item \code{\link[BiocGenerics]{lapply}},
-            \code{\link[BiocGenerics]{sapply}}
+      \item \code{BiocGenerics::\link[BiocGenerics]{lapply}},
+            \code{BiocGenerics::\link[BiocGenerics]{sapply}}
 
-      \item \code{\link[BiocGenerics]{mapply}}
+      \item \code{BiocGenerics::\link[BiocGenerics]{mapply}}
 
-      \item \code{\link[BiocGenerics]{nrow}},
-            \code{\link[BiocGenerics]{ncol}},
-            \code{\link[BiocGenerics]{NROW}},
-            \code{\link[BiocGenerics]{NCOL}}
+      \item \code{BiocGenerics::\link[BiocGenerics]{nrow}},
+            \code{BiocGenerics::\link[BiocGenerics]{ncol}},
+            \code{BiocGenerics::\link[BiocGenerics]{NROW}},
+            \code{BiocGenerics::\link[BiocGenerics]{NCOL}}
 
-      \item \code{\link[BiocGenerics]{order}}
+      \item \code{BiocGenerics::\link[BiocGenerics]{order}}
 
-      \item \code{\link[BiocGenerics]{paste}}
+      \item \code{BiocGenerics::\link[BiocGenerics]{paste}}
 
-      \item \code{\link[BiocGenerics]{rep.int}}
+      \item \code{BiocGenerics::\link[BiocGenerics]{rep.int}}
 
-      \item \code{\link[BiocGenerics]{rownames}},
-            \code{\link[BiocGenerics]{colnames}}
+      \item \code{BiocGenerics::\link[BiocGenerics]{rownames}},
+            \code{BiocGenerics::\link[BiocGenerics]{colnames}}
 
       \item sets:
-            \code{\link[BiocGenerics]{union}},
-            \code{\link[BiocGenerics]{intersect}},
-            \code{\link[BiocGenerics]{setdiff}}
+            \code{BiocGenerics::\link[BiocGenerics]{union}},
+            \code{BiocGenerics::\link[BiocGenerics]{intersect}},
+            \code{BiocGenerics::\link[BiocGenerics]{setdiff}}
 
-      \item \code{\link[BiocGenerics]{table}}
+      \item \code{BiocGenerics::\link[BiocGenerics]{table}}
 
-      \item \code{\link[BiocGenerics]{tapply}}
+      \item \code{BiocGenerics::\link[BiocGenerics]{tapply}}
 
-      \item \code{\link[BiocGenerics]{unique}}
+      \item \code{BiocGenerics::\link[BiocGenerics]{unique}}
     }
 
     From package stats:
     \itemize{
-      \item \code{\link[BiocGenerics]{xtabs}}
+      \item \code{BiocGenerics::\link[BiocGenerics]{xtabs}}
     }
   }
 
@@ -85,6 +85,32 @@
 
       \item \code{\link[BiocGenerics]{updateObject}}
     }
+  }
+}
+
+\note{
+  More generics can be added on request by sending an email to the
+  Bioc-devel mailing list:
+
+    \url{http://bioconductor.org/help/mailing-list/}
+
+  Things that should NOT be added to the BiocGenerics package:
+  \itemize{
+    \item Internal generic primitive functions like \code{\link{length}},
+          \code{\link{dim}}, \code{`\link{dim<-}`}, etc...
+          See \code{?\link{InternalMethods}} for the complete list.
+          There are a few exceptions though, that is, the BiocGenerics package
+          may actually redefine a few of those internal generic primitive
+          functions as generics but with a different effective signature
+          because the effective signature of the internal generic primitive
+          function is not appropriate. See for example
+          \code{?BiocGenerics::\link[BiocGenerics]{cbind}}.
+
+    \item S3 and S4 group generic functions like \code{\link{Math}},
+          \code{\link{Ops}}, etc... See \code{?\link{groupGeneric}} and
+          \code{?\link{S4groupGeneric}} for the complete list.
+
+    \item Generics already defined in the stats4 package.
   }
 }
 
