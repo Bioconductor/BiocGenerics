@@ -3,6 +3,7 @@
 \alias{characterORconnection-class}
 \alias{file-class}
 \alias{gzfile-class}
+\alias{bzfile-class}
 \alias{gzcon-class}
 \alias{pipe-class}
 \alias{sockconn-class}
