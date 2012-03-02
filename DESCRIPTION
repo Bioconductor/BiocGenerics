@@ -7,9 +7,10 @@ Maintainer: Bioconductor Package Maintainer <maintainer@bioconductor.org>
 biocViews: Infrastructure
 Depends: methods, graphics, stats
 Imports: methods, graphics, stats
-Suggests: Biobase, IRanges, oligoClasses, oligo, RUnit
+Suggests: Biobase, IRanges, GenomicRanges, oligoClasses, oligo, RUnit
 License: Artistic-2.0
-Collate: boxplot.R
+Collate: connection-classes.R
+	boxplot.R
 	cbind.R
 	duplicated.R
 	eval.R
@@ -30,8 +31,8 @@ Collate: boxplot.R
 	unique.R
 	xtabs.R
 	combine.R
+	strand.R
 	updateObject.R
-	connection-classes.R
 	testPackage.R
 	test_BiocGenerics_package.R
 	zzz.R

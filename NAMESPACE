@@ -2,6 +2,18 @@ import(methods)
 import(graphics)
 import(stats)
 
+exportClasses(
+    ## from R/connection-classes.R:
+    connection, file, url, gzfile, unz, pipe, sockconn, terminal,
+    textConnection, gzcon, characterORconnection
+)
+
+
+### ==========================================================================
+### Functions defined in base R and explicitly promoted to generics in the
+### BiocGenerics package
+### --------------------------------------------------------------------------
+
 export(
     ## from R/boxplot.R:
     boxplot,
@@ -61,10 +73,20 @@ export(
     unique,
 
     ## from R/xtabs.R:
-    xtabs,
+    xtabs
+)
 
+
+### ==========================================================================
+### Bioconductor specific generics and their methods
+### --------------------------------------------------------------------------
+
+export(
     ## from R/combine.R:
     combine,
+
+    ## from R/strand.R:
+    strand, "strand<-",
 
     ## from R/updateObject.R:
     updateObject,
@@ -80,8 +102,3 @@ exportMethods(
     updateObject
 )
 
-exportClasses(
-    ## from R/connection-classes.R:
-    connection, file, url, gzfile, unz, pipe, sockconn, terminal,
-    textConnection, gzcon, characterORconnection
-)
