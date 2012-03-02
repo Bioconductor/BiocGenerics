@@ -82,6 +82,8 @@
 
     From package stats:
     \itemize{
+      \item \code{BiocGenerics::\link[BiocGenerics]{residuals}}
+
       \item \code{BiocGenerics::\link[BiocGenerics]{xtabs}}
     }
   }
@@ -108,9 +110,9 @@
           See \code{?\link{InternalMethods}} for the complete list.
           There are a few exceptions though, that is, the BiocGenerics package
           may actually redefine a few of those internal generic primitive
-          functions as generics but with a different effective signature
+          functions as S4 generics but with a different effective signature
           because the effective signature of the internal generic primitive
-          function is not appropriate. See for example
+          function is not appropriate. For example this is the case for
           \code{?BiocGenerics::\link[BiocGenerics]{cbind}}.
 
     \item S3 and S4 group generic functions like \code{\link{Math}},
