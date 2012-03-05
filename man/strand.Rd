@@ -10,13 +10,16 @@
 }
 
 \usage{
-strand(x)
-strand(x) <- value
+strand(x, ...)
+strand(x, ...) <- value
 }
 
 \arguments{
   \item{x}{
     An object containing strand information.
+  }
+  \item{...}{
+    Additional arguments, for use in specific methods.
   }
   \item{value}{
     The strand information to set on \code{x}.
