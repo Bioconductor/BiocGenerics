@@ -115,10 +115,9 @@
           See \code{?\link{InternalMethods}} for the complete list.
           There are a few exceptions though, that is, the BiocGenerics package
           may actually redefine a few of those internal generic primitive
-          functions as S4 generics but with a different effective signature
-          because the effective signature of the internal generic primitive
-          function is not appropriate. For example this is the case for
-          \code{?BiocGenerics::\link[BiocGenerics]{cbind}}.
+          functions as S4 generics when for example the signature of the
+          internal generic primitive is not appropriate (this is the
+          case for \code{BiocGenerics::\link[BiocGenerics]{cbind}}).
 
     \item S3 and S4 group generic functions like \code{\link{Math}},
           \code{\link{Ops}}, etc... See \code{?\link{groupGeneric}} and

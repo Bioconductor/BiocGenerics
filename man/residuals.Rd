@@ -40,6 +40,9 @@ residuals(object, ...)
   \code{\link[methods]{selectMethod}} for getting the definition of
   a specific method.
 
+  \link[affyPLM]{residuals,PLMset-method} in the affyPLM package
+  for the method defined for \link[affyPLM]{PLMset} objects.
+
   \link{BiocGenerics} for a summary of all the generics defined
   in the BiocGenerics package.
 }
