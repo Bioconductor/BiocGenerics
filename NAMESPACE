@@ -4,8 +4,8 @@ import(stats)
 
 exportClasses(
     ## from R/connection-classes.R:
-    connection, file, url, gzfile, unz, pipe, sockconn, terminal,
-    textConnection, gzcon, characterORconnection
+    connection, file, url, gzfile, bzfile, unz, pipe, sockconn,
+    terminal, textConnection, gzcon, characterORconnection
 )
 
 
@@ -102,8 +102,3 @@ exportMethods(
     updateObject
 )
 
-exportClasses(
-    ## from R/connection-classes.R:
-    connection, file, url, gzfile, bzfile, unz, pipe, sockconn,
-    terminal, textConnection, gzcon, characterORconnection
-)
