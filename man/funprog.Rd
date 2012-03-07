@@ -55,7 +55,7 @@ Position(f, x, right=FALSE, nomatch=NA_integer_)
   See \code{?base::\link[base]{Reduce}} for the value returned by the
   default methods.
 
-  Specific \code{Position} methods defined in other Bioconductor packages
+  Specific \code{Reduce} methods defined in other Bioconductor packages
   should also return a single integer.
 }
 

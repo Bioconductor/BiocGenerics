@@ -36,6 +36,9 @@ export(
     ## from R/funprog.R:
     Reduce, Filter, Find, Map, Position,
 
+    ## from R/get.R:
+    get, mget,
+
     ## from R/image.R:
     image,
 

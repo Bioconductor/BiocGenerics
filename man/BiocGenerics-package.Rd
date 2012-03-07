@@ -42,6 +42,9 @@
             \code{BiocGenerics::\link[BiocGenerics]{Map}},
             \code{BiocGenerics::\link[BiocGenerics]{Position}}
 
+      \item \code{BiocGenerics::\link[BiocGenerics]{get}},
+            \code{BiocGenerics::\link[BiocGenerics]{mget}}
+
       \item \code{BiocGenerics::\link[BiocGenerics]{lapply}},
             \code{BiocGenerics::\link[BiocGenerics]{sapply}}
 
