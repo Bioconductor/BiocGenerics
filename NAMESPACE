@@ -21,6 +21,9 @@ export(
     ## from R/cbind.R:
     cbind, rbind,
 
+    ## from R/density.R:
+    density,
+
     ## from R/duplicated.R:
     duplicated, anyDuplicated,
 

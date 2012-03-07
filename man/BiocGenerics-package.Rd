@@ -82,6 +82,8 @@
 
     From package stats:
     \itemize{
+      \item \code{BiocGenerics::\link[BiocGenerics]{density}}
+
       \item \code{BiocGenerics::\link[BiocGenerics]{residuals}}
 
       \item \code{BiocGenerics::\link[BiocGenerics]{weights}}

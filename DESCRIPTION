@@ -7,11 +7,13 @@ Maintainer: Bioconductor Package Maintainer <maintainer@bioconductor.org>
 biocViews: Infrastructure
 Depends: methods, graphics, stats
 Imports: methods, graphics, stats
-Suggests: Biobase, IRanges, GenomicRanges, oligoClasses, oligo, affyPLM, RUnit
+Suggests: Biobase, IRanges, GenomicRanges, oligoClasses, oligo, affyPLM,
+	flowClust, RUnit
 License: Artistic-2.0
 Collate: connection-classes.R
 	boxplot.R
 	cbind.R
+	density.R
 	duplicated.R
 	eval.R
 	Extremes.R
