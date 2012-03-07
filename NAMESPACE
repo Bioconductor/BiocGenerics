@@ -72,6 +72,9 @@ export(
     ## from R/unique.R:
     unique,
 
+    ## from R/weights.R:
+    weights,
+
     ## from R/xtabs.R:
     xtabs
 )

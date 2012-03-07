@@ -84,6 +84,8 @@
     \itemize{
       \item \code{BiocGenerics::\link[BiocGenerics]{residuals}}
 
+      \item \code{BiocGenerics::\link[BiocGenerics]{weights}}
+
       \item \code{BiocGenerics::\link[BiocGenerics]{xtabs}}
     }
   }
