@@ -81,8 +81,8 @@ showMethods("get")
 selectMethod("get", c("ANY", "ANY", "ANY"))  # the default method
 
 mget  # note the dispatch on the 'x' and 'envir' args only
-showMethods("get")
-selectMethod("get", c("ANY", "ANY"))  # the default method
+showMethods("mget")
+selectMethod("mget", c("ANY", "ANY"))  # the default method
 }
 
 \keyword{methods}
