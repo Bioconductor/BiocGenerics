@@ -2,20 +2,28 @@
 ### The union(), intersect() and setdiff() generics
 ### -------------------------------------------------------------------------
 ###
-### We add the '...' arg to the generics.
+### The default methods (defined in the base package) only take 2 arguments.
+### We add the ... argument to the generic functions defined here so they can
+### be called with an arbitrary number of effective arguments. See the \note
+### section in ?BiocGenerics::union for the motivations.
+
+.union.useAsDefault <- function(x, y, ...) base::union(x, y, ...)
+.intersect.useAsDefault <- function(x, y, ...) base::intersect(x, y, ...)
+.setdiff.useAsDefault <- function(x, y, ...) base::setdiff(x, y, ...)
 
 setGeneric("union",
     function(x, y, ...) standardGeneric("union"),
-    useAsDefault = function(x, y, ...) base::union(x, y)
+    useAsDefault=.union.useAsDefault
 )
 
 setGeneric("intersect",
     function(x, y, ...) standardGeneric("intersect"),
-    useAsDefault = function(x, y, ...) base::intersect(x, y)
+    useAsDefault=.intersect.useAsDefault
+
 )
 
 setGeneric("setdiff",
     function(x, y, ...) standardGeneric("setdiff"),
-    useAsDefault = function(x, y, ...) base::setdiff(x,y)
+    useAsDefault=.setdiff.useAsDefault
 )
 
