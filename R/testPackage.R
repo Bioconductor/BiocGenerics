@@ -14,6 +14,8 @@ testPackage <- function(pkgname, subdir="unitTests", pattern="^test_.*\\.R$")
         } else list()
     }
 
+    require(pkgname, quietly=TRUE, character.only=TRUE) ||
+        stop("package '", pkgname, "' not found")
     dir <- system.file(subdir, package=pkgname)
     if (nchar(dir) == 0L)
         stop("unable to find unit tests, no '", subdir, "' dir")
