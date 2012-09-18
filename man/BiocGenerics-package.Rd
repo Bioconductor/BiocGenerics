@@ -97,6 +97,9 @@
 
   \subsection{(2) Bioconductor specific generics}{
     \itemize{
+      \item \code{\link[BiocGenerics]{annotation}},
+            \code{\link[BiocGenerics]{annotation<-}}
+
       \item \code{\link[BiocGenerics]{combine}}
 
       \item \code{\link[BiocGenerics]{strand}},

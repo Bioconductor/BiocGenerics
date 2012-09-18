@@ -91,6 +91,9 @@ export(
 ### --------------------------------------------------------------------------
 
 export(
+    ## from R/annotation.R:
+    annotation, "annotation<-",
+
     ## from R/combine.R:
     combine,
 
@@ -100,10 +103,7 @@ export(
     ## from R/updateObject.R:
     updateObject,
     updateObjectFromSlots,
-    getObjectSlots,
-
-    ## from R/annotation.R:
-    annotation, "annotation<-"
+    getObjectSlots
 )
 
 exportMethods(
