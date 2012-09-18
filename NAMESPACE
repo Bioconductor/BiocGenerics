@@ -100,7 +100,10 @@ export(
     ## from R/updateObject.R:
     updateObject,
     updateObjectFromSlots,
-    getObjectSlots
+    getObjectSlots,
+
+    ## from R/annotation.R:
+    annotation, "annotation<-"
 )
 
 exportMethods(
