@@ -1,14 +1,14 @@
 Package: BiocGenerics
 Title: Generic functions for Bioconductor
 Description: S4 generic functions needed by many other Bioconductor packages.
-Version: 0.3.2
+Version: 0.3.3
 Author: The Bioconductor Dev Team
 Maintainer: Bioconductor Package Maintainer <maintainer@bioconductor.org>
 biocViews: Infrastructure
 Depends: methods, graphics, stats
 Imports: methods, graphics, stats
 Suggests: Biobase, IRanges, GenomicRanges, AnnotationDbi,
-	oligoClasses, oligo, affyPLM, flowClust, RUnit
+	oligoClasses, oligo, affyPLM, RUnit
 License: Artistic-2.0
 Collate: connection-classes.R
 	boxplot.R
