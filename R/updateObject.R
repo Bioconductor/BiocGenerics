@@ -160,7 +160,7 @@ setMethod("updateObject", "environment",
                 warning("updateObject modifying environment")
         }
         env <- if (envLocked) new.env() else object
-        lapply(ls(object, all=TRUE),
+        lapply(ls(object, all.names=TRUE),
                function(elt) {    # side-effect!
                    bindingLocked <- bindingIsLocked(elt, object)
                    if (!envLocked && bindingLocked)
