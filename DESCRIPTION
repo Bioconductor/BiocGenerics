@@ -1,39 +1,40 @@
 Package: BiocGenerics
 Title: Generic functions for Bioconductor
 Description: S4 generic functions needed by many other Bioconductor packages.
-Version: 0.5.0
+Version: 0.5.1
 Author: The Bioconductor Dev Team
 Maintainer: Bioconductor Package Maintainer <maintainer@bioconductor.org>
 biocViews: Infrastructure
-Depends: methods, graphics, stats
-Imports: methods, graphics, stats
+Depends: methods, graphics, stats, parallel
+Imports: methods, graphics, stats, parallel
 Suggests: Biobase, IRanges, GenomicRanges, AnnotationDbi,
 	oligoClasses, oligo, affyPLM, RUnit
 License: Artistic-2.0
 Collate: connection-classes.R
-	boxplot.R
 	cbind.R
-	density.R
 	duplicated.R
 	eval.R
 	Extremes.R
 	funprog.R
 	get.R
-	image.R
 	lapply.R
 	mapply.R
 	nrow.R
 	order.R
 	paste.R
 	rep.R
-	residuals.R
 	row_colnames.R
 	sets.R
 	table.R
 	tapply.R
 	unique.R
+	boxplot.R
+	image.R
+	density.R
+	residuals.R
 	weights.R
 	xtabs.R
+	clusterApply.R
 	annotation.R
 	combine.R
 	strand.R

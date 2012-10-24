@@ -1,6 +1,7 @@
 import(methods)
 import(graphics)
 import(stats)
+import(parallel)
 
 exportClasses(
     ## from R/connection-classes.R:
@@ -14,15 +15,10 @@ exportClasses(
 ### BiocGenerics package
 ### --------------------------------------------------------------------------
 
+### Generics for functions defined in package base:
 export(
-    ## from R/boxplot.R:
-    boxplot,
-
     ## from R/cbind.R:
     cbind, rbind,
-
-    ## from R/density.R:
-    density,
 
     ## from R/duplicated.R:
     duplicated, anyDuplicated,
@@ -38,9 +34,6 @@ export(
 
     ## from R/get.R:
     get, mget,
-
-    ## from R/image.R:
-    image,
 
     ## from R/lapply.R:
     lapply, sapply,
@@ -60,9 +53,6 @@ export(
     ## from R/rep.R:
     rep.int,
 
-    ## from R/residuals.R:
-    residuals,
-
     ## from R/row_colnames.R:
     rownames, colnames,
 
@@ -76,13 +66,41 @@ export(
     tapply,
 
     ## from R/unique.R:
-    unique,
+    unique
+)
+
+### Generics for functions defined in package graphics:
+export(
+    ## from R/boxplot.R:
+    boxplot,
+
+    ## from R/image.R:
+    image
+)
+
+### Generics for functions defined in package stats:
+export(
+    ## from R/density.R:
+    density,
+
+    ## from R/residuals.R:
+    residuals,
 
     ## from R/weights.R:
     weights,
 
     ## from R/xtabs.R:
     xtabs
+)
+
+### Generics for functions defined in package parallel:
+export(
+    ## from R/clusterApply.R:
+    clusterCall, clusterApply, clusterApplyLB,
+    clusterEvalQ, clusterExport,
+    clusterMap, clusterSplit,
+    parLapply, parSapply, parApply, parRapply, parCapply,
+    parLapplyLB, parSapplyLB
 )
 
 

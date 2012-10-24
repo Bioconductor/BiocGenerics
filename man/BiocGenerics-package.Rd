@@ -19,7 +19,7 @@
   \subsection{(1) Functions defined in base R and explicitly promoted to
               generics in the BiocGenerics package}{
 
-    From package base:
+    Generics for functions defined in package base:
     \itemize{
       \item \code{BiocGenerics::\link[BiocGenerics]{cbind}},
             \code{BiocGenerics::\link[BiocGenerics]{rbind}}
@@ -76,14 +76,14 @@
       \item \code{BiocGenerics::\link[BiocGenerics]{unique}}
     }
 
-    From package graphics:
+    Generics for functions defined in package graphics:
     \itemize{
       \item \code{BiocGenerics::\link[BiocGenerics]{boxplot}}
 
       \item \code{BiocGenerics::\link[BiocGenerics]{image}}
     }
 
-    From package stats:
+    Generics for functions defined in package stats:
     \itemize{
       \item \code{BiocGenerics::\link[BiocGenerics]{density}}
 
@@ -92,6 +92,24 @@
       \item \code{BiocGenerics::\link[BiocGenerics]{weights}}
 
       \item \code{BiocGenerics::\link[BiocGenerics]{xtabs}}
+    }
+
+    Generics for functions defined in package parallel:
+    \itemize{
+      \item \code{BiocGenerics::\link[BiocGenerics]{clusterCall}},
+            \code{BiocGenerics::\link[BiocGenerics]{clusterApply}},
+            \code{BiocGenerics::\link[BiocGenerics]{clusterApplyLB}},
+            \code{BiocGenerics::\link[BiocGenerics]{clusterEvalQ}},
+            \code{BiocGenerics::\link[BiocGenerics]{clusterExport}},
+            \code{BiocGenerics::\link[BiocGenerics]{clusterMap}},
+            \code{BiocGenerics::\link[BiocGenerics]{clusterSplit}},
+            \code{BiocGenerics::\link[BiocGenerics]{parLapply}},
+            \code{BiocGenerics::\link[BiocGenerics]{parSapply}},
+            \code{BiocGenerics::\link[BiocGenerics]{parApply}},
+            \code{BiocGenerics::\link[BiocGenerics]{parRapply}},
+            \code{BiocGenerics::\link[BiocGenerics]{parCapply}},
+            \code{BiocGenerics::\link[BiocGenerics]{parLapplyLB}},
+            \code{BiocGenerics::\link[BiocGenerics]{parSapplyLB}}
     }
   }
 
