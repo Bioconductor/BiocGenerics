@@ -8,7 +8,7 @@
   \code{paste} concatenates vectors of strings or vector-like R
   objects containing strings.
 
-  NOTE: This man page is for the \code{paste} S4 generic function
+  NOTE: This man page is for the \code{paste} \emph{S4 generic function}
   defined in the BiocGenerics package.
   See \code{?base::\link[base]{paste}} for the default method
   (defined in the base package).

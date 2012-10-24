@@ -8,8 +8,8 @@
 \description{
   Search for an R object with a given name and return it.
 
-  NOTE: This man page is for the \code{get} and \code{mget} S4 generic
-  functions defined in the BiocGenerics package.
+  NOTE: This man page is for the \code{get} and \code{mget} \emph{S4 generic
+  functions} defined in the BiocGenerics package.
   See \code{?base::\link[base]{get}} for the default methods
   (defined in the base package).
   Bioconductor packages can define specific methods for objects

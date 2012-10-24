@@ -17,7 +17,7 @@
   as \code{lapply(x, f)}.
 
   NOTE: This man page is for the \code{lapply} and \code{sapply}
-  S4 generic functions defined in the BiocGenerics package.
+  \emph{S4 generic functions} defined in the BiocGenerics package.
   See \code{?base::\link[base]{lapply}} for the default methods
   (defined in the base package).
   Bioconductor packages can define specific methods for objects

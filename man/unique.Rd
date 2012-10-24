@@ -9,7 +9,7 @@
   a vector-like, data-frame-like, or array-like R object) but with duplicate
   elements/rows removed.
 
-  NOTE: This man page is for the \code{unique} S4 generic function
+  NOTE: This man page is for the \code{unique} \emph{S4 generic function}
   defined in the BiocGenerics package.
   See \code{?base::\link[base]{unique}} for the default method
   (defined in the base package).

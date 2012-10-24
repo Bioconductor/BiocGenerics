@@ -9,7 +9,7 @@
   into ascending or descending order, breaking ties by further
   arguments.
 
-  NOTE: This man page is for the \code{order} S4 generic function
+  NOTE: This man page is for the \code{order} \emph{S4 generic function}
   defined in the BiocGenerics package.
   See \code{?base::\link[base]{order}} for the default method
   (defined in the base package).

@@ -10,7 +10,7 @@
   This can be used to display three-dimensional or spatial data aka
   \emph{images}.
 
-  NOTE: This man page is for the \code{image} S4 generic function
+  NOTE: This man page is for the \code{image} \emph{S4 generic function}
   defined in the BiocGenerics package.
   See \code{?graphics::\link[graphics]{image}} for the default method
   (defined in the graphics package).

@@ -7,7 +7,7 @@
 \description{
   \code{eval} evaluates an R expression in a specified environment.
 
-  NOTE: This man page is for the \code{eval} S4 generic function
+  NOTE: This man page is for the \code{eval} \emph{S4 generic function}
   defined in the BiocGenerics package.
   See \code{?base::\link[base]{eval}} for the default method
   (defined in the base package).

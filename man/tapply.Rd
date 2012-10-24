@@ -9,7 +9,7 @@
   that is to each (non-empty) group of values given by a unique
   combination of the levels of certain factors.
 
-  NOTE: This man page is for the \code{tapply} S4 generic function
+  NOTE: This man page is for the \code{tapply} \emph{S4 generic function}
   defined in the BiocGenerics package.
   See \code{?base::\link[base]{tapply}} for the default method
   (defined in the base package).

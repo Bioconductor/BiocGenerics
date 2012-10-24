@@ -25,7 +25,7 @@
   \code{clusterApplyLB}, \code{clusterEvalQ}, \code{clusterExport},
   \code{clusterMap}, \code{clusterSplit}, \code{parLapply}, \code{parSapply},
   \code{parApply}, \code{parRapply}, \code{parCapply}, \code{parLapplyLB},
-  and \code{parSapplyLB} S4 generic functions defined in the
+  and \code{parSapplyLB} \emph{S4 generic functions} defined in the
   BiocGenerics package.
   See \code{?parallel::\link[parallel]{clusterApply}} for the default
   methods (defined in the parallel package).

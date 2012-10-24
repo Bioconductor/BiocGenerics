@@ -8,7 +8,7 @@
   \code{residuals} is a generic function which extracts model residuals
   from objects returned by modeling functions.
 
-  NOTE: This man page is for the \code{residuals} S4 generic function
+  NOTE: This man page is for the \code{residuals} \emph{S4 generic function}
   defined in the BiocGenerics package.
   See \code{?stats::\link[stats]{residuals}} for the default method
   (defined in the stats package).

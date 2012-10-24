@@ -21,7 +21,7 @@
   list-like or vector-like R objects.
 
   NOTE: This man page is for the \code{Reduce}, \code{Filter},
-  \code{Find}, \code{Map} and \code{Position} S4 generic functions
+  \code{Find}, \code{Map} and \code{Position} \emph{S4 generic functions}
   defined in the BiocGenerics package.
   See \code{?base::\link[base]{Reduce}} for the default methods
   (defined in the base package).

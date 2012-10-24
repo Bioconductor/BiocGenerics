@@ -13,7 +13,7 @@
   parallel maxima and minima of the input values.
 
   NOTE: This man page is for the \code{pmax}, \code{pmin}, \code{pmax.int}
-  and \code{pmin.int} S4 generic functions defined in the BiocGenerics
+  and \code{pmin.int} \emph{S4 generic functions} defined in the BiocGenerics
   package.
   See \code{?base::\link[base]{pmax}} for the default methods
   (defined in the base package).

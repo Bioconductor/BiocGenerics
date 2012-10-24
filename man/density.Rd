@@ -8,7 +8,7 @@
   The generic function \code{density} computes kernel density
   estimates.
 
-  NOTE: This man page is for the \code{density} S4 generic function
+  NOTE: This man page is for the \code{density} \emph{S4 generic function}
   defined in the BiocGenerics package.
   See \code{?stats::\link[stats]{density}} for the default method
   (defined in the stats package).

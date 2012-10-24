@@ -9,7 +9,7 @@
   cross-classifying factors, usually contained in a data-frame-like object,
   using a formula interface.
 
-  NOTE: This man page is for the \code{xtabs} S4 generic function
+  NOTE: This man page is for the \code{xtabs} \emph{S4 generic function}
   defined in the BiocGenerics package.
   See \code{?stats::\link[stats]{xtabs}} for the default method
   (defined in the stats package).

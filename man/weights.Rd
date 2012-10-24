@@ -8,7 +8,7 @@
   \code{weights} is a generic function which extracts fitting weights
   from objects returned by modeling functions.
 
-  NOTE: This man page is for the \code{weights} S4 generic function
+  NOTE: This man page is for the \code{weights} \emph{S4 generic function}
   defined in the BiocGenerics package.
   See \code{?stats::\link[stats]{weights}} for the default method
   (defined in the stats package).

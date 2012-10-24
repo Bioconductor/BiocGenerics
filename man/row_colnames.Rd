@@ -10,7 +10,7 @@
   Retrieve the row or column names of a matrix-like R object.
 
   NOTE: This man page is for the \code{rownames} and \code{colnames}
-  S4 generic functions defined in the BiocGenerics package.
+  \emph{S4 generic functions} defined in the BiocGenerics package.
   See \code{?base::\link[base]{rownames}} for the default methods
   (defined in the base package).
   Bioconductor packages can define specific methods for objects

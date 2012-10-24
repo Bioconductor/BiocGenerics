@@ -7,7 +7,7 @@
 \description{
   Produce box-and-whisker plot(s) of the given (grouped) values.
 
-  NOTE: This man page is for the \code{boxplot} S4 generic function
+  NOTE: This man page is for the \code{boxplot} \emph{S4 generic function}
   defined in the BiocGenerics package.
   See \code{?graphics::\link[graphics]{boxplot}} for the default method
   (defined in the graphics package).

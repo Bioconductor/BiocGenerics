@@ -11,7 +11,7 @@
   Return the number of rows or columns present in an array-like R object.
 
   NOTE: This man page is for the \code{nrow}, \code{ncol}, \code{NROW} and
-  \code{NCOL} S4 generic functions defined in the BiocGenerics package.
+  \code{NCOL} \emph{S4 generic functions} defined in the BiocGenerics package.
   See \code{?base::\link[base]{nrow}} for the default methods (defined in
   the base package).
   Bioconductor packages can define specific methods for objects

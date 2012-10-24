@@ -11,7 +11,7 @@
   logical vector indicating which elements (rows) are duplicates.
 
   NOTE: This man page is for the \code{duplicated} and \code{anyDuplicated}
-  S4 generic functions defined in the BiocGenerics package.
+  \emph{S4 generic functions} defined in the BiocGenerics package.
   See \code{?base::\link[base]{duplicated}} for the default methods
   (defined in the base package).
   Bioconductor packages can define specific methods for objects

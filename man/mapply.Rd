@@ -11,7 +11,7 @@
   the second elements, the third elements, and so on. Arguments
   are recycled if necessary.
 
-  NOTE: This man page is for the \code{mapply} S4 generic function
+  NOTE: This man page is for the \code{mapply} \emph{S4 generic function}
   defined in the BiocGenerics package.
   See \code{?base::\link[base]{mapply}} for the default method
   (defined in the base package).
