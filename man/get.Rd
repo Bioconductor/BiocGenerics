@@ -67,9 +67,9 @@ mget(x, envir, mode="any",
   \code{\link[methods]{selectMethod}} for getting the definition of
   a specific method.
 
-  \link[AnnotationDbi]{get,ANY,AnnDbBimap,missing-method} in the
+  \link[AnnotationDbi]{get,ANY,Bimap,missing-method} in the
   AnnotationDbi package for the \code{get} method defined for
-  \link[AnnotationDbi]{AnnDbBimap} objects.
+  \link[AnnotationDbi]{Bimap} objects.
 
   \link{BiocGenerics} for a summary of all the generics defined
   in the BiocGenerics package.
