@@ -8,7 +8,7 @@ biocViews: Infrastructure
 Depends: methods, graphics, stats, parallel
 Imports: methods, graphics, stats, parallel
 Suggests: Biobase, IRanges, GenomicRanges, AnnotationDbi,
-	oligoClasses, oligo, affyPLM, RUnit
+	oligoClasses, oligo, affyPLM, flowClust, RUnit
 License: Artistic-2.0
 Collate: connection-classes.R
 	cbind.R
