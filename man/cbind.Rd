@@ -53,8 +53,8 @@ rbind(..., deparse.level=1)
   a specific method.
 
   \link[IRanges]{cbind,DataFrame-method} in the IRanges package
-  for the \code{cbind} method defined for \link[IRanges]{DataFrame}
-  objects.
+  for an example of a specific \code{cbind} method (defined for
+  \link[IRanges]{DataFrame} objects).
 
   \link{BiocGenerics} for a summary of all the generics defined
   in the BiocGenerics package.

@@ -53,8 +53,8 @@ mapply(FUN, ..., MoreArgs=NULL, SIMPLIFY=TRUE, USE.NAMES=TRUE)
   a specific method.
 
   \link[IRanges]{mapply,List-method} in the IRanges package
-  for the \code{mapply} method defined for \link[IRanges]{List}
-  objects.
+  for an example of a specific \code{mapply} method (defined for
+  \link[IRanges]{List} objects).
 
   \link{BiocGenerics} for a summary of all the generics defined
   in the BiocGenerics package.

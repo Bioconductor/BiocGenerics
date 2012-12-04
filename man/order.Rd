@@ -67,7 +67,8 @@ order(..., na.last=TRUE, decreasing=FALSE)
   a specific method.
 
   \link[IRanges]{order,Ranges-method} in the IRanges package
-  for the method defined for \link[IRanges]{Ranges} objects.
+  for an example of a specific \code{order} method (defined for
+  \link[IRanges]{Ranges} objects).
 
   \link{BiocGenerics} for a summary of all the generics defined
   in the BiocGenerics package.

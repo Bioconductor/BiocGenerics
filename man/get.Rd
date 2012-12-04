@@ -68,8 +68,8 @@ mget(x, envir, mode="any",
   a specific method.
 
   \link[AnnotationDbi]{get,ANY,Bimap,missing-method} in the
-  AnnotationDbi package for the \code{get} method defined for
-  \link[AnnotationDbi]{Bimap} objects.
+  AnnotationDbi package for an example of a specific \code{get} method
+  (defined for \link[AnnotationDbi]{Bimap} objects).
 
   \link{BiocGenerics} for a summary of all the generics defined
   in the BiocGenerics package.

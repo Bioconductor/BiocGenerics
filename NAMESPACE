@@ -17,6 +17,9 @@ exportClasses(
 
 ### Generics for functions defined in package base:
 export(
+    ## from R/as.data.frame.R:
+    as.data.frame,
+
     ## from R/cbind.R:
     cbind, rbind,
 

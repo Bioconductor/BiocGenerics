@@ -45,7 +45,8 @@ density(x, ...)
   a specific method.
 
   \link[flowClust]{density,flowClust-method} in the flowClust package
-  for the method defined for \link[flowClust]{flowClust} objects.
+  for an example of a specific \code{density} method (defined for
+  \link[flowClust]{flowClust} objects).
 
   \link{BiocGenerics} for a summary of all the generics defined
   in the BiocGenerics package.

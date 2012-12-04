@@ -49,7 +49,8 @@ paste(..., sep=" ", collapse=NULL)
   a specific method.
 
   \link[IRanges]{paste,Rle-method} in the IRanges package
-  for the method defined for \link[IRanges]{Rle} objects.
+  for an example of a specific \code{paste} method (defined for
+  \link[IRanges]{Rle} objects).
 
   \link{BiocGenerics} for a summary of all the generics defined
   in the BiocGenerics package.

@@ -3,8 +3,6 @@ o Functions defined in base R that would need to be explicitly promoted
   made generics by the IRanges package):
 
   From package base:
-    - as.data.frame(): implicit generic dispatches on (x, row.names, optional).
-      Explicit generic should dispatch on (x) only.
     - append(): implicit generic dispatches on (x, values, after).
       Explicit generic should dispatch on (x, values) only (or maybe just x?)
     - unlist(): implicit generic dispatches on (x, recursive, use.names).

@@ -1,0 +1,65 @@
+\name{as.data.frame}
+
+\alias{as.data.frame}
+
+\title{Coerce to a data frame}
+
+\description{
+  Function to coerce to a data frame, if possible.
+
+  NOTE: This man page is for the \code{as.data.frame}
+  \emph{S4 generic function} defined in the BiocGenerics package.
+  See \code{?base::\link[base]{as.data.frame}} for the default method
+  (defined in the base package).
+  Bioconductor packages can define specific methods for objects
+  not supported by the default method.
+}
+
+\usage{
+as.data.frame(x, row.names=NULL, optional=FALSE, ...)
+}
+
+\arguments{
+  \item{x}{
+    Any R object.
+  }
+  \item{row.names, optional, ...}{
+    See \code{?base::\link[base]{as.data.frame}} for a description of
+    these arguments.
+  }
+}
+
+\value{
+  A data frame.
+
+  See \code{?base::\link[base]{as.data.frame}} for the value returned
+  by the default method.
+}
+
+\seealso{
+  \code{base::\link[base]{as.data.frame}} for the default
+  \code{as.data.frame} method.
+
+  \code{\link[methods]{showMethods}} for displaying a summary of the
+  methods defined for a given generic function.
+
+  \code{\link[methods]{selectMethod}} for getting the definition of
+  a specific method.
+
+  \link[IRanges]{as.data.frame,Ranges-method} and
+  \link[IRanges]{as.data.frame,DataFrame-method} in the IRanges package
+  for examples of specific \code{as.data.frame} methods (defined for
+  \link[IRanges]{Ranges} and \link[IRanges]{DataFrame} objects,
+  respectively).
+
+  \link{BiocGenerics} for a summary of all the generics defined
+  in the BiocGenerics package.
+}
+
+\examples{
+as.data.frame  # note the dispatch on the 'x' arg only
+showMethods("as.data.frame")
+selectMethod("as.data.frame", "ANY")  # the default method
+}
+
+\keyword{methods}

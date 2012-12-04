@@ -61,8 +61,8 @@ sapply(X, FUN, ..., simplify=TRUE, USE.NAMES=TRUE)
   a specific method.
 
   \link[IRanges]{lapply,List-method} in the IRanges package
-  for the \code{lapply} method defined for \link[IRanges]{List}
-  objects.
+  for an example of a specific \code{lapply} method (defined for
+  \link[IRanges]{List} objects).
 
   \link{BiocGenerics} for a summary of all the generics defined
   in the BiocGenerics package.

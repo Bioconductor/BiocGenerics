@@ -71,8 +71,8 @@ setdiff(x, y, ...)
   a specific method.
 
   \link[GenomicRanges]{union,GRanges,GRanges-method} in the GenomicRanges
-  package for the \code{union} method defined for \link[GenomicRanges]{GRanges}
-  objects.
+  package for an example of a specific \code{union} method (defined for
+  \link[GenomicRanges]{GRanges} objects).
 
   \link{BiocGenerics} for a summary of all the generics defined
   in the BiocGenerics package.

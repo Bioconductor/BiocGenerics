@@ -44,7 +44,8 @@ boxplot(x, ...)
   a specific method.
 
   \link[oligo]{boxplot,FeatureSet-method} in the oligo package
-  for the method defined for \link[oligoClasses]{FeatureSet} objects.
+  for an example of a specific \code{boxplot} method (defined for
+  \link[oligoClasses]{FeatureSet} objects).
 
   \link{BiocGenerics} for a summary of all the generics defined
   in the BiocGenerics package.

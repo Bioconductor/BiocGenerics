@@ -47,7 +47,8 @@ weights(object, ...)
   a specific method.
 
   \link[affyPLM]{weights,PLMset-method} in the affyPLM package
-  for the method defined for \link[affyPLM]{PLMset} objects.
+  for an example of a specific \code{weights} method (defined for
+  \link[affyPLM]{PLMset} objects).
 
   \link{BiocGenerics} for a summary of all the generics defined
   in the BiocGenerics package.

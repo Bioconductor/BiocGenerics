@@ -50,7 +50,8 @@ xtabs(formula=~., data=parent.frame(), subset, sparse=FALSE,
   a specific method.
 
   \link[IRanges]{xtabs,DataTable-method} in the IRanges package
-  for the method defined for \link[IRanges]{DataTable} objects.
+  for an example of a specific \code{xtabs} method (defined for
+  \link[IRanges]{DataTable} objects).
 
   \link{BiocGenerics} for a summary of all the generics defined
   in the BiocGenerics package.

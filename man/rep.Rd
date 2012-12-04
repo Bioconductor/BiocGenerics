@@ -50,7 +50,8 @@ rep.int(x, ...)
   a specific method.
 
   \link[IRanges]{rep.int,Rle-method} in the IRanges package
-  for the method defined for \link[IRanges]{Rle} objects.
+  for an example of a specific \code{rep.int} method (defined for
+  \link[IRanges]{Rle} objects).
 
   \link{BiocGenerics} for a summary of all the generics defined
   in the BiocGenerics package.

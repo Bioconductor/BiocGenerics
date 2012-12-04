@@ -50,8 +50,8 @@ tapply(X, INDEX, FUN=NULL, ..., simplify=TRUE)
   a specific method.
 
   \link[IRanges]{tapply,Vector-method} in the IRanges package
-  for the \code{tapply} method defined for \link[IRanges]{Vector}
-  objects.
+  for an example of a specific \code{tapply} method (defined for
+  \link[IRanges]{Vector} objects).
 
   \link{BiocGenerics} for a summary of all the generics defined
   in the BiocGenerics package.

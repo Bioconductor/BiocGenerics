@@ -53,8 +53,8 @@ colnames(x, do.NULL=TRUE, prefix="col")
   a specific method.
 
   \link[IRanges]{rownames,DataFrame-method} in the IRanges package
-  for the \code{rownames} method defined for \link[IRanges]{DataFrame}
-  objects.
+  for an example of a specific \code{rownames} method (defined for
+  \link[IRanges]{DataFrame} objects).
 
   \link{BiocGenerics} for a summary of all the generics defined
   in the BiocGenerics package.
