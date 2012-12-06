@@ -35,6 +35,14 @@ setdiff(x, y, ...)
   }
 }
 
+\value{
+  See \code{?base::\link[base]{union}} for the value returned by the
+  default methods.
+
+  Specific methods defined in Bioconductor packages will typically
+  return an object of the same class as the input objects.
+}
+
 \note{
   The default methods (defined in the base package) only take 2 arguments.
   We've added the \code{...} argument to the generic functions defined in
@@ -50,14 +58,6 @@ setdiff(x, y, ...)
   in the GenomicRanges package). (Note that the \code{union} and
   \code{intersect} methods for those objects also support the
   \code{ignore.strand} argument.)
-}
-
-\value{
-  See \code{?base::\link[base]{union}} for the value returned by the
-  default methods.
-
-  Specific methods defined in Bioconductor packages will typically
-  return an object of the same class as the input objects.
 }
 
 \seealso{

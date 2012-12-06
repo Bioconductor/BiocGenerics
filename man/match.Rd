@@ -22,7 +22,7 @@ match(x, table, nomatch=NA_integer_, incomparables=NULL, ...)
 
 \arguments{
   \item{x, table}{
-    R objects of the same class (typically a vector-like class).
+    Vector-like R objects (typically of the same class, but not necessarily).
   }
   \item{nomatch, incomparables}{
     See \code{?base::\link[base]{match}} for a description of
@@ -31,13 +31,6 @@ match(x, table, nomatch=NA_integer_, incomparables=NULL, ...)
   \item{...}{
     Additional arguments, for use in specific methods.
   }
-}
-
-\note{
-  The default method (defined in the base package) doesn't have the
-  \code{...} argument. We've added it to the generic function defined
-  in the BiocGenerics package in order to allow specific methods to
-  support additional arguments if needed.
 }
 
 \value{
@@ -49,6 +42,13 @@ match(x, table, nomatch=NA_integer_, incomparables=NULL, ...)
 
   Specific methods defined in Bioconductor packages should
   behave as consistently as possible with the default method.
+}
+
+\note{
+  The default method (defined in the base package) doesn't have the
+  \code{...} argument. We've added it to the generic function defined
+  in the BiocGenerics package in order to allow specific methods to
+  support additional arguments if needed.
 }
 
 \seealso{
