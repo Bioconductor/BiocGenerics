@@ -18,11 +18,7 @@
 
 \usage{
 get(x, pos=-1, envir=as.environment(pos), mode="any", inherits=TRUE)
-mget(x, envir, mode="any",
-     ifnotfound=list(function(x)
-                     stop(gettextf("value for \%s not found", sQuote(x)),
-                          call.=FALSE, domain=NA)),
-     inherits=FALSE)
+mget(x, envir, mode="any", ifnotfound, inherits=FALSE)
 }
 
 \arguments{
