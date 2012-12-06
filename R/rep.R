@@ -29,9 +29,12 @@
 ###     function(x, times)
 ###
 ### so we use the arguments of base::rep() (i.e. 'x', '...') just to make
-### 'R CMD check' happy :-) ... Kind of an ugly hack though :-(
+### 'R CMD check' happy :-) ... Kind of an ugly/silly hack though :-(
+
+.rep.int.useAsDefault <- function(x, ...) base::rep.int(x, ...)
+
 setGeneric("rep.int",
     function(x, ...) standardGeneric("rep.int"),
-    useAsDefault = function(x, ...) base::rep.int(x, ...)
+    useAsDefault=.rep.int.useAsDefault
 )
 

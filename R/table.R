@@ -17,8 +17,11 @@
 #)
 
 ### So we use this instead.
+
+.table.useAsDefault <- function(...) base::table(...)
+
 setGeneric("table", signature="...",
     function(...) standardGeneric("table"),
-    useAsDefault = function(...) base::table(...)
+    useAsDefault=.table.useAsDefault
 )
 

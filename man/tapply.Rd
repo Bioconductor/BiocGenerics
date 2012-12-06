@@ -36,7 +36,7 @@ tapply(X, INDEX, FUN=NULL, ..., simplify=TRUE)
   See \code{?base::\link[base]{tapply}} for the value returned by the
   default method.
 
-  Specific methods defined in other Bioconductor packages should 
+  Specific methods defined in Bioconductor packages should 
   behave as consistently as possible with the default method.
 }
 

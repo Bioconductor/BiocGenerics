@@ -44,7 +44,7 @@ sapply(X, FUN, ..., simplify=TRUE, USE.NAMES=TRUE)
   See \code{?base::\link[base]{lapply}} for the value returned by the
   default methods.
 
-  Specific methods defined in other Bioconductor packages should 
+  Specific methods defined in Bioconductor packages should 
   behave as consistently as possible with the default methods.
   In particular, \code{lapply} and \code{sapply(simplify=FALSE)}
   should always return a list.

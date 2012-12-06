@@ -31,7 +31,7 @@ image(x, ...)
 \details{
   See \code{?graphics::\link[graphics]{image}} for the details.
 
-  Specific methods defined in other Bioconductor packages should
+  Specific methods defined in Bioconductor packages should
   behave as consistently as possible with the default method.
 }
 

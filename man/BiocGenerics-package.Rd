@@ -7,7 +7,7 @@
 \title{Generic functions for Bioconductor}
 
 \description{
-  S4 generic functions needed by many other Bioconductor packages.
+  S4 generic functions needed by many Bioconductor packages.
 }
 
 \details{
@@ -51,6 +51,8 @@
             \code{BiocGenerics::\link[BiocGenerics]{sapply}}
 
       \item \code{BiocGenerics::\link[BiocGenerics]{mapply}}
+
+      \item \code{BiocGenerics::\link[BiocGenerics]{match}}
 
       \item \code{BiocGenerics::\link[BiocGenerics]{nrow}},
             \code{BiocGenerics::\link[BiocGenerics]{ncol}},

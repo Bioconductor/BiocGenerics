@@ -43,7 +43,7 @@ anyDuplicated(x, incomparables=FALSE, ...)
     \item \code{nrow(x)} when \code{x} is a data frame.
   }
 
-  Specific \code{duplicated} methods defined in other Bioconductor
+  Specific \code{duplicated} methods defined in Bioconductor
   packages must also return a logical vector of the same length
   as \code{x} when \code{x} is a vector-like object, and a logical
   vector with one element for each row when \code{x} is a
@@ -52,7 +52,7 @@ anyDuplicated(x, incomparables=FALSE, ...)
   The default \code{anyDuplicated} method (see
   \code{?base::\link[base]{duplicated}}) returns a single
   non-negative integer and so must the specific \code{anyDuplicated}
-  methods defined in other Bioconductor packages.
+  methods defined in Bioconductor packages.
 
   \code{anyDuplicated} should always behave consistently with
   \code{duplicated}.

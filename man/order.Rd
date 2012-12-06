@@ -38,7 +38,7 @@ order(..., na.last=TRUE, decreasing=FALSE)
   elements and can be used to rearrange the first argument in
   \code{...} into ascending or descending order (by subsetting it).
 
-  Specific methods defined in other Bioconductor packages must also
+  Specific methods defined in Bioconductor packages must also
   return an integer vector representing a permutation of N elements.
 }
 

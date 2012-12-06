@@ -34,7 +34,7 @@ NCOL(x)
 \value{
   A single integer or \code{NULL}.
 
-  Specific methods defined in other Bioconductor packages should 
+  Specific methods defined in Bioconductor packages should 
   behave as consistently as possible with the default methods.
 }
 

@@ -56,7 +56,7 @@ setdiff(x, y, ...)
   See \code{?base::\link[base]{union}} for the value returned by the
   default methods.
 
-  Specific methods defined in other Bioconductor packages will typically
+  Specific methods defined in Bioconductor packages will typically
   return an object of the same class as the input objects.
 }
 

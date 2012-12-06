@@ -36,7 +36,7 @@ unique(x, incomparables=FALSE, ...)
   See \code{?base::\link[base]{unique}} for the value returned by the
   default method.
 
-  Specific methods defined in other Bioconductor packages will typically
+  Specific methods defined in Bioconductor packages will typically
   return an object of the same class as the input object.
 
   \code{unique} should always behave consistently with
