@@ -69,7 +69,7 @@ match(x, table, nomatch=NA_integer_, incomparables=NULL, ...)
 }
 
 \examples{
-match
+match  # note the dispatch on the 'x' and 'table' args only
 showMethods("match")
 selectMethod("match", c("ANY", "ANY"))  # the default method
 }
