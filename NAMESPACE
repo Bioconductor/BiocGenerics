@@ -72,7 +72,10 @@ export(
     tapply,
 
     ## from R/unique.R:
-    unique
+    unique,
+
+    ## from R/unlist.R:
+    unlist
 )
 
 ### Generics for functions defined in package graphics:

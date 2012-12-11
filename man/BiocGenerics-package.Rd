@@ -78,6 +78,8 @@
       \item \code{BiocGenerics::\link[BiocGenerics]{tapply}}
 
       \item \code{BiocGenerics::\link[BiocGenerics]{unique}}
+
+      \item \code{BiocGenerics::\link[BiocGenerics]{unlist}}
     }
 
     Generics for functions defined in package graphics:

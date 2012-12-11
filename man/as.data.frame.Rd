@@ -34,6 +34,9 @@ as.data.frame(x, row.names=NULL, optional=FALSE, ...)
 
   See \code{?base::\link[base]{as.data.frame}} for the value returned
   by the default method.
+
+  Specific methods defined in Bioconductor packages should
+  behave as consistently as possible with the default method.
 }
 
 \seealso{

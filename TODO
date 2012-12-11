@@ -5,8 +5,6 @@ o Functions defined in base R that would need to be explicitly promoted
   From package base:
     - append(): implicit generic dispatches on (x, values, after).
       Explicit generic should dispatch on (x, values) only (or maybe just x?)
-    - unlist(): implicit generic dispatches on (x, recursive, use.names).
-      Explicit generic should dispatch on (x) only.
     - sort(): implicit generic dispatches on (x, decreasing).
       Explicit generic should dispatch on (x) only.
     - rank(): implicit generic dispatches on (x, na.last, ties.method).
