@@ -1,8 +1,8 @@
 ### =========================================================================
-### The image() generic
+### The sort() generic
 ### -------------------------------------------------------------------------
 ###
-### graphics::image() is an S3 generic.
+### base::sort() is an S3 generic.
 
-setGeneric("image")
+setGeneric("sort", signature="x")
 

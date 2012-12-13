@@ -63,6 +63,8 @@
 
       \item \code{BiocGenerics::\link[BiocGenerics]{paste}}
 
+      \item \code{BiocGenerics::\link[BiocGenerics]{rank}}
+
       \item \code{BiocGenerics::\link[BiocGenerics]{rep.int}}
 
       \item \code{BiocGenerics::\link[BiocGenerics]{rownames}},
@@ -72,6 +74,8 @@
             \code{BiocGenerics::\link[BiocGenerics]{union}},
             \code{BiocGenerics::\link[BiocGenerics]{intersect}},
             \code{BiocGenerics::\link[BiocGenerics]{setdiff}}
+
+      \item \code{BiocGenerics::\link[BiocGenerics]{sort}}
 
       \item \code{BiocGenerics::\link[BiocGenerics]{table}}
 

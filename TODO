@@ -5,10 +5,6 @@ o Functions defined in base R that would need to be explicitly promoted
   From package base:
     - append(): implicit generic dispatches on (x, values, after).
       Explicit generic should dispatch on (x, values) only (or maybe just x?)
-    - sort(): implicit generic dispatches on (x, decreasing).
-      Explicit generic should dispatch on (x) only.
-    - rank(): implicit generic dispatches on (x, na.last, ties.method).
-      Explicit generic should dispatch on (x) only.
     - as.vector(): implicit generic dispatches on (x, mode).
       Explicit generic should dispatch on (x) only.
     - is.unsorted(): implicit generic dispatches on (x, na.rm, strictly).
@@ -30,6 +26,7 @@ o Functions defined in base R that would need to be explicitly promoted
     - sub(), gsub(): implicit generics dispatch on (pattern, replacement, x,
       ignore.case, perl, fixed, useBytes). Explicit generics should dispatch
       on (x) only.
+    - by(): 
 
   From package stats:
     - var(): implicit generic dispatches on (x, y, na.rm, use).

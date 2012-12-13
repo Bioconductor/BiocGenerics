@@ -1,8 +1,7 @@
 ### =========================================================================
-### The image() generic
+### The rank() generic
 ### -------------------------------------------------------------------------
 ###
-### graphics::image() is an S3 generic.
 
-setGeneric("image")
+setGeneric("rank", signature="x")
 

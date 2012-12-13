@@ -56,6 +56,9 @@ export(
     ## from R/paste.R:
     paste,
 
+    ## from R/rank.R:
+    rank,
+
     ## from R/rep.R:
     rep.int,
 
@@ -64,6 +67,9 @@ export(
 
     ## from R/sets.R:
     union, intersect, setdiff,
+
+    ## from R/sort.R:
+    sort,
 
     ## from R/table.R:
     table,

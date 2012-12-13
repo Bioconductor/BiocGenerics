@@ -1,9 +1,8 @@
 ### =========================================================================
 ### The density() generic
 ### -------------------------------------------------------------------------
-
-### The corresponding function is an S3 generic function defined in the
-### stats package.
+###
+### stats::density () is an S3 generic.
 
 setGeneric("density")
 

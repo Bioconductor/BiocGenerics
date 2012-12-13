@@ -1,9 +1,8 @@
 ### =========================================================================
 ### The weights() generic
 ### -------------------------------------------------------------------------
-
-### The corresponding function is an S3 generic function defined in the
-### stats package.
+###
+### stats::weights() is an S3 generic.
 
 setGeneric("weights")
 
