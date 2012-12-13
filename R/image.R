@@ -2,7 +2,7 @@
 ### The image() generic
 ### -------------------------------------------------------------------------
 ###
-### graphics::image() is an S3 generic.
+### graphics::image is an S3 generic.
 
 setGeneric("image")
 

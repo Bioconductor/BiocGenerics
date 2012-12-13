@@ -2,7 +2,7 @@
 ### The weights() generic
 ### -------------------------------------------------------------------------
 ###
-### stats::weights() is an S3 generic.
+### stats::weights is an S3 generic.
 
 setGeneric("weights")
 

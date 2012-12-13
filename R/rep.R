@@ -19,8 +19,7 @@
 ### A more natural (and cleaner) thing to do for this generic would be to
 ### use the same arguments as base::rep.int() (i.e. 'x', 'times') but then
 ### 'R CMD check' would get confused and think that we are trying to define
-### an S3 method for base::rep() and would complain (observed with R <=
-### 2.12):
+### an S3 method for base::rep and would complain (observed with R <= 2.12):
 ###
 ###   * checking S3 generic/method consistency ... WARNING
 ###   rep:

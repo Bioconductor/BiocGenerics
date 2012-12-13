@@ -2,7 +2,7 @@
 ### The unlist() generic
 ### -------------------------------------------------------------------------
 ###
-### base::unlist() is an S3 generic.
+### base::unlist is an S3 generic.
 
 setGeneric("unlist", signature="x")
 

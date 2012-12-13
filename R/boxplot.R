@@ -2,7 +2,7 @@
 ### The boxplot() generic
 ### -------------------------------------------------------------------------
 ###
-### graphics::boxplot() is an S3 generic.
+### graphics::boxplot is an S3 generic.
 
 setGeneric("boxplot")
 

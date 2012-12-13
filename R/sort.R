@@ -2,7 +2,7 @@
 ### The sort() generic
 ### -------------------------------------------------------------------------
 ###
-### base::sort() is an S3 generic.
+### base::sort is an S3 generic.
 
 setGeneric("sort", signature="x")
 
