@@ -26,6 +26,7 @@ o Functions defined in base R that would need to be explicitly promoted
     - sub(), gsub(): implicit generics dispatch on (pattern, replacement, x,
       ignore.case, perl, fixed, useBytes). Explicit generics should dispatch
       on (x) only.
+    - range():
     - by(): 
 
   From package stats:

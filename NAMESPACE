@@ -4,9 +4,14 @@ import(stats)
 import(parallel)
 
 exportClasses(
-    ## from R/connection-classes.R:
-    connection, file, url, gzfile, bzfile, unz, pipe, sockconn,
-    terminal, textConnection, gzcon, characterORconnection
+    ## from R/S3-classes-as-S4-classes.R:
+    connection,
+    file, url, gzfile, bzfile, unz, pipe,
+    fifo, sockconn, terminal, textConnection,
+    gzcon,
+    characterORconnection,
+    AsIs,
+    table, xtabs
 )
 
 
