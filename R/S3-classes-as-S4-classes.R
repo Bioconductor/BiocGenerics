@@ -18,5 +18,9 @@ setClassUnion("characterORconnection", c("character", "connection"))
 
 ### others
 setOldClass("AsIs")
-setOldClass("xtabs", "table")
+
+#setOldClass("xtabs", "table")  # this seems to cause problems when installing
+                                # IRanges:
+                                # Warning: replacing previous import
+                                # ‘.__C__table’ when loading ‘BiocGenerics’
 

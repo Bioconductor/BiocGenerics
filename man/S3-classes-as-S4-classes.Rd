@@ -17,8 +17,8 @@
 \alias{characterORconnection-class}
 
 \alias{AsIs-class}
-\alias{table-class}
-\alias{xtabs-class}
+%\alias{table-class}
+%\alias{xtabs-class}
 
 
 \title{S3 classes as S4 classes}
@@ -40,7 +40,7 @@
           Addtitionally the characterORconnection S4 class is defined as
           the union of classes character and connection.
 
-    \item others: AsIs, table, xtabs
+    \item others: AsIs
   }
 }
 
