@@ -135,6 +135,9 @@ export(
     ## from R/combine.R:
     combine,
 
+    ## from R/normalize.R:
+    normalize,
+
     ## from R/strand.R:
     strand, "strand<-",
 

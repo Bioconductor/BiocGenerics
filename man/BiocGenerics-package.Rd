@@ -130,6 +130,8 @@
 
       \item \code{\link[BiocGenerics]{combine}}
 
+      \item \code{\link[BiocGenerics]{normalize}}
+
       \item \code{\link[BiocGenerics]{strand}},
             \code{\link[BiocGenerics]{strand<-}}
 
