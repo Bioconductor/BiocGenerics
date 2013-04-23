@@ -63,9 +63,9 @@ rank(x, na.last=TRUE,
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[IRanges]{rank,Vector-method} in the IRanges package
+    \item \link[IRanges]{rank,Ranges-method} in the IRanges package
           for an example of a specific \code{rank} method (defined for
-          \link[IRanges]{Vector} objects).
+          \link[IRanges]{Ranges} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
           in the BiocGenerics package.
