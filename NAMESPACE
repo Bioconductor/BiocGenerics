@@ -28,6 +28,9 @@ export(
     ## from R/as.data.frame.R:
     as.data.frame,
 
+    ## from R/as.vector.R:
+    as.vector,
+
     ## from R/cbind.R:
     cbind, rbind,
 

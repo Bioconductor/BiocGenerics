@@ -25,6 +25,8 @@
 
       \item \code{BiocGenerics::\link[BiocGenerics]{as.data.frame}}
 
+      \item \code{BiocGenerics::\link[BiocGenerics]{as.vector}}
+
       \item \code{BiocGenerics::\link[BiocGenerics]{cbind}},
             \code{BiocGenerics::\link[BiocGenerics]{rbind}}
 

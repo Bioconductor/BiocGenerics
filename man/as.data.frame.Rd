@@ -2,7 +2,7 @@
 
 \alias{as.data.frame}
 
-\title{Coerce to a data frame}
+\title{Coerce an object into a data frame}
 
 \description{
   Function to coerce to a data frame, if possible.
@@ -21,7 +21,7 @@ as.data.frame(x, row.names=NULL, optional=FALSE, ...)
 
 \arguments{
   \item{x}{
-    Any object.
+    The object to coerce.
   }
   \item{row.names, optional, ...}{
     See \code{?base::\link[base]{as.data.frame}} for a description of

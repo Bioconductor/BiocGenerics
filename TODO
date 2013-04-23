@@ -3,8 +3,6 @@ o Functions defined in base R that would need to be explicitly promoted
   made generics by the IRanges package):
 
   From package base:
-    - as.vector(): implicit generic dispatches on (x, mode).
-      Explicit generic should dispatch on (x) only.
     - is.unsorted(): implicit generic dispatches on (x, na.rm, strictly).
       Explicit generic should dispatch on (x) only.
     - split(): implicit generic dispatches on (x, f, drop).

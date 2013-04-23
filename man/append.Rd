@@ -64,7 +64,7 @@ append(x, values, after=length(x))
 }
 
 \examples{
-append
+append  # note the dispatch on the 'x' and 'values' args only
 showMethods("append")
 selectMethod("append", c("ANY", "ANY"))  # the default method
 }

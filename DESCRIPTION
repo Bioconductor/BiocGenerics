@@ -13,6 +13,7 @@ License: Artistic-2.0
 Collate: S3-classes-as-S4-classes.R
 	append.R
 	as.data.frame.R
+	as.vector.R
 	cbind.R
 	duplicated.R
 	eval.R
