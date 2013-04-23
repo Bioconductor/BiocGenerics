@@ -40,23 +40,25 @@ as.data.frame(x, row.names=NULL, optional=FALSE, ...)
 }
 
 \seealso{
-  \code{base::\link[base]{as.data.frame}} for the default
-  \code{as.data.frame} method.
+  \itemize{
+    \item \code{base::\link[base]{as.data.frame}} for the default
+          \code{as.data.frame} method.
 
-  \code{\link[methods]{showMethods}} for displaying a summary of the
-  methods defined for a given generic function.
+    \item \code{\link[methods]{showMethods}} for displaying a summary of the
+          methods defined for a given generic function.
 
-  \code{\link[methods]{selectMethod}} for getting the definition of
-  a specific method.
+    \item \code{\link[methods]{selectMethod}} for getting the definition of
+          a specific method.
 
-  \link[IRanges]{as.data.frame,Ranges-method} and
-  \link[IRanges]{as.data.frame,DataFrame-method} in the IRanges package
-  for examples of specific \code{as.data.frame} methods (defined for
-  \link[IRanges]{Ranges} and \link[IRanges]{DataFrame} objects,
-  respectively).
+    \item \link[IRanges]{as.data.frame,Ranges-method} and
+          \link[IRanges]{as.data.frame,DataFrame-method} in the IRanges package
+          for examples of specific \code{as.data.frame} methods (defined for
+          \link[IRanges]{Ranges} and \link[IRanges]{DataFrame} objects,
+          respectively).
 
-  \link{BiocGenerics} for a summary of all the generics defined
-  in the BiocGenerics package.
+    \item \link{BiocGenerics} for a summary of all the generics defined
+          in the BiocGenerics package.
+  }
 }
 
 \examples{

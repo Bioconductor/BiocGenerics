@@ -31,20 +31,22 @@ normalize(object, ...)
 }
 
 \seealso{
-  \code{\link[methods]{showMethods}} for displaying a summary of the
-  methods defined for a given generic function.
+  \itemize{
+    \item \code{\link[methods]{showMethods}} for displaying a summary of the
+          methods defined for a given generic function.
 
-  \code{\link[methods]{selectMethod}} for getting the definition of
-  a specific method.
+    \item \code{\link[methods]{selectMethod}} for getting the definition of
+          a specific method.
 
-  \link[affy]{normalize,AffyBatch-method} in the affy package,
-  and \link[oligo]{normalize,FeatureSet-method} in the oligo package,
-  for examples of specific \code{normalize} methods (defined for
-  \link[affy]{AffyBatch} and \link[oligoClasses]{FeatureSet} objects,
-  respectively).
+    \item \link[affy]{normalize,AffyBatch-method} in the affy package
+          and \link[oligo]{normalize,FeatureSet-method} in the oligo package
+          for examples of specific \code{normalize} methods (defined for
+          \link[affy]{AffyBatch} and \link[oligoClasses]{FeatureSet} objects,
+          respectively).
 
-  \link{BiocGenerics} for a summary of all the generics defined
-  in the BiocGenerics package.
+    \item \link{BiocGenerics} for a summary of all the generics defined
+          in the BiocGenerics package.
+  }
 }
 
 \examples{

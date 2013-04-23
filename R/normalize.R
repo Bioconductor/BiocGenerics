@@ -3,5 +3,6 @@
 ### -------------------------------------------------------------------------
 
 setGeneric("normalize", 
-    function(object, ...) standardGeneric("normalize"))
+    function(object, ...) standardGeneric("normalize")
+)
 

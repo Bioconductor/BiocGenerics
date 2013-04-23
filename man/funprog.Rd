@@ -60,21 +60,23 @@ Position(f, x, right=FALSE, nomatch=NA_integer_)
 }
 
 \seealso{
-  \code{base::\link[base]{Reduce}} for the default \code{Reduce},
-  \code{Filter}, \code{Find}, \code{Map} and \code{Position} methods.
+  \itemize{
+    \item \code{base::\link[base]{Reduce}} for the default \code{Reduce},
+          \code{Filter}, \code{Find}, \code{Map} and \code{Position} methods.
 
-  \code{\link[methods]{showMethods}} for displaying a summary of the
-  methods defined for a given generic function.
+    \item \code{\link[methods]{showMethods}} for displaying a summary of the
+          methods defined for a given generic function.
 
-  \code{\link[methods]{selectMethod}} for getting the definition of
-  a specific method.
+    \item \code{\link[methods]{selectMethod}} for getting the definition of
+          a specific method.
 
-  \link[IRanges]{Reduce,List-method} in the IRanges package
-  for an example of a specific \code{Reduce} method (defined for
-  \link[IRanges]{List} objects).
+    \item \link[IRanges]{Reduce,List-method} in the IRanges package
+          for an example of a specific \code{Reduce} method (defined for
+          \link[IRanges]{List} objects).
 
-  \link{BiocGenerics} for a summary of all the generics defined
-  in the BiocGenerics package.
+    \item \link{BiocGenerics} for a summary of all the generics defined
+          in the BiocGenerics package.
+  }
 }
 
 \examples{

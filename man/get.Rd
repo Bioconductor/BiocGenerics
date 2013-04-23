@@ -54,21 +54,23 @@ mget(x, envir, mode="any", ifnotfound, inherits=FALSE)
 }
 
 \seealso{
-  \code{base::\link[base]{get}} for the default \code{get} and \code{mget}
-  methods.
+  \itemize{
+    \item \code{base::\link[base]{get}} for the default \code{get} and
+          \code{mget} methods.
 
-  \code{\link[methods]{showMethods}} for displaying a summary of the
-  methods defined for a given generic function.
+    \item \code{\link[methods]{showMethods}} for displaying a summary of the
+          methods defined for a given generic function.
 
-  \code{\link[methods]{selectMethod}} for getting the definition of
-  a specific method.
+    \item \code{\link[methods]{selectMethod}} for getting the definition of
+          a specific method.
 
-  \link[AnnotationDbi]{get,ANY,Bimap,missing-method} in the
-  AnnotationDbi package for an example of a specific \code{get} method
-  (defined for \link[AnnotationDbi]{Bimap} objects).
+    \item \link[AnnotationDbi]{get,ANY,Bimap,missing-method} in the
+          AnnotationDbi package for an example of a specific \code{get}
+          method (defined for \link[AnnotationDbi]{Bimap} objects).
 
-  \link{BiocGenerics} for a summary of all the generics defined
-  in the BiocGenerics package.
+    \item \link{BiocGenerics} for a summary of all the generics defined
+          in the BiocGenerics package.
+  }
 }
 
 \examples{

@@ -80,23 +80,25 @@ combine(x, y, ...)
 \author{Biocore}
 
 \seealso{
-  \link[Biobase]{combine,AnnotatedDataFrame,AnnotatedDataFrame-method},
-  \link[Biobase]{combine,AssayData,AssayData-method},
-  \link[Biobase]{combine,MIAME,MIAME-method},
-  and \link[Biobase]{combine,eSet,eSet-method} in the Biobase package
-  for additional \code{combine} methods.
+  \itemize{
+    \item \link[Biobase]{combine,AnnotatedDataFrame,AnnotatedDataFrame-method},
+          \link[Biobase]{combine,AssayData,AssayData-method},
+          \link[Biobase]{combine,MIAME,MIAME-method},
+          and \link[Biobase]{combine,eSet,eSet-method} in the Biobase package
+          for additional \code{combine} methods.
 
-  \code{\link{merge}} for merging two data frames (or data.frame-like)
-  R objects.
+    \item \code{\link{merge}} for merging two data frames (or data.frame-like)
+          R objects.
 
-  \code{\link[methods]{showMethods}} for displaying a summary of the
-  methods defined for a given generic function.
+    \item \code{\link[methods]{showMethods}} for displaying a summary of the
+          methods defined for a given generic function.
 
-  \code{\link[methods]{selectMethod}} for getting the definition of
-  a specific method.
+    \item \code{\link[methods]{selectMethod}} for getting the definition of
+          a specific method.
 
-  \link{BiocGenerics} for a summary of all the generics defined
-  in the BiocGenerics package.
+    \item \link{BiocGenerics} for a summary of all the generics defined
+          in the BiocGenerics package.
+  }
 }
 
 \examples{

@@ -37,20 +37,22 @@ table(...)
 }
 
 \seealso{
-  \code{base::\link[base]{table}} for the default \code{table} method.
+  \itemize{
+    \item \code{base::\link[base]{table}} for the default \code{table} method.
 
-  \code{\link[methods]{showMethods}} for displaying a summary of the
-  methods defined for a given generic function.
+    \item \code{\link[methods]{showMethods}} for displaying a summary of the
+          methods defined for a given generic function.
 
-  \code{\link[methods]{selectMethod}} for getting the definition of
-  a specific method.
+    \item \code{\link[methods]{selectMethod}} for getting the definition of
+          a specific method.
 
-  \link[IRanges]{table,Rle-method} in the IRanges package
-  for an example of a specific \code{table} method (defined
-  for \link[IRanges]{Rle} objects).
+    \item \link[IRanges]{table,Rle-method} in the IRanges package
+          for an example of a specific \code{table} method (defined for
+          \link[IRanges]{Rle} objects).
 
-  \link{BiocGenerics} for a summary of all the generics defined
-  in the BiocGenerics package.
+    \item \link{BiocGenerics} for a summary of all the generics defined
+          in the BiocGenerics package.
+  }
 }
 
 \examples{

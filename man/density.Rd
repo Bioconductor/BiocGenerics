@@ -35,21 +35,23 @@ density(x, ...)
 }
 
 \seealso{
-  \code{stats::\link[stats]{density}} for the default \code{density}
-  method.
+  \itemize{
+    \item \code{stats::\link[stats]{density}} for the default \code{density}
+          method.
 
-  \code{\link[methods]{showMethods}} for displaying a summary of the
-  methods defined for a given generic function.
+    \item \code{\link[methods]{showMethods}} for displaying a summary of the
+          methods defined for a given generic function.
 
-  \code{\link[methods]{selectMethod}} for getting the definition of
-  a specific method.
+    \item \code{\link[methods]{selectMethod}} for getting the definition of
+          a specific method.
 
-  \link[flowClust]{density,flowClust-method} in the flowClust package
-  for an example of a specific \code{density} method (defined for
-  \link[flowClust]{flowClust} objects).
+    \item \link[flowClust]{density,flowClust-method} in the flowClust package
+          for an example of a specific \code{density} method (defined for
+          \link[flowClust]{flowClust} objects).
 
-  \link{BiocGenerics} for a summary of all the generics defined
-  in the BiocGenerics package.
+    \item \link{BiocGenerics} for a summary of all the generics defined
+          in the BiocGenerics package.
+  }
 }
 
 \examples{

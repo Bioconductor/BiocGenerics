@@ -27,18 +27,20 @@ annotation(object, ...) <- value
 }
 
 \seealso{
-  \code{\link[methods]{showMethods}} for displaying a summary of the
-  methods defined for a given generic function.
+  \itemize{
+    \item \code{\link[methods]{showMethods}} for displaying a summary of the
+          methods defined for a given generic function.
 
-  \code{\link[methods]{selectMethod}} for getting the definition of
-  a specific method.
+    \item \code{\link[methods]{selectMethod}} for getting the definition of
+          a specific method.
 
-  \link[Biobase]{annotation,eSet-method} in the Biobase 
-  package for an example of a specific \code{annotation} method (defined
-  for \link[Biobase]{eSet} objects).
+    \item \link[Biobase]{annotation,eSet-method} in the Biobase package
+          for an example of a specific \code{annotation} method (defined for
+          \link[Biobase]{eSet} objects).
 
-  \link{BiocGenerics} for a summary of all the generics defined
-  in the BiocGenerics package.
+    \item \link{BiocGenerics} for a summary of all the generics defined
+          in the BiocGenerics package.
+  }
 }
 
 \examples{

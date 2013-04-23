@@ -39,21 +39,23 @@ NCOL(x)
 }
 
 \seealso{
-  \code{base::\link[base]{nrow}} for the default \code{nrow}, \code{ncol},
-  \code{NROW} and \code{NCOL} methods.
+  \itemize{
+    \item \code{base::\link[base]{nrow}} for the default \code{nrow},
+          \code{ncol}, \code{NROW} and \code{NCOL} methods.
 
-  \code{\link[methods]{showMethods}} for displaying a summary of the
-  methods defined for a given generic function.
+    \item \code{\link[methods]{showMethods}} for displaying a summary of the
+          methods defined for a given generic function.
 
-  \code{\link[methods]{selectMethod}} for getting the definition of
-  a specific method.
+    \item \code{\link[methods]{selectMethod}} for getting the definition of
+          a specific method.
 
-  \link[IRanges]{nrow,DataFrame-method} in the IRanges package
-  for an example of a specific \code{nrow} method (defined for
-  \link[IRanges]{DataFrame} objects).
+    \item \link[IRanges]{nrow,DataFrame-method} in the IRanges package
+          for an example of a specific \code{nrow} method (defined for
+          \link[IRanges]{DataFrame} objects).
 
-  \link{BiocGenerics} for a summary of all the generics defined
-  in the BiocGenerics package.
+    \item \link{BiocGenerics} for a summary of all the generics defined
+          in the BiocGenerics package.
+  }
 }
 
 \examples{

@@ -41,20 +41,23 @@ tapply(X, INDEX, FUN=NULL, ..., simplify=TRUE)
 }
 
 \seealso{
-  \code{base::\link[base]{tapply}} for the default \code{tapply} method.
+  \itemize{
+    \item \code{base::\link[base]{tapply}} for the default \code{tapply}
+          method.
 
-  \code{\link[methods]{showMethods}} for displaying a summary of the
-  methods defined for a given generic function.
+    \item \code{\link[methods]{showMethods}} for displaying a summary of the
+          methods defined for a given generic function.
 
-  \code{\link[methods]{selectMethod}} for getting the definition of
-  a specific method.
+    \item \code{\link[methods]{selectMethod}} for getting the definition of
+          a specific method.
 
-  \link[IRanges]{tapply,Vector-method} in the IRanges package
-  for an example of a specific \code{tapply} method (defined for
-  \link[IRanges]{Vector} objects).
+    \item \link[IRanges]{tapply,Vector-method} in the IRanges package
+          for an example of a specific \code{tapply} method (defined for
+          \link[IRanges]{Vector} objects).
 
-  \link{BiocGenerics} for a summary of all the generics defined
-  in the BiocGenerics package.
+    \item \link{BiocGenerics} for a summary of all the generics defined
+          in the BiocGenerics package.
+  }
 }
 
 \examples{

@@ -168,14 +168,16 @@
 \author{The Bioconductor Dev Team}
 
 \seealso{
-  \code{\link[methods]{showMethods}} for displaying a summary of the
-  methods defined for a given generic function.
+  \itemize{
+    \item \code{\link[methods]{showMethods}} for displaying a summary of the
+          methods defined for a given generic function.
 
-  \code{\link[methods]{selectMethod}} for getting the definition of
-  a specific method.
+    \item \code{\link[methods]{selectMethod}} for getting the definition of
+          a specific method.
 
-  \code{\link[methods]{setGeneric}} and \code{\link[methods]{setMethod}}
-  for defining generics and methods.
+    \item \code{\link[methods]{setGeneric}} and
+          \code{\link[methods]{setMethod}} for defining generics and methods.
+  }
 }
 
 \examples{

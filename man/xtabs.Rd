@@ -41,20 +41,23 @@ xtabs(formula=~., data=parent.frame(), subset, sparse=FALSE,
 }
 
 \seealso{
-  \code{stats::\link[stats]{xtabs}} for the default \code{xtabs} method.
+  \itemize{
+    \item \code{stats::\link[stats]{xtabs}} for the default \code{xtabs}
+          method.
 
-  \code{\link[methods]{showMethods}} for displaying a summary of the
-  methods defined for a given generic function.
+    \item \code{\link[methods]{showMethods}} for displaying a summary of the
+          methods defined for a given generic function.
 
-  \code{\link[methods]{selectMethod}} for getting the definition of
-  a specific method.
+    \item \code{\link[methods]{selectMethod}} for getting the definition of
+          a specific method.
 
-  \link[IRanges]{xtabs,DataTable-method} in the IRanges package
-  for an example of a specific \code{xtabs} method (defined for
-  \link[IRanges]{DataTable} objects).
+    \item \link[IRanges]{xtabs,DataTable-method} in the IRanges package
+          for an example of a specific \code{xtabs} method (defined for
+          \link[IRanges]{DataTable} objects).
 
-  \link{BiocGenerics} for a summary of all the generics defined
-  in the BiocGenerics package.
+    \item \link{BiocGenerics} for a summary of all the generics defined
+          in the BiocGenerics package.
+  }
 }
 
 \examples{

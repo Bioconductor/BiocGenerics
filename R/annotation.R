@@ -3,7 +3,10 @@
 ### -------------------------------------------------------------------------
 
 setGeneric("annotation", 
-    function(object, ...) standardGeneric("annotation"))
+    function(object, ...) standardGeneric("annotation")
+)
 
 setGeneric("annotation<-", 
-    function(object, ..., value) standardGeneric("annotation<-"))
+    function(object, ..., value) standardGeneric("annotation<-")
+)
+

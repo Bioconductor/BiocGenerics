@@ -44,23 +44,26 @@ unique(x, incomparables=FALSE, ...)
 }
 
 \seealso{
-  \code{base::\link[base]{unique}} for the default \code{unique} method.
+  \itemize{
+    \item \code{base::\link[base]{unique}} for the default \code{unique}
+          method.
 
-  \code{BiocGenerics::\link[BiocGenerics]{duplicated}} for determining
-  duplicate elements.
+    \item \code{BiocGenerics::\link[BiocGenerics]{duplicated}} for determining
+          duplicate elements.
 
-  \code{\link[methods]{showMethods}} for displaying a summary of the
-  methods defined for a given generic function.
+    \item \code{\link[methods]{showMethods}} for displaying a summary of the
+          methods defined for a given generic function.
 
-  \code{\link[methods]{selectMethod}} for getting the definition of
-  a specific method.
+    \item \code{\link[methods]{selectMethod}} for getting the definition of
+          a specific method.
 
-  \link[IRanges]{unique,Rle-method} in the IRanges package
-  for an example of a specific \code{unique} method (defined for
-  \link[IRanges]{Rle} objects).
+    \item \link[IRanges]{unique,Rle-method} in the IRanges package
+          for an example of a specific \code{unique} method (defined for
+          \link[IRanges]{Rle} objects).
 
-  \link{BiocGenerics} for a summary of all the generics defined
-  in the BiocGenerics package.
+    \item \link{BiocGenerics} for a summary of all the generics defined
+          in the BiocGenerics package.
+  }
 }
 
 \examples{

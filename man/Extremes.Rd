@@ -49,21 +49,23 @@ pmin.int(..., na.rm=FALSE)
 }
 
 \seealso{
-  \code{base::\link[base]{pmax}} for the default \code{pmax}, \code{pmin},
-  \code{pmax.int} and \code{pmin.int} methods.
+  \itemize{
+    \item \code{base::\link[base]{pmax}} for the default \code{pmax},
+          \code{pmin}, \code{pmax.int} and \code{pmin.int} methods.
 
-  \code{\link[methods]{showMethods}} for displaying a summary of the
-  methods defined for a given generic function.
+    \item \code{\link[methods]{showMethods}} for displaying a summary of the
+          methods defined for a given generic function.
 
-  \code{\link[methods]{selectMethod}} for getting the definition of
-  a specific method.
+    \item \code{\link[methods]{selectMethod}} for getting the definition of
+          a specific method.
 
-  \link[IRanges]{pmax,Rle-method} in the IRanges package
-  for an example of a specific \code{pmax} method (defined for
-  \link[IRanges]{Rle} objects).
+    \item \link[IRanges]{pmax,Rle-method} in the IRanges package
+          for an example of a specific \code{pmax} method (defined for
+          \link[IRanges]{Rle} objects).
 
-  \link{BiocGenerics} for a summary of all the generics defined
-  in the BiocGenerics package.
+    \item \link{BiocGenerics} for a summary of all the generics defined
+          in the BiocGenerics package.
+  }
 }
 
 \examples{

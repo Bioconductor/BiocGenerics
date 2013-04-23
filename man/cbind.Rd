@@ -43,21 +43,23 @@ rbind(..., deparse.level=1)
 }
 
 \seealso{
-  \code{base::\link[base]{cbind}} for the default \code{cbind} and
-  \code{rbind} methods.
+  \itemize{
+    \item \code{base::\link[base]{cbind}} for the default \code{cbind} and
+          \code{rbind} methods.
 
-  \code{\link[methods]{showMethods}} for displaying a summary of the
-  methods defined for a given generic function.
+    \item \code{\link[methods]{showMethods}} for displaying a summary of the
+          methods defined for a given generic function.
 
-  \code{\link[methods]{selectMethod}} for getting the definition of
-  a specific method.
+    \item \code{\link[methods]{selectMethod}} for getting the definition of
+          a specific method.
 
-  \link[IRanges]{cbind,DataFrame-method} in the IRanges package
-  for an example of a specific \code{cbind} method (defined for
-  \link[IRanges]{DataFrame} objects).
+    \item \link[IRanges]{cbind,DataFrame-method} in the IRanges package
+          for an example of a specific \code{cbind} method (defined for
+          \link[IRanges]{DataFrame} objects).
 
-  \link{BiocGenerics} for a summary of all the generics defined
-  in the BiocGenerics package.
+    \item \link{BiocGenerics} for a summary of all the generics defined
+          in the BiocGenerics package.
+  }
 }
 
 \examples{

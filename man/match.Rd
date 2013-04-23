@@ -52,20 +52,22 @@ match(x, table, nomatch=NA_integer_, incomparables=NULL, ...)
 }
 
 \seealso{
-  \code{base::\link[base]{match}} for the default \code{match} method.
+  \itemize{
+    \item \code{base::\link[base]{match}} for the default \code{match} method.
 
-  \code{\link[methods]{showMethods}} for displaying a summary of the
-  methods defined for a given generic function.
+    \item \code{\link[methods]{showMethods}} for displaying a summary of the
+          methods defined for a given generic function.
 
-  \code{\link[methods]{selectMethod}} for getting the definition of
-  a specific method.
+    \item \code{\link[methods]{selectMethod}} for getting the definition of
+          a specific method.
 
-  \link[IRanges]{match,Hits,Hits-method} in the IRanges
-  package for an example of a specific \code{match} method (defined for
-  \link[IRanges]{Hits} objects).
+    \item \link[IRanges]{match,Hits,Hits-method} in the IRanges package
+          for an example of a specific \code{match} method (defined for
+          \link[IRanges]{Hits} objects).
 
-  \link{BiocGenerics} for a summary of all the generics defined
-  in the BiocGenerics package.
+    \item \link{BiocGenerics} for a summary of all the generics defined
+          in the BiocGenerics package.
+  }
 }
 
 \examples{

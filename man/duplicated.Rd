@@ -59,21 +59,23 @@ anyDuplicated(x, incomparables=FALSE, ...)
 }
 
 \seealso{
-  \code{base::\link[base]{duplicated}} for the default \code{duplicated}
-  and \code{anyDuplicated} methods.
+  \itemize{
+    \item \code{base::\link[base]{duplicated}} for the default
+          \code{duplicated} and \code{anyDuplicated} methods.
 
-  \code{\link[methods]{showMethods}} for displaying a summary of the
-  methods defined for a given generic function.
+    \item \code{\link[methods]{showMethods}} for displaying a summary of the
+          methods defined for a given generic function.
 
-  \code{\link[methods]{selectMethod}} for getting the definition of
-  a specific method.
+    \item \code{\link[methods]{selectMethod}} for getting the definition of
+          a specific method.
 
-  \link[IRanges]{duplicated,Ranges-method} in the IRanges package
-  for an example of a specific \code{duplicated} method (defined for
-  \link[IRanges]{Ranges} objects).
+    \item \link[IRanges]{duplicated,Ranges-method} in the IRanges package
+          for an example of a specific \code{duplicated} method (defined for
+          \link[IRanges]{Ranges} objects).
 
-  \link{BiocGenerics} for a summary of all the generics defined
-  in the BiocGenerics package.
+    \item \link{BiocGenerics} for a summary of all the generics defined
+          in the BiocGenerics package.
+  }
 }
 
 \examples{

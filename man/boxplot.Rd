@@ -34,21 +34,23 @@ boxplot(x, ...)
 }
 
 \seealso{
-  \code{graphics::\link[graphics]{boxplot}} for the default \code{boxplot}
-  method.
+  \itemize{
+    \item \code{graphics::\link[graphics]{boxplot}} for the default
+          \code{boxplot} method.
 
-  \code{\link[methods]{showMethods}} for displaying a summary of the
-  methods defined for a given generic function.
+    \item \code{\link[methods]{showMethods}} for displaying a summary of the
+          methods defined for a given generic function.
 
-  \code{\link[methods]{selectMethod}} for getting the definition of
-  a specific method.
+    \item \code{\link[methods]{selectMethod}} for getting the definition of
+          a specific method.
 
-  \link[oligo]{boxplot,FeatureSet-method} in the oligo package
-  for an example of a specific \code{boxplot} method (defined for
-  \link[oligoClasses]{FeatureSet} objects).
+    \item \link[oligo]{boxplot,FeatureSet-method} in the oligo package
+          for an example of a specific \code{boxplot} method (defined for
+          \link[oligoClasses]{FeatureSet} objects).
 
-  \link{BiocGenerics} for a summary of all the generics defined
-  in the BiocGenerics package.
+    \item \link{BiocGenerics} for a summary of all the generics defined
+          in the BiocGenerics package.
+  }
 }
 
 \examples{

@@ -40,20 +40,22 @@ paste(..., sep=" ", collapse=NULL)
 }
 
 \seealso{
-  \code{base::\link[base]{paste}} for the default \code{paste} method.
+  \itemize{
+    \item \code{base::\link[base]{paste}} for the default \code{paste} method.
 
-  \code{\link[methods]{showMethods}} for displaying a summary of the
-  methods defined for a given generic function.
+    \item \code{\link[methods]{showMethods}} for displaying a summary of the
+          methods defined for a given generic function.
 
-  \code{\link[methods]{selectMethod}} for getting the definition of
-  a specific method.
+    \item \code{\link[methods]{selectMethod}} for getting the definition of
+          a specific method.
 
-  \link[IRanges]{paste,Rle-method} in the IRanges package
-  for an example of a specific \code{paste} method (defined for
-  \link[IRanges]{Rle} objects).
+    \item \link[IRanges]{paste,Rle-method} in the IRanges package
+          for an example of a specific \code{paste} method (defined for
+          \link[IRanges]{Rle} objects).
 
-  \link{BiocGenerics} for a summary of all the generics defined
-  in the BiocGenerics package.
+    \item \link{BiocGenerics} for a summary of all the generics defined
+          in the BiocGenerics package.
+  }
 }
 
 \examples{

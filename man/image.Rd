@@ -36,21 +36,23 @@ image(x, ...)
 }
 
 \seealso{
-  \code{graphics::\link[graphics]{image}} for the default \code{image}
-  method.
+  \itemize{
+    \item \code{graphics::\link[graphics]{image}} for the default \code{image}
+          method.
 
-  \code{\link[methods]{showMethods}} for displaying a summary of the
-  methods defined for a given generic function.
+    \item \code{\link[methods]{showMethods}} for displaying a summary of the
+          methods defined for a given generic function.
 
-  \code{\link[methods]{selectMethod}} for getting the definition of
-  a specific method.
+    \item \code{\link[methods]{selectMethod}} for getting the definition of
+          a specific method.
 
-  \link[oligo]{image,FeatureSet-method} in the oligo package
-  for an example of a specific \code{image} method (defined for
-  \link[oligoClasses]{FeatureSet} objects).
+    \item \link[oligo]{image,FeatureSet-method} in the oligo package
+          for an example of a specific \code{image} method (defined for
+          \link[oligoClasses]{FeatureSet} objects).
 
-  \link{BiocGenerics} for a summary of all the generics defined
-  in the BiocGenerics package.
+    \item \link{BiocGenerics} for a summary of all the generics defined
+          in the BiocGenerics package.
+  }
 }
 
 \examples{
