@@ -22,6 +22,9 @@ exportClasses(
 
 ### Generics for functions defined in package base:
 export(
+    ## from R/append.R:
+    append,
+
     ## from R/as.data.frame.R:
     as.data.frame,
 

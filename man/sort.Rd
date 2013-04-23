@@ -21,7 +21,7 @@ sort(x, decreasing=FALSE, ...)
 
 \arguments{
   \item{x}{
-    A vector-like R object.
+    A vector-like object.
   }
   \item{decreasing, ...}{
     See \code{?base::\link[base]{sort}} for a description of

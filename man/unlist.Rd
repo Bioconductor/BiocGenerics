@@ -24,7 +24,7 @@ unlist(x, recursive=TRUE, use.names=TRUE)
 
 \arguments{
   \item{x}{
-    A list-like R object.
+    A list-like object.
   }
   \item{recursive, use.names}{
     See \code{?base::\link[base]{unlist}} for a description of

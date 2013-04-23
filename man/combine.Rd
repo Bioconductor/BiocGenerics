@@ -88,7 +88,7 @@ combine(x, y, ...)
           for additional \code{combine} methods.
 
     \item \code{\link{merge}} for merging two data frames (or data.frame-like)
-          R objects.
+          objects.
 
     \item \code{\link[methods]{showMethods}} for displaying a summary of the
           methods defined for a given generic function.

@@ -32,7 +32,7 @@ pmin.int(..., na.rm=FALSE)
 
 \arguments{
   \item{...}{
-    One or more vector-like or matrix-like R objects.
+    One or more vector-like or matrix-like objects.
   }
   \item{na.rm}{
     See \code{?base::\link[base]{pmax}} for a description of

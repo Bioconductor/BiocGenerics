@@ -11,6 +11,7 @@ Suggests: Biobase, IRanges, GenomicRanges, AnnotationDbi,
 	oligoClasses, oligo, affyPLM, flowClust, affy, RUnit
 License: Artistic-2.0
 Collate: S3-classes-as-S4-classes.R
+	append.R
 	as.data.frame.R
 	cbind.R
 	duplicated.R

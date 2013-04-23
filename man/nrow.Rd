@@ -8,7 +8,7 @@
 \title{The number of rows/columns of an array-like object}
 
 \description{
-  Return the number of rows or columns present in an array-like R object.
+  Return the number of rows or columns present in an array-like object.
 
   NOTE: This man page is for the \code{nrow}, \code{ncol}, \code{NROW} and
   \code{NCOL} \emph{S4 generic functions} defined in the BiocGenerics package.
@@ -27,7 +27,7 @@ NCOL(x)
 
 \arguments{
   \item{x}{
-    A matrix- or array-like R object.
+    A matrix- or array-like object.
   }
 }
 

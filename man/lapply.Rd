@@ -3,7 +3,7 @@
 \alias{lapply}
 \alias{sapply}
 
-\title{Apply a function over a list-like or vector-like R object}
+\title{Apply a function over a list-like or vector-like object}
 
 \description{
   \code{lapply} returns a list of the same length as \code{X}, each
@@ -32,7 +32,7 @@ sapply(X, FUN, ..., simplify=TRUE, USE.NAMES=TRUE)
 
 \arguments{
   \item{X}{
-    A list-like or vector-like R object.
+    A list-like or vector-like object.
   }
   \item{FUN, ..., simplify, USE.NAMES}{
     See \code{?base::\link[base]{lapply}} for a description of

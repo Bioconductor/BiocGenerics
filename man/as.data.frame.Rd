@@ -21,7 +21,7 @@ as.data.frame(x, row.names=NULL, optional=FALSE, ...)
 
 \arguments{
   \item{x}{
-    Any R object.
+    Any object.
   }
   \item{row.names, optional, ...}{
     See \code{?base::\link[base]{as.data.frame}} for a description of

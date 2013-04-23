@@ -6,7 +6,7 @@
 
 \description{
   \code{unique} returns an object of the same class as \code{x} (typically
-  a vector-like, data-frame-like, or array-like R object) but with duplicate
+  a vector-like, data-frame-like, or array-like object) but with duplicate
   elements/rows removed.
 
   NOTE: This man page is for the \code{unique} \emph{S4 generic function}
@@ -24,7 +24,7 @@ unique(x, incomparables=FALSE, ...)
 
 \arguments{
   \item{x}{
-    A vector-like, data-frame-like, or array-like R object.
+    A vector-like, data-frame-like, or array-like object.
   }
   \item{incomparables, ...}{
     See \code{?base::\link[base]{unique}} for a description of

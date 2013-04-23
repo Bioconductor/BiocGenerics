@@ -23,7 +23,7 @@ order(..., na.last=TRUE, decreasing=FALSE)
 
 \arguments{
   \item{...}{
-    One or more vector-like R objects, all of the same length.
+    One or more vector-like objects, all of the same length.
   }
   \item{na.last, decreasing}{
     See \code{?base::\link[base]{order}} for a description of

@@ -22,7 +22,7 @@ match(x, table, nomatch=NA_integer_, incomparables=NULL, ...)
 
 \arguments{
   \item{x, table}{
-    Vector-like R objects (typically of the same class, but not necessarily).
+    Vector-like objects (typically of the same class, but not necessarily).
   }
   \item{nomatch, incomparables}{
     See \code{?base::\link[base]{match}} for a description of

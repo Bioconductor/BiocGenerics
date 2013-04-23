@@ -2,7 +2,7 @@
 
 \alias{rep.int}
 
-\title{Replicate elements of a vector-like R object}
+\title{Replicate elements of a vector-like object}
 
 \description{
   \code{rep.int} replicates the elements in \code{x}.
@@ -24,7 +24,7 @@ rep.int(x, ...)
 
 \arguments{
   \item{x}{
-    R object (typically vector-like).
+    The object to replicate (typically vector-like).
   }
   \item{...}{
     Additional arguments, for use in specific \code{rep.int} methods.

@@ -24,7 +24,7 @@ tapply(X, INDEX, FUN=NULL, ..., simplify=TRUE)
 
 \arguments{
   \item{X}{
-    A list-like or vector-like R object.
+    A list-like or vector-like object.
   }
   \item{INDEX, FUN, ..., simplify}{
     See \code{?base::\link[base]{tapply}} for a description of

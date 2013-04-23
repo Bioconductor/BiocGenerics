@@ -7,7 +7,7 @@
 \title{Row and column names}
 
 \description{
-  Retrieve the row or column names of a matrix-like R object.
+  Retrieve the row or column names of a matrix-like object.
 
   NOTE: This man page is for the \code{rownames} and \code{colnames}
   \emph{S4 generic functions} defined in the BiocGenerics package.
@@ -24,7 +24,7 @@ colnames(x, do.NULL=TRUE, prefix="col")
 
 \arguments{
   \item{x}{
-    A matrix-like R object.
+    A matrix-like object.
   }
   \item{do.NULL, prefix}{
     See \code{?base::\link[base]{rownames}} for a description of

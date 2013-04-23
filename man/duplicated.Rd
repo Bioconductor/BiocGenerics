@@ -6,7 +6,7 @@
 \title{Determine duplicate elements}
 
 \description{
-  Determines which elements of a vector-like or data-frame-like R object
+  Determines which elements of a vector-like or data-frame-like object
   are duplicates of elements with smaller subscripts, and returns a
   logical vector indicating which elements (rows) are duplicates.
 
@@ -26,7 +26,7 @@ anyDuplicated(x, incomparables=FALSE, ...)
 
 \arguments{
   \item{x}{
-    A vector-like or data-frame-like R object.
+    A vector-like or data-frame-like object.
   }
   \item{incomparables, ...}{
     See \code{?base::\link[base]{duplicated}} for a description of

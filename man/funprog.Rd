@@ -11,14 +11,14 @@
 
 \description{
   \code{Reduce} uses a binary function to successively combine the
-  elements of a given list-like or vector-like R object and a possibly
+  elements of a given list-like or vector-like object and a possibly
   given initial value.
   \code{Filter} extracts the elements of a list-like or vector-like
-  R object for which a predicate (logical) function gives true.
+  object for which a predicate (logical) function gives true.
   \code{Find} and \code{Position} give the first or last such element
   and its position in the object, respectively.
   \code{Map} applies a function to the corresponding elements of given
-  list-like or vector-like R objects.
+  list-like or vector-like objects.
 
   NOTE: This man page is for the \code{Reduce}, \code{Filter},
   \code{Find}, \code{Map} and \code{Position} \emph{S4 generic functions}
@@ -44,10 +44,10 @@ Position(f, x, right=FALSE, nomatch=NA_integer_)
     these arguments.
   }
   \item{x}{
-    A list-like or vector-like R object.
+    A list-like or vector-like object.
   }
   \item{...}{
-    One or more list-like or vector-like R objects.
+    One or more list-like or vector-like objects.
   }
 }
 

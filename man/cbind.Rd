@@ -3,11 +3,11 @@
 \alias{cbind}
 \alias{rbind}
 
-\title{Combine R objects by rows or columns}
+\title{Combine objects by rows or columns}
 
 \description{
-  \code{cbind} and \code{rbind} take a sequence of R objects arguments
-  and combine them by columns or rows, respectively.
+  \code{cbind} and \code{rbind} take one or more objects and combine them
+  by columns or rows, respectively.
 
   NOTE: This man page is for the \code{cbind} and \code{rbind}
   \emph{S4 generic functions} defined in the BiocGenerics package.
@@ -25,7 +25,7 @@ rbind(..., deparse.level=1)
 
 \arguments{
   \item{...}{
-    One or more vector-like or matrix-like R objects. These can be given as
+    One or more vector-like or matrix-like objects. These can be given as
     named arguments.
   }
   \item{deparse.level}{

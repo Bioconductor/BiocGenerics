@@ -22,7 +22,7 @@ table(...)
 
 \arguments{
   \item{...}{
-    One or more R objects which can be interpreted as factors
+    One or more objects which can be interpreted as factors
     (including character strings), or a list (or data frame)
     whose components can be so interpreted.
   }

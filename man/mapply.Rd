@@ -30,7 +30,7 @@ mapply(FUN, ..., MoreArgs=NULL, SIMPLIFY=TRUE, USE.NAMES=TRUE)
     these arguments.
   }
   \item{...}{
-    One or more list-like or vector-like R objects of strictly
+    One or more list-like or vector-like objects of strictly
     positive length, or all of zero length.
   }
 }

@@ -28,7 +28,7 @@ xtabs(formula=~., data=parent.frame(), subset, sparse=FALSE,
     these arguments.
   }
   \item{data}{
-    A data-frame-like R object.
+    A data-frame-like object.
   }
 }
 

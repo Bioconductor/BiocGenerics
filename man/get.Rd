@@ -6,7 +6,7 @@
 \title{Return the value of a named object}
 
 \description{
-  Search for an R object with a given name and return it.
+  Search for an object with a given name and return it.
 
   NOTE: This man page is for the \code{get} and \code{mget} \emph{S4 generic
   functions} defined in the BiocGenerics package.

@@ -23,7 +23,7 @@ rank(x, na.last=TRUE,
 
 \arguments{
   \item{x}{
-    A vector-like R object.
+    A vector-like object.
   }
   \item{na.last, ties.method}{
     See \code{?base::\link[base]{rank}} for a description of

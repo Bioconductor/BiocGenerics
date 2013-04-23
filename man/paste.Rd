@@ -5,7 +5,7 @@
 \title{Concatenate strings}
 
 \description{
-  \code{paste} concatenates vectors of strings or vector-like R
+  \code{paste} concatenates vectors of strings or vector-like
   objects containing strings.
 
   NOTE: This man page is for the \code{paste} \emph{S4 generic function}
@@ -23,7 +23,7 @@ paste(..., sep=" ", collapse=NULL)
 
 \arguments{
   \item{...}{
-    One or more vector-like R objects containing strings.
+    One or more vector-like objects containing strings.
   }
   \item{sep, collapse}{
     See \code{?base::\link[base]{paste}} for a description of

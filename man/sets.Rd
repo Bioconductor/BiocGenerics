@@ -9,7 +9,7 @@
 
 \description{
   Performs \emph{set} union, intersection and (asymmetric!) difference
-  on two vector-like R objects.
+  on two vector-like objects.
 
   NOTE: This man page is for the \code{union}, \code{intersect} and
   \code{setdiff} \emph{S4 generic functions} defined in the BiocGenerics
@@ -28,7 +28,7 @@ setdiff(x, y, ...)
 
 \arguments{
   \item{x, y}{
-    R objects of the same class (typically a vector-like class).
+    Vector-like objects (typically of the same class, but not necessarily).
   }
   \item{...}{
     Additional arguments, for use in specific methods.
