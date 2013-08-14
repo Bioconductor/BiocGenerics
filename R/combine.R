@@ -10,7 +10,7 @@ setGeneric("combine",
     function(x, y, ...)
     {
         if (length(list(...)) > 0L) {
-            callGeneric(x, do.call(callGeneric, list(y, ...)))
+            combine(x, do.call(combine, list(y, ...)))
         } else {
             standardGeneric("combine")
         }
