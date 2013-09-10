@@ -158,6 +158,17 @@ exportMethods(
     combine,
 
     ## from R/updateObject.R:
-    updateObject
+    updateObject,
+
+    ## from R/dge.R:
+    counts, "counts<-",
+    design, "design<-",
+    dispTable, "dispTable<-",
+    sizeFactors, "sizeFactors<-",
+    conditions, "conditions<-",
+    estimateSizeFactors, 
+    estimateDispersions,
+    plotDispEsts, 
+    plotMA
 )
 
