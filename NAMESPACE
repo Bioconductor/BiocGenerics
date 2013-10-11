@@ -49,6 +49,9 @@ export(
     ## from R/get.R:
     get, mget,
 
+    ## from R/is.unsorted.R:
+    is.unsorted,
+    
     ## from R/lapply.R:
     lapply, sapply,
 
