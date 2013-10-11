@@ -4,7 +4,7 @@
 ###
 ### Need to explicitly define this generic otherwise the implicit generic in
 ### package "base" would dispatch on all its arguments. Here we set dispatch
-### on the 1st arg (the 'X' arg) only!
+### on the 1st and 2nd args only!
 
-setGeneric("tapply", signature="X")
+setGeneric("tapply", signature=c("X", "INDEX"))
 
