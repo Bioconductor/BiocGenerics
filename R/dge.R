@@ -15,4 +15,4 @@ setGeneric("design<-",      function(object, ..., value) standardGeneric("design
 setGeneric("estimateSizeFactors", function(object, ...) standardGeneric("estimateSizeFactors"))
 setGeneric("estimateDispersions", function(object, ...) standardGeneric("estimateDispersions"))
 setGeneric("plotDispEsts", function(object, ...) standardGeneric("plotDispEsts"))
-setGeneric("plotMA", function(object, ...) standardGeneric("plotMA"))
+

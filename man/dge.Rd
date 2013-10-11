@@ -12,7 +12,6 @@
 \alias{estimateSizeFactors}
 \alias{estimateDispersions}
 \alias{plotDispEsts}
-\alias{plotMA}
 
 \title{Accessors and generic functions used in the context of count datasets}
 
@@ -33,7 +32,6 @@ design(object, ...) <- value
 estimateSizeFactors(object, ...)
 estimateDispersions(object, ...)
 plotDispEsts(object, ...)
-plotMA(object, ...)
 }
 
 \arguments{
