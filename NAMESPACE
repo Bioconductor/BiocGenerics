@@ -38,7 +38,7 @@ export(
     duplicated, anyDuplicated,
 
     ## from R/eval.R:
-    eval,
+    eval, evalq,
 
     ## from R/Extremes.R:
     pmax, pmin, pmax.int, pmin.int,
