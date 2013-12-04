@@ -15,7 +15,7 @@
   (defined in the base package).
   Bioconductor packages can define specific methods for objects
   (typically list-like or vector-like) not supported by the
-  default methods.
+  default method.
 }
 
 \usage{
@@ -24,9 +24,22 @@ tapply(X, INDEX, FUN=NULL, ..., simplify=TRUE)
 
 \arguments{
   \item{X}{
-    A list-like or vector-like object.
+    The default method expects an atomic object, typically a vector.
+    See \code{?base::\link[base]{tapply}} for the details.
+
+    Specific methods can support other objects (typically list-like
+    or vector-like).
+    Please refer to the documentation of a particular method for the details.
   }
-  \item{INDEX, FUN, ..., simplify}{
+  \item{INDEX}{
+    The default method expects a list of one or more factors, each of same
+    length as \code{X}.
+    See \code{?base::\link[base]{tapply}} for the details.
+
+    Specific methods can support other objects (typically list-like).
+    Please refer to the documentation of a particular method for the details.
+  }
+  \item{FUN, ..., simplify}{
     See \code{?base::\link[base]{tapply}} for a description of
     these arguments.
   }
@@ -51,7 +64,7 @@ tapply(X, INDEX, FUN=NULL, ..., simplify=TRUE)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[IRanges]{tapply,Vector-method} in the IRanges package
+    \item \link[IRanges]{tapply,Vector,ANY-method} in the IRanges package
           for an example of a specific \code{tapply} method (defined for
           \link[IRanges]{Vector} objects).
 
@@ -61,9 +74,9 @@ tapply(X, INDEX, FUN=NULL, ..., simplify=TRUE)
 }
 
 \examples{
-tapply  # note the dispatch on the 'X' arg only
+tapply  # note the dispatch on the 'X' and 'INDEX' args only
 showMethods("tapply")
-selectMethod("tapply", "ANY")  # the default method
+selectMethod("tapply", c("ANY", "ANY"))  # the default method
 }
 
 \keyword{methods}

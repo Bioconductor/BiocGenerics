@@ -30,6 +30,8 @@
       \item \code{BiocGenerics::\link[BiocGenerics]{cbind}},
             \code{BiocGenerics::\link[BiocGenerics]{rbind}}
 
+      \item \code{BiocGenerics::\link[BiocGenerics]{do.call}}
+
       \item \code{BiocGenerics::\link[BiocGenerics]{duplicated}},
             \code{BiocGenerics::\link[BiocGenerics]{anyDuplicated}}
 
@@ -50,6 +52,8 @@
 
       \item \code{BiocGenerics::\link[BiocGenerics]{get}},
             \code{BiocGenerics::\link[BiocGenerics]{mget}}
+
+      \item \code{BiocGenerics::\link[BiocGenerics]{is.unsorted}}
 
       \item \code{BiocGenerics::\link[BiocGenerics]{lapply}},
             \code{BiocGenerics::\link[BiocGenerics]{sapply}}
