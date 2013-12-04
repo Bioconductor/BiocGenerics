@@ -62,7 +62,7 @@ do.call(what, args, quote=FALSE, envir=parent.frame())
           a specific method.
 
     \item \link{BiocGenerics} for a summary of all the generics defined
-          in the BiocGenerics package.
+          in the \pkg{BiocGenerics} package.
   }
 }
 

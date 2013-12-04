@@ -9,9 +9,9 @@
   Ties (i.e., equal values) and missing values can be handled in several ways.
 
   NOTE: This man page is for the \code{rank}
-  \emph{S4 generic function} defined in the BiocGenerics package.
+  \emph{S4 generic function} defined in the \pkg{BiocGenerics} package.
   See \code{?base::\link[base]{rank}} for the default method
-  (defined in the base package).
+  (defined in the \pkg{base} package).
   Bioconductor packages can define specific methods for objects
   not supported by the default method.
 }
@@ -63,12 +63,12 @@ rank(x, na.last=TRUE,
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[IRanges]{rank,Ranges-method} in the IRanges package
+    \item \link[IRanges]{rank,Ranges-method} in the \pkg{IRanges} package
           for an example of a specific \code{rank} method (defined for
           \link[IRanges]{Ranges} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
-          in the BiocGenerics package.
+          in the \pkg{BiocGenerics} package.
   }
 }
 

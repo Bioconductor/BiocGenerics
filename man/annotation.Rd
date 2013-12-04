@@ -34,12 +34,12 @@ annotation(object, ...) <- value
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[Biobase]{annotation,eSet-method} in the Biobase package
+    \item \link[Biobase]{annotation,eSet-method} in the \pkg{Biobase} package
           for an example of a specific \code{annotation} method (defined for
           \link[Biobase]{eSet} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
-          in the BiocGenerics package.
+          in the \pkg{BiocGenerics} package.
   }
 }
 

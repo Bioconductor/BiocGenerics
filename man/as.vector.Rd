@@ -11,9 +11,9 @@
   object.
 
   NOTE: This man page is for the \code{as.vector}
-  \emph{S4 generic function} defined in the BiocGenerics package.
+  \emph{S4 generic function} defined in the \pkg{BiocGenerics} package.
   See \code{?base::\link[base]{as.vector}} for the default method
-  (defined in the base package).
+  (defined in the \pkg{base} package).
   Bioconductor packages can define specific methods for objects
   not supported by the default method.
 }
@@ -54,13 +54,13 @@ as.vector(x, mode="any")
           a specific method.
 
     \item \link[IRanges]{as.vector,Rle-method} and
-          \link[IRanges]{as.vector,AtomicList-method} in the IRanges package
-          for examples of specific \code{as.vector} methods (defined for
-          \link[IRanges]{Rle} and \link[IRanges]{AtomicList} objects,
+          \link[IRanges]{as.vector,AtomicList-method} in the \pkg{IRanges}
+          package for examples of specific \code{as.vector} methods (defined
+          for \link[IRanges]{Rle} and \link[IRanges]{AtomicList} objects,
           respectively).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
-          in the BiocGenerics package.
+          in the \pkg{BiocGenerics} package.
   }
 }
 

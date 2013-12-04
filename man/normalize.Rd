@@ -38,14 +38,14 @@ normalize(object, ...)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[affy]{normalize,AffyBatch-method} in the affy package
-          and \link[oligo]{normalize,FeatureSet-method} in the oligo package
-          for examples of specific \code{normalize} methods (defined for
-          \link[affy]{AffyBatch} and \link[oligoClasses]{FeatureSet} objects,
-          respectively).
+    \item \link[affy]{normalize,AffyBatch-method} in the \pkg{affy} package
+          and \link[oligo]{normalize,FeatureSet-method} in the \pkg{oligo}
+          package for examples of specific \code{normalize} methods (defined
+          for \link[affy]{AffyBatch} and \link[oligoClasses]{FeatureSet}
+          objects, respectively).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
-          in the BiocGenerics package.
+          in the \pkg{BiocGenerics} package.
   }
 }
 

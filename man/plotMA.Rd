@@ -35,11 +35,11 @@ plotMA(object, ...)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \code{\link[limma]{plotMA}} in the \code{limma} package
+    \item \code{\link[limma]{plotMA}} in the \pkg{limma} package
           for a function with the same name that is not dispatched through this generic function.
 
     \item \code{\link{BiocGenerics}} for a summary of all the generics defined
-          in the BiocGenerics package.
+          in the \pkg{BiocGenerics} package.
   }
 }
 

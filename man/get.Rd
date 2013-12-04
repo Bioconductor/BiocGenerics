@@ -9,9 +9,9 @@
   Search for an object with a given name and return it.
 
   NOTE: This man page is for the \code{get} and \code{mget} \emph{S4 generic
-  functions} defined in the BiocGenerics package.
+  functions} defined in the \pkg{BiocGenerics} package.
   See \code{?base::\link[base]{get}} for the default methods
-  (defined in the base package).
+  (defined in the \pkg{base} package).
   Bioconductor packages can define specific methods for objects
   (list-like or environment-like) not supported by the default methods.
 }
@@ -65,11 +65,11 @@ mget(x, envir, mode="any", ifnotfound, inherits=FALSE)
           a specific method.
 
     \item \link[AnnotationDbi]{get,ANY,Bimap,missing-method} in the
-          AnnotationDbi package for an example of a specific \code{get}
+          \pkg{AnnotationDbi} package for an example of a specific \code{get}
           method (defined for \link[AnnotationDbi]{Bimap} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
-          in the BiocGenerics package.
+          in the \pkg{BiocGenerics} package.
   }
 }
 

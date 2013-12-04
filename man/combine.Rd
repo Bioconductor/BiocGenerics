@@ -41,7 +41,7 @@ combine(x, y, ...)
 }
 
 \section{Methods}{
-  The following methods are defined in the BiocGenerics package:
+  The following methods are defined in the \pkg{BiocGenerics} package:
   \describe{
     \item{\code{combine(x=ANY, missing)}}{Return the first (x) argument
       unchanged.}
@@ -65,7 +65,7 @@ combine(x, y, ...)
       operation, \code{combine} makes sure that data in shared rows and
       columns are all equal in the two matricies.}
   }
-  Additional \code{combine} methods are defined in the Biobase package
+  Additional \code{combine} methods are defined in the \pkg{Biobase} package
   for \link[Biobase]{AnnotatedDataFrame},
   \link[Biobase]{AssayData}, \link[Biobase]{MIAME},
   and \link[Biobase]{eSet} objects.
@@ -84,8 +84,8 @@ combine(x, y, ...)
     \item \link[Biobase]{combine,AnnotatedDataFrame,AnnotatedDataFrame-method},
           \link[Biobase]{combine,AssayData,AssayData-method},
           \link[Biobase]{combine,MIAME,MIAME-method},
-          and \link[Biobase]{combine,eSet,eSet-method} in the Biobase package
-          for additional \code{combine} methods.
+          and \link[Biobase]{combine,eSet,eSet-method} in the \pkg{Biobase}
+          package for additional \code{combine} methods.
 
     \item \code{\link{merge}} for merging two data frames (or data.frame-like)
           objects.
@@ -97,7 +97,7 @@ combine(x, y, ...)
           a specific method.
 
     \item \link{BiocGenerics} for a summary of all the generics defined
-          in the BiocGenerics package.
+          in the \pkg{BiocGenerics} package.
   }
 }
 

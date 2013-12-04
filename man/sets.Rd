@@ -12,10 +12,10 @@
   on two vector-like objects.
 
   NOTE: This man page is for the \code{union}, \code{intersect} and
-  \code{setdiff} \emph{S4 generic functions} defined in the BiocGenerics
+  \code{setdiff} \emph{S4 generic functions} defined in the \pkg{BiocGenerics}
   package.
   See \code{?base::\link[base]{union}} for the default methods
-  (defined in the base package).
+  (defined in the \pkg{base} package).
   Bioconductor packages can define specific methods for objects
   (typically vector-like) not supported by the default methods.
 }
@@ -44,10 +44,10 @@ setdiff(x, y, ...)
 }
 
 \note{
-  The default methods (defined in the base package) only take 2 arguments.
-  We've added the \code{...} argument to the generic functions defined in
-  the BiocGenerics package so they can be called with an arbitrary number
-  of effective arguments.
+  The default methods (defined in the \pkg{base} package) only take 2
+  arguments. We've added the \code{...} argument to the generic functions
+  defined in the \pkg{BiocGenerics} package so they can be called with an
+  arbitrary number of effective arguments.
   For \code{union} or \code{intersect}, this typically allows Bioconductor
   packages to define methods that compute the union or intersection of more
   than 2 objects. However, for \code{setdiff}, which is conceptually a
@@ -55,7 +55,7 @@ setdiff(x, y, ...)
   for controlling/altering the behavior of the operation.
   Like for example the \code{ignore.strand} argument supported by the
   \code{setdiff} method for \link[GenomicRanges]{GRanges} objects (defined
-  in the GenomicRanges package). (Note that the \code{union} and
+  in the \pkg{GenomicRanges} package). (Note that the \code{union} and
   \code{intersect} methods for those objects also support the
   \code{ignore.strand} argument.)
 }
@@ -72,11 +72,11 @@ setdiff(x, y, ...)
           a specific method.
 
     \item \link[GenomicRanges]{union,GRanges,GRanges-method} in the
-          GenomicRanges package for an example of a specific \code{union}
+          \pkg{GenomicRanges} package for an example of a specific \code{union}
           method (defined for \link[GenomicRanges]{GRanges} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
-          in the BiocGenerics package.
+          in the \pkg{BiocGenerics} package.
   }
 }
 

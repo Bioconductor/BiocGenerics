@@ -10,9 +10,9 @@
   arguments.
 
   NOTE: This man page is for the \code{order} \emph{S4 generic function}
-  defined in the BiocGenerics package.
+  defined in the \pkg{BiocGenerics} package.
   See \code{?base::\link[base]{order}} for the default method
-  (defined in the base package).
+  (defined in the \pkg{base} package).
   Bioconductor packages can define specific methods for objects
   (typically vector-like) not supported by the default method.
 }
@@ -73,12 +73,12 @@ order(..., na.last=TRUE, decreasing=FALSE)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[IRanges]{order,Ranges-method} in the IRanges package
+    \item \link[IRanges]{order,Ranges-method} in the \pkg{IRanges} package
           for an example of a specific \code{order} method (defined for
           \link[IRanges]{Ranges} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
-          in the BiocGenerics package.
+          in the \pkg{BiocGenerics} package.
   }
 }
 

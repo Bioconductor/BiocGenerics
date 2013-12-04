@@ -43,7 +43,7 @@ plotDispEsts(object, ...)
 }
 
 \details{For the details, please consult the manual pages of the
-  methods in the \code{DESeq}, \code{DESeq2}, and \code{DEXSeq} packages and the package
+  methods in the \pkg{DESeq}, \pkg{DESeq2}, and \pkg{DEXSeq} packages and the package
   vignettes.}
 
 \author{W. Huber, S. Anders}

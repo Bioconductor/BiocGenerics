@@ -25,7 +25,7 @@
 
 \description{
   Some old-style (aka S3) classes are turned into formally defined (aka S4)
-  classes by the BiocGenerics package. This allows S4 methods defined in
+  classes by the \pkg{BiocGenerics} package. This allows S4 methods defined in
   Bioconductor packages to use them in their signatures.
 }
 
@@ -45,7 +45,7 @@
 }
 
 \seealso{
-  \link{setOldClass} and \link{setClassUnion} in the methods package.
+  \link{setOldClass} and \link{setClassUnion} in the \pkg{methods} package.
 }
 
 \keyword{classes}

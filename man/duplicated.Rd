@@ -11,9 +11,9 @@
   logical vector indicating which elements (rows) are duplicates.
 
   NOTE: This man page is for the \code{duplicated} and \code{anyDuplicated}
-  \emph{S4 generic functions} defined in the BiocGenerics package.
+  \emph{S4 generic functions} defined in the \pkg{BiocGenerics} package.
   See \code{?base::\link[base]{duplicated}} for the default methods
-  (defined in the base package).
+  (defined in the \pkg{base} package).
   Bioconductor packages can define specific methods for objects
   (typically vector-like or data-frame-like) not supported by the
   default method.
@@ -69,12 +69,12 @@ anyDuplicated(x, incomparables=FALSE, ...)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[IRanges]{duplicated,Ranges-method} in the IRanges package
-          for an example of a specific \code{duplicated} method (defined for
-          \link[IRanges]{Ranges} objects).
+    \item \link[IRanges]{duplicated,Ranges-method} in the \pkg{IRanges}
+          package for an example of a specific \code{duplicated} method
+          (defined for \link[IRanges]{Ranges} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
-          in the BiocGenerics package.
+          in the \pkg{BiocGenerics} package.
   }
 }
 

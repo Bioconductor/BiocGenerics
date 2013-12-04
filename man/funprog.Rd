@@ -22,9 +22,9 @@
 
   NOTE: This man page is for the \code{Reduce}, \code{Filter},
   \code{Find}, \code{Map} and \code{Position} \emph{S4 generic functions}
-  defined in the BiocGenerics package.
+  defined in the \pkg{BiocGenerics} package.
   See \code{?base::\link[base]{Reduce}} for the default methods
-  (defined in the base package).
+  (defined in the \pkg{base} package).
   Bioconductor packages can define specific methods for objects
   (typically list-like or vector-like) not supported by the
   default methods.
@@ -70,12 +70,12 @@ Position(f, x, right=FALSE, nomatch=NA_integer_)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[IRanges]{Reduce,List-method} in the IRanges package
+    \item \link[IRanges]{Reduce,List-method} in the \pkg{IRanges} package
           for an example of a specific \code{Reduce} method (defined for
           \link[IRanges]{List} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
-          in the BiocGenerics package.
+          in the \pkg{BiocGenerics} package.
   }
 }
 

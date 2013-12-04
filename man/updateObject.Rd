@@ -108,8 +108,8 @@ getObjectSlots(object)
 
 \seealso{
   \itemize{
-    \item \code{\link[Biobase]{updateObjectTo}} in the Biobase package for
-          updating an object to the class definition of a template (might
+    \item \code{\link[Biobase]{updateObjectTo}} in the \pkg{Biobase} package
+          for updating an object to the class definition of a template (might
           be useful for updating a virtual superclass).
 
     \item \code{\link[methods]{validObject}} for testing the validity of an
@@ -122,7 +122,7 @@ getObjectSlots(object)
           a specific method.
 
     \item \link{BiocGenerics} for a summary of all the generics defined
-          in the BiocGenerics package.
+          in the \pkg{BiocGenerics} package.
   }
 }
 

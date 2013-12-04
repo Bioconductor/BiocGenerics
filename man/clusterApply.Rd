@@ -26,9 +26,9 @@
   \code{clusterMap}, \code{clusterSplit}, \code{parLapply}, \code{parSapply},
   \code{parApply}, \code{parRapply}, \code{parCapply}, \code{parLapplyLB},
   and \code{parSapplyLB} \emph{S4 generic functions} defined in the
-  BiocGenerics package.
+  \pkg{BiocGenerics} package.
   See \code{?parallel::\link[parallel]{clusterApply}} for the default
-  methods (defined in the parallel package).
+  methods (defined in the \pkg{parallel} package).
   Bioconductor packages can define specific methods for cluster-like
   objects not supported by the default methods.
 }
@@ -97,7 +97,7 @@ parSapplyLB(cl=NULL, X, FUN, ..., simplify=TRUE, USE.NAMES=TRUE)
           a specific method.
 
     \item \link{BiocGenerics} for a summary of all the generics defined
-          in the BiocGenerics package.
+          in the \pkg{BiocGenerics} package.
   }
 }
 

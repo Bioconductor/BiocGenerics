@@ -27,7 +27,7 @@ strand(x, ...) <- value
 }
 
 \note{
-  All the \code{strand} methods defined in the GenomicRanges package
+  All the \code{strand} methods defined in the \pkg{GenomicRanges} package
   use the same set of 3 values (levels) to specify the strand of a
   genomic location: \code{+}, \code{-}, and \code{*}.
   \code{*} is used when the exact strand of the location is unknown,
@@ -43,12 +43,13 @@ strand(x, ...) <- value
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[GenomicRanges]{strand,GRanges-method} in the GenomicRanges
-          package for an example of a specific \code{strand} method (defined
-          for \link[GenomicRanges]{GRanges} objects).
+    \item \link[GenomicRanges]{strand,GRanges-method} in the
+          \pkg{GenomicRanges} package for an example of a specific
+          \code{strand} method (defined for \link[GenomicRanges]{GRanges}
+          objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
-          in the BiocGenerics package.
+          in the \pkg{BiocGenerics} package.
   }
 }
 

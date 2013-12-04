@@ -9,8 +9,8 @@
   argument) in a specified environment.
 
   NOTE: This man page is for the \code{evalq} wrapper defined in the
-  BiocGenerics package.  See \code{?base::\link[base]{evalq}} for the
-  function defined in the base package. This wrapper correctly delegates
+  \pkg{BiocGenerics} package.  See \code{?base::\link[base]{evalq}} for the
+  function defined in the \pkg{base} package. This wrapper correctly delegates
   to the \code{eval} generic, rather than
   \code{base::\link[base]{eval}}.
 }

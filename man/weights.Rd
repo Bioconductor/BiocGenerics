@@ -9,9 +9,9 @@
   from objects returned by modeling functions.
 
   NOTE: This man page is for the \code{weights} \emph{S4 generic function}
-  defined in the BiocGenerics package.
+  defined in the \pkg{BiocGenerics} package.
   See \code{?stats::\link[stats]{weights}} for the default method
-  (defined in the stats package).
+  (defined in the \pkg{stats} package).
   Bioconductor packages can define specific methods for objects
   not supported by the default method.
 }
@@ -47,12 +47,12 @@ weights(object, ...)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[affyPLM]{weights,PLMset-method} in the affyPLM package
+    \item \link[affyPLM]{weights,PLMset-method} in the \pkg{affyPLM} package
           for an example of a specific \code{weights} method (defined for
           \link[affyPLM]{PLMset} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
-          in the BiocGenerics package.
+          in the \pkg{BiocGenerics} package.
   }
 }
 

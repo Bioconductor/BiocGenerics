@@ -11,9 +11,9 @@
   \emph{images}.
 
   NOTE: This man page is for the \code{image} \emph{S4 generic function}
-  defined in the BiocGenerics package.
+  defined in the \pkg{BiocGenerics} package.
   See \code{?graphics::\link[graphics]{image}} for the default method
-  (defined in the graphics package).
+  (defined in the \pkg{graphics} package).
   Bioconductor packages can define specific methods for objects
   not supported by the default method.
 }
@@ -46,12 +46,12 @@ image(x, ...)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[oligo]{image,FeatureSet-method} in the oligo package
+    \item \link[oligo]{image,FeatureSet-method} in the \pkg{oligo} package
           for an example of a specific \code{image} method (defined for
           \link[oligoClasses]{FeatureSet} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
-          in the BiocGenerics package.
+          in the \pkg{BiocGenerics} package.
   }
 }
 

@@ -11,9 +11,10 @@
   Return the number of rows or columns present in an array-like object.
 
   NOTE: This man page is for the \code{nrow}, \code{ncol}, \code{NROW} and
-  \code{NCOL} \emph{S4 generic functions} defined in the BiocGenerics package.
+  \code{NCOL} \emph{S4 generic functions} defined in the \pkg{BiocGenerics}
+  package.
   See \code{?base::\link[base]{nrow}} for the default methods (defined in
-  the base package).
+  the \pkg{base} package).
   Bioconductor packages can define specific methods for objects
   (typically matrix- or array-like) not supported by the default methods.
 }
@@ -49,12 +50,12 @@ NCOL(x)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[IRanges]{nrow,DataFrame-method} in the IRanges package
+    \item \link[IRanges]{nrow,DataFrame-method} in the \pkg{IRanges} package
           for an example of a specific \code{nrow} method (defined for
           \link[IRanges]{DataFrame} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
-          in the BiocGenerics package.
+          in the \pkg{BiocGenerics} package.
   }
 }
 

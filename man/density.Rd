@@ -9,9 +9,9 @@
   estimates.
 
   NOTE: This man page is for the \code{density} \emph{S4 generic function}
-  defined in the BiocGenerics package.
+  defined in the \pkg{BiocGenerics} package.
   See \code{?stats::\link[stats]{density}} for the default method
-  (defined in the stats package).
+  (defined in the \pkg{stats} package).
   Bioconductor packages can define specific methods for objects
   not supported by the default method.
 }
@@ -45,12 +45,12 @@ density(x, ...)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[flowClust]{density,flowClust-method} in the flowClust package
-          for an example of a specific \code{density} method (defined for
-          \link[flowClust]{flowClust} objects).
+    \item \link[flowClust]{density,flowClust-method} in the \pkg{flowClust}
+          package for an example of a specific \code{density} method (defined
+          for \link[flowClust]{flowClust} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
-          in the BiocGenerics package.
+          in the \pkg{BiocGenerics} package.
   }
 }
 

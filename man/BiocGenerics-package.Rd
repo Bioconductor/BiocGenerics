@@ -11,15 +11,15 @@
 }
 
 \details{
-  We divide the generic functions defined in the BiocGenerics package in
-  2 categories: (1) functions already defined in base R and explicitly
+  We divide the generic functions defined in the \pkg{BiocGenerics} package
+  in 2 categories: (1) functions already defined in base R and explicitly
   promoted to generics in BiocGenerics, and (2) Bioconductor specific
   generics.
 
   \subsection{(1) Functions defined in base R and explicitly promoted to
-              generics in the BiocGenerics package}{
+              generics in the \pkg{BiocGenerics} package}{
 
-    Generics for functions defined in package base:
+    Generics for functions defined in package \pkg{base}:
     \itemize{
       \item \code{BiocGenerics::\link[BiocGenerics]{append}}
 
@@ -94,14 +94,14 @@
       \item \code{BiocGenerics::\link[BiocGenerics]{unlist}}
     }
 
-    Generics for functions defined in package graphics:
+    Generics for functions defined in package \pkg{graphics}:
     \itemize{
       \item \code{BiocGenerics::\link[BiocGenerics]{boxplot}}
 
       \item \code{BiocGenerics::\link[BiocGenerics]{image}}
     }
 
-    Generics for functions defined in package stats:
+    Generics for functions defined in package \pkg{stats}:
     \itemize{
       \item \code{BiocGenerics::\link[BiocGenerics]{density}}
 
@@ -112,7 +112,7 @@
       \item \code{BiocGenerics::\link[BiocGenerics]{xtabs}}
     }
 
-    Generics for functions defined in package parallel:
+    Generics for functions defined in package \pkg{parallel}:
     \itemize{
       \item \code{BiocGenerics::\link[BiocGenerics]{clusterCall}},
             \code{BiocGenerics::\link[BiocGenerics]{clusterApply}},
@@ -154,22 +154,22 @@
 
     \url{http://bioconductor.org/help/mailing-list/}
 
-  Things that should NOT be added to the BiocGenerics package:
+  Things that should NOT be added to the \pkg{BiocGenerics} package:
   \itemize{
     \item Internal generic primitive functions like \code{\link{length}},
           \code{\link{dim}}, \code{`\link{dim<-}`}, etc...
           See \code{?\link{InternalMethods}} for the complete list.
-          There are a few exceptions though, that is, the BiocGenerics package
-          may actually redefine a few of those internal generic primitive
-          functions as S4 generics when for example the signature of the
-          internal generic primitive is not appropriate (this is the
+          There are a few exceptions though, that is, the \pkg{BiocGenerics}
+          package may actually redefine a few of those internal generic
+          primitive functions as S4 generics when for example the signature
+          of the internal generic primitive is not appropriate (this is the
           case for \code{BiocGenerics::\link[BiocGenerics]{cbind}}).
 
     \item S3 and S4 group generic functions like \code{\link{Math}},
           \code{\link{Ops}}, etc... See \code{?\link{groupGeneric}} and
           \code{?\link{S4groupGeneric}} for the complete list.
 
-    \item Generics already defined in the stats4 package.
+    \item Generics already defined in the \pkg{stats4} package.
   }
 }
 
