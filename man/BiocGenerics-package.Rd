@@ -4,7 +4,7 @@
 \alias{BiocGenerics}
 \docType{package}
 
-\title{Generic functions for Bioconductor}
+\title{S4 generic functions for Bioconductor}
 
 \description{
   S4 generic functions needed by many Bioconductor packages.
