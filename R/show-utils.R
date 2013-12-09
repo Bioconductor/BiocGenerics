@@ -6,7 +6,7 @@
 labeledLine <-
   function(label, els, count = TRUE, labelSep = ":", sep = " ", ellipsis = "...")
 {
-  if (count)
+  if (count && !is.null(els))
     label <- paste(label, "(", length(els), ")", sep = "")
   label <- paste(label, labelSep, sep, sep = "")
   width <- getOption("width") - nchar(label)
@@ -17,6 +17,8 @@ labeledLine <-
 ellipsize <-
   function(obj, width = getOption("width"), sep = " ", ellipsis = "...")
 {
+  if (is.null(obj))
+    obj <- "NULL"
   if (length(obj) > 2 * width)
     obj <- c(head(obj, width), tail(obj, width))
   str <- encodeString(obj)
