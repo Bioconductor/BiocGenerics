@@ -1,6 +1,7 @@
 import(methods)
 import(graphics)
 import(stats)
+import(utils)
 import(parallel)
 
 exportClasses(
@@ -75,6 +76,9 @@ export(
 
     ## from R/rank.R:
     rank,
+
+    ## from R/relist.R:
+    relist,
 
     ## from R/rep.R:
     rep.int,

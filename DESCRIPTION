@@ -5,8 +5,8 @@ Version: 0.9.1
 Author: The Bioconductor Dev Team
 Maintainer: Bioconductor Package Maintainer <maintainer@bioconductor.org>
 biocViews: Infrastructure
-Depends: methods, graphics, stats, parallel
-Imports: methods, graphics, stats, parallel
+Depends: methods, graphics, stats, parallel, utils
+Imports: methods, graphics, stats, parallel, utils
 Suggests: Biobase, IRanges, GenomicRanges, AnnotationDbi,
 	oligoClasses, oligo, affyPLM, flowClust, affy, RUnit, DESeq2
 License: Artistic-2.0
@@ -29,6 +29,7 @@ Collate: S3-classes-as-S4-classes.R
 	order.R
 	paste.R
 	rank.R
+	relist.R
 	rep.R
 	row_colnames.R
 	sets.R
