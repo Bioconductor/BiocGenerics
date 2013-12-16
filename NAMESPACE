@@ -1,7 +1,7 @@
 import(methods)
+import(utils)
 import(graphics)
 import(stats)
-import(utils)
 import(parallel)
 
 exportClasses(
@@ -77,9 +77,6 @@ export(
     ## from R/rank.R:
     rank,
 
-    ## from R/relist.R:
-    relist,
-
     ## from R/rep.R:
     rep.int,
 
@@ -103,6 +100,12 @@ export(
 
     ## from R/unlist.R:
     unlist
+)
+
+### Generics for functions defined in package utils:
+export(
+    ## from R/relist.R:
+    relist
 )
 
 ### Generics for functions defined in package graphics:

@@ -5,3 +5,4 @@
 ### utils::relist is an S3 generic.
 
 setGeneric("relist")
+

@@ -94,6 +94,11 @@
       \item \code{BiocGenerics::\link[BiocGenerics]{unlist}}
     }
 
+    Generics for functions defined in package \pkg{utils}:
+    \itemize{
+      \item \code{BiocGenerics::\link[BiocGenerics]{relist}}
+    }
+
     Generics for functions defined in package \pkg{graphics}:
     \itemize{
       \item \code{BiocGenerics::\link[BiocGenerics]{boxplot}}
