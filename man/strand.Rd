@@ -2,6 +2,7 @@
 
 \alias{strand}
 \alias{strand<-}
+\alias{unstrand}
 
 \title{Accessing strand information}
 
@@ -12,6 +13,7 @@
 \usage{
 strand(x, ...)
 strand(x, ...) <- value
+unstrand(x)
 }
 
 \arguments{
@@ -26,13 +28,22 @@ strand(x, ...) <- value
   }
 }
 
-\note{
+\details{
   All the \code{strand} methods defined in the \pkg{GenomicRanges} package
   use the same set of 3 values (levels) to specify the strand of a
   genomic location: \code{+}, \code{-}, and \code{*}.
   \code{*} is used when the exact strand of the location is unknown,
   or irrelevant, or when the "feature" at that location belongs to
   both strands.
+}
+
+\note{
+  \code{unstrand} is not a generic function, just a convenience wrapper to
+  the generic strand setter (\code{strand<-}) that simply does:
+\preformatted{
+  strand(x) <- "*"
+  x
+}
 }
 
 \seealso{

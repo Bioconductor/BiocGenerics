@@ -17,8 +17,8 @@ exportClasses(
 
 
 ### ==========================================================================
-### Functions defined in base R and explicitly promoted to generics in the
-### BiocGenerics package
+### Export functions defined in base R and explicitly promoted to generics in
+### the BiocGenerics package
 ### --------------------------------------------------------------------------
 
 ### Generics for functions defined in package base:
@@ -144,7 +144,7 @@ export(
 
 
 ### ==========================================================================
-### Bioconductor specific generics and their methods
+### Export Bioconductor specific generics and their methods
 ### --------------------------------------------------------------------------
 
 export(
@@ -183,5 +183,15 @@ exportMethods(
     estimateDispersions,
     plotDispEsts, 
     plotMA
+)
+
+
+### ==========================================================================
+### Export non-generic functions
+### --------------------------------------------------------------------------
+
+export(
+    ## from R/strand.R:
+    unstrand
 )
 
