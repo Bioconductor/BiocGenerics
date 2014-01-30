@@ -30,8 +30,8 @@ unstrand(x)
 
 \details{
   All the \code{strand} methods defined in the \pkg{GenomicRanges} package
-  use the same set of 3 values (levels) to specify the strand of a
-  genomic location: \code{+}, \code{-}, and \code{*}.
+  use the same set of 3 values (called the "standard strand levels") to
+  specify the strand of a genomic location: \code{+}, \code{-}, and \code{*}.
   \code{*} is used when the exact strand of the location is unknown,
   or irrelevant, or when the "feature" at that location belongs to
   both strands.
