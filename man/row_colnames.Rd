@@ -36,6 +36,10 @@ colnames(x) <- value
     See \code{?base::\link[base]{rownames}} for a description of
     these arguments.
   }
+  \item{value}{
+    Either \code{NULL} or a character vector equal of length equal to the
+    appropriate dimension.
+  }
 }
 
 \value{
