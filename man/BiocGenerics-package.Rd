@@ -76,7 +76,9 @@
       \item \code{BiocGenerics::\link[BiocGenerics]{rep.int}}
 
       \item \code{BiocGenerics::\link[BiocGenerics]{rownames}},
-            \code{BiocGenerics::\link[BiocGenerics]{colnames}}
+            \code{BiocGenerics::\link[BiocGenerics]{rownames<-}},
+            \code{BiocGenerics::\link[BiocGenerics]{colnames}},
+            \code{BiocGenerics::\link[BiocGenerics]{colnames<-}}
 
       \item sets:
             \code{BiocGenerics::\link[BiocGenerics]{union}},

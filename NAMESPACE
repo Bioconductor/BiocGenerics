@@ -81,7 +81,7 @@ export(
     rep.int,
 
     ## from R/row_colnames.R:
-    rownames, colnames,
+    rownames, "rownames<-", colnames, "colnames<-",
 
     ## from R/sets.R:
     union, intersect, setdiff,

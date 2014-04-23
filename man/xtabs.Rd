@@ -51,9 +51,9 @@ xtabs(formula=~., data=parent.frame(), subset, sparse=FALSE,
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[IRanges]{xtabs,DataTable-method} in the \pkg{IRanges} package
-          for an example of a specific \code{xtabs} method (defined for
-          \link[IRanges]{DataTable} objects).
+    \item \link[S4Vectors]{xtabs,DataTable-method} in the \pkg{S4Vectors}
+          package for an example of a specific \code{xtabs} method (defined
+          for \link[S4Vectors]{DataTable} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
           in the \pkg{BiocGenerics} package.
