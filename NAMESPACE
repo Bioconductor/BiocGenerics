@@ -29,6 +29,9 @@ export(
     ## from R/as.data.frame.R:
     as.data.frame,
 
+    ## from R/as.list.R:
+    as.list,
+
     ## from R/as.vector.R:
     as.vector,
 

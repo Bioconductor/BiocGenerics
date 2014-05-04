@@ -1,0 +1,4 @@
+
+
+setGeneric("as.list")
+
