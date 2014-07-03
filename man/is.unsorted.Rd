@@ -57,9 +57,9 @@ is.unsorted(x, na.rm=FALSE, strictly=FALSE)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[IRanges]{is.unsorted,Rle-method} in the \pkg{IRanges} package
-          for an example of a specific \code{is.unsorted} method (defined for
-          \link[IRanges]{Rle} objects).
+    \item \link[S4Vectors]{is.unsorted,Rle-method} in the \pkg{S4Vectors}
+          package for an example of a specific \code{is.unsorted} method
+          (defined for \link[S4Vectors]{Rle} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
           in the \pkg{BiocGenerics} package.

@@ -49,9 +49,9 @@ paste(..., sep=" ", collapse=NULL)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[IRanges]{paste,Rle-method} in the \pkg{IRanges} package
+    \item \link[S4Vectors]{paste,Rle-method} in the \pkg{S4Vectors} package
           for an example of a specific \code{paste} method (defined for
-          \link[IRanges]{Rle} objects).
+          \link[S4Vectors]{Rle} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
           in the \pkg{BiocGenerics} package.

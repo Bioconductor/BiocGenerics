@@ -87,6 +87,13 @@
 
       \item \code{BiocGenerics::\link[BiocGenerics]{sort}}
 
+      \item \code{BiocGenerics::\link[BiocGenerics]{start}},
+            \code{BiocGenerics::\link[BiocGenerics]{start<-}},
+            \code{BiocGenerics::\link[BiocGenerics]{end}},
+            \code{BiocGenerics::\link[BiocGenerics]{end<-}},
+            \code{BiocGenerics::\link[BiocGenerics]{width}},
+            \code{BiocGenerics::\link[BiocGenerics]{width<-}}
+
       \item \code{BiocGenerics::\link[BiocGenerics]{table}}
 
       \item \code{BiocGenerics::\link[BiocGenerics]{tapply}}

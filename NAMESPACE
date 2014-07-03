@@ -92,6 +92,11 @@ export(
     ## from R/sort.R:
     sort,
 
+    ## from R/start.R:
+    start, "start<-",
+    end, "end<-",
+    width, "width<-",
+
     ## from R/table.R:
     table,
 

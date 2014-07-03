@@ -64,9 +64,9 @@ tapply(X, INDEX, FUN=NULL, ..., simplify=TRUE)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[IRanges]{tapply,Vector,ANY-method} in the \pkg{IRanges} package
-          for an example of a specific \code{tapply} method (defined for
-          \link[IRanges]{Vector} objects).
+    \item \link[IRanges]{tapply,Vector,ANY-method} in the \pkg{IRanges}
+          package for an example of a specific \code{tapply} method (defined
+          for \link[S4Vectors]{Vector} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
           in the \pkg{BiocGenerics} package.

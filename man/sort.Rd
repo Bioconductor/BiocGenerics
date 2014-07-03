@@ -62,9 +62,9 @@ sort(x, decreasing=FALSE, ...)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[IRanges]{sort,Vector-method} in the \pkg{IRanges} package
+    \item \link[S4Vectors]{sort,Vector-method} in the \pkg{S4Vectors} package
           for an example of a specific \code{sort} method (defined for
-          \link[IRanges]{Vector} objects).
+          \link[S4Vectors]{Vector} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
           in the \pkg{BiocGenerics} package.

@@ -57,9 +57,9 @@ unique(x, incomparables=FALSE, ...)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[IRanges]{unique,Rle-method} in the \pkg{IRanges} package
+    \item \link[S4Vectors]{unique,Rle-method} in the \pkg{S4Vectors} package
           for an example of a specific \code{unique} method (defined for
-          \link[IRanges]{Rle} objects).
+          \link[S4Vectors]{Rle} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
           in the \pkg{BiocGenerics} package.

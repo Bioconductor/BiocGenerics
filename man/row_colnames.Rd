@@ -9,7 +9,7 @@
 \title{Row and column names}
 
 \description{
-  Retrieve or set the row or column names of a matrix-like object.
+  Get or set the row or column names of a matrix-like object.
 
   NOTE: This man page is for the \code{rownames}, \code{`rownames<-`},
   \code{colnames}, and \code{`colnames<-`} \emph{S4 generic functions}

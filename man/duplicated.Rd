@@ -69,9 +69,9 @@ anyDuplicated(x, incomparables=FALSE, ...)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[IRanges]{duplicated,Ranges-method} in the \pkg{IRanges}
+    \item \link[S4Vectors]{duplicated,Rle-method} in the \pkg{S4Vectors}
           package for an example of a specific \code{duplicated} method
-          (defined for \link[IRanges]{Ranges} objects).
+          (defined for \link[S4Vectors]{Rle} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
           in the \pkg{BiocGenerics} package.

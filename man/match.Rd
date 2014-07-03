@@ -61,9 +61,9 @@ match(x, table, nomatch=NA_integer_, incomparables=NULL, ...)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[IRanges]{match,Hits,Hits-method} in the \pkg{IRanges} package
-          for an example of a specific \code{match} method (defined for
-          \link[IRanges]{Hits} objects).
+    \item \link[S4Vectors]{match,Hits,Hits-method} in the \pkg{S4Vectors}
+          package for an example of a specific \code{match} method (defined
+          for \link[S4Vectors]{Hits} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
           in the \pkg{BiocGenerics} package.
