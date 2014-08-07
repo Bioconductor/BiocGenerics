@@ -107,7 +107,10 @@ export(
     unique,
 
     ## from R/unlist.R:
-    unlist
+    unlist,
+
+    ## from R/unsplit.R:
+    unsplit
 )
 
 ### Generics for functions defined in package utils:
