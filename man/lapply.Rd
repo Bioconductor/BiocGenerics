@@ -61,9 +61,9 @@ sapply(X, FUN, ..., simplify=TRUE, USE.NAMES=TRUE)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[IRanges]{lapply,List-method} in the \pkg{IRanges} package
+    \item \link[S4Vectors]{lapply,List-method} in the \pkg{S4Vectors} package
           for an example of a specific \code{lapply} method (defined for
-          \link[IRanges]{List} objects).
+          \link[S4Vectors]{List} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
           in the \pkg{BiocGenerics} package.

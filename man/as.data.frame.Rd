@@ -50,10 +50,11 @@ as.data.frame(x, row.names=NULL, optional=FALSE, ...)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[IRanges]{as.data.frame,Ranges-method} and
-          \link[IRanges]{as.data.frame,DataFrame-method} in the \pkg{IRanges}
-          package for examples of specific \code{as.data.frame} methods
-          (defined for \link[IRanges]{Ranges} and \link[IRanges]{DataFrame}
+    \item \link[S4Vectors]{as.data.frame,DataFrame-method} in the
+          \pkg{S4Vectors} package, and
+          \link[IRanges]{as.data.frame,Ranges-method} in the \pkg{IRanges}
+          package, for examples of specific \code{as.data.frame} methods
+          (defined for \link[S4Vectors]{DataFrame} and \link[IRanges]{Ranges}
           objects, respectively).
 
     \item \link{BiocGenerics} for a summary of all the generics defined

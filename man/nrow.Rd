@@ -50,9 +50,9 @@ NCOL(x)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[IRanges]{nrow,DataFrame-method} in the \pkg{IRanges} package
-          for an example of a specific \code{nrow} method (defined for
-          \link[IRanges]{DataFrame} objects).
+    \item \link[S4Vectors]{nrow,DataFrame-method} in the \pkg{S4Vectors}
+          package for an example of a specific \code{nrow} method (defined
+          for \link[S4Vectors]{DataFrame} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
           in the \pkg{BiocGenerics} package.

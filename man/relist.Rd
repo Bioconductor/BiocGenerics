@@ -46,9 +46,9 @@ relist(flesh, skeleton)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[IRanges]{relist,ANY,List-method} in the \pkg{IRanges} package
-          for an example of a specific \code{relist} method (defined for
-          when \code{skeleton} is a \link[IRanges]{List} object).
+    \item \link[IRanges]{relist,ANY,List-method} in the \pkg{IRanges}
+          package for an example of a specific \code{relist} method (defined
+          for when \code{skeleton} is a \link[S4Vectors]{List} object).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
           in the \pkg{BiocGenerics} package.

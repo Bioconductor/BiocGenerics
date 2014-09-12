@@ -66,9 +66,9 @@ colnames(x) <- value
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[IRanges]{rownames,DataFrame-method} in the \pkg{IRanges}
+    \item \link[S4Vectors]{rownames,DataFrame-method} in the \pkg{S4Vectors}
           package for an example of a specific \code{rownames} method (defined
-          for \link[IRanges]{DataFrame} objects).
+          for \link[S4Vectors]{DataFrame} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
           in the \pkg{BiocGenerics} package.

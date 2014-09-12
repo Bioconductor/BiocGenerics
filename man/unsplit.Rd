@@ -56,7 +56,7 @@ unsplit(x, recursive=TRUE, use.names=TRUE)
 
     \item \link[IRanges]{unsplit,List-method} in the \pkg{IRanges} package
           for an example of a specific \code{unsplit} method (defined for
-          \link[IRanges]{List} objects).
+          \link[S4Vectors]{List} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
           in the \pkg{BiocGenerics} package.

@@ -53,9 +53,9 @@ rbind(..., deparse.level=1)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[IRanges]{cbind,DataFrame-method} in the \pkg{IRanges} package
-          for an example of a specific \code{cbind} method (defined for
-          \link[IRanges]{DataFrame} objects).
+    \item \link[IRanges]{cbind,DataFrame-method} in the \pkg{IRanges}
+          package for an example of a specific \code{cbind} method (defined
+          for \link[S4Vectors]{DataFrame} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
           in the \pkg{BiocGenerics} package.
