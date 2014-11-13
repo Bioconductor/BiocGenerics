@@ -19,6 +19,8 @@ ellipsize <-
 {
   if (is.null(obj))
     obj <- "NULL"
+  if (is.factor(obj))
+    obj <- as.character(obj)
   if (length(obj) > 2 * width)
     obj <- c(head(obj, width), tail(obj, width))
   str <- encodeString(obj)
