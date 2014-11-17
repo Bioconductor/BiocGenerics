@@ -154,6 +154,9 @@
 
       \item \code{\link[BiocGenerics]{normalize}}
 
+      \item \code{\link[BiocGenerics]{plotMA}}
+      \item \code{\link[BiocGenerics]{plotPCA}}
+
       \item \code{\link[BiocGenerics]{strand}},
             \code{\link[BiocGenerics]{strand<-}}
 

@@ -168,6 +168,12 @@ export(
     ## from R/normalize.R:
     normalize,
 
+    ## from R/plotMA.R
+    plotMA,
+
+    ## from R/plotPCA.R
+    plotPCA,
+
     ## from R/strand.R:
     strand, "strand<-",
 
@@ -192,8 +198,9 @@ exportMethods(
     conditions, "conditions<-",
     estimateSizeFactors, 
     estimateDispersions,
-    plotDispEsts, 
-    plotMA
+    plotDispEsts,
+    plotMA,
+    plotPCA
 )
 
 
