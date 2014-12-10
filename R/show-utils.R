@@ -11,7 +11,7 @@ labeledLine <-
     label <- paste(label, "(", length(els), ")", sep = "")
   label <- paste(label, labelSep, sep, sep = "")
   width <- getOption("width") - nchar(label)
-  line <- ellipsis(els, width, sep, ellipsis, ellipsisPos)
+  line <- ellipsize(els, width, sep, ellipsis, ellipsisPos)
   paste(label, line, "\n", sep = "")
 }
 
