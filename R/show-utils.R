@@ -73,8 +73,10 @@ ellipsize <-
 
 ## taken directly from Biobase, then added 'ellipsisPos' argument
 selectSome <- function(obj, maxToShow = 5, ellipsis = "...",
-                       ellipsisPos = c("middle", "end", "start")) 
+                       ellipsisPos = c("middle", "end", "start"), quote=FALSE) 
 {
+  if(is.character(obj) && quote)
+      obj <- sQuote(obj)
   ellipsisPos <- match.arg(ellipsisPos)
   len <- length(obj)
   if (maxToShow < 3) 
