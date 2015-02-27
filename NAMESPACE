@@ -165,13 +165,16 @@ export(
     ## from R/combine.R:
     combine,
 
+    ## from R/fileName.R:
+    fileName,
+
     ## from R/normalize.R:
     normalize,
 
-    ## from R/plotMA.R
+    ## from R/plotMA.R:
     plotMA,
 
-    ## from R/plotPCA.R
+    ## from R/plotPCA.R:
     plotPCA,
 
     ## from R/strand.R:

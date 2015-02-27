@@ -2,6 +2,16 @@
 ### Utility functions for checking/fixing user-supplied arguments
 ### -------------------------------------------------------------------------
 
+### NOTE: The stuff in this file (not exported) is a copy/paste of some of
+### the functions in S4Vectors but it doesn't really belong to BiocGenerics.
+### It seems that the only reason for having it duplicated here is that it's
+### used by the stuff in the update-utils.R file. However the stuff in
+### update-utils.R doesn't really belong to BiocGenerics either!
+###
+### TODO: This stuff would need to be moved to a more appropriate place (when
+### we have one), and then we should get rid of the duplication between the
+### functions below and the same functions in S4Vectors.
+
 ### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ### For checking only.
 ###

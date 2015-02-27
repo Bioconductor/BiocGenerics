@@ -2,7 +2,11 @@
 ### Efficient update behavior for S4 objects
 ### -------------------------------------------------------------------------
 ###
-### 'updateS4' is essentially a more efficient initialize for (value) S4 objects.
+### NOTE: The stuff in this file (not exported) doesn't really belong to
+### BiocGenerics.
+###
+### TODO: This stuff would need to be moved to a more appropriate place (when
+### we have one).
 
 unsafe_updateS4 <- function(object, ..., .slotList = list()) {
   valid_argnames <- slotNames(object)
@@ -30,6 +34,8 @@ unsafe_updateS4 <- function(object, ..., .slotList = list()) {
   listUpdate(listUpdate(object, args), .slotList)
 }
 
+### 'updateS4' is essentially a more efficient initialize for (value) S4
+### objects.
 updateS4 <- function(object, ..., check = TRUE) {
   if (!isTRUEorFALSE(check)) 
     stop("'check' must be TRUE or FALSE")

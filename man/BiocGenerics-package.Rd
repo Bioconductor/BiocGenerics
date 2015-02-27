@@ -152,6 +152,8 @@
 
       \item \code{\link[BiocGenerics]{combine}}
 
+      \item \code{\link[BiocGenerics]{fileName}}
+
       \item \code{\link[BiocGenerics]{normalize}}
 
       \item \code{\link[BiocGenerics]{plotMA}}
