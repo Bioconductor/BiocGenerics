@@ -25,14 +25,14 @@ testPackage <- function(pkgname, subdir="unitTests", pattern="^test_.*\\.R$")
     RUnit_opts$silent <- TRUE
     RUnit_opts$verbose_fail_msg <- TRUE
     options(RUnit = RUnit_opts)
-    suite <- defineTestSuite(name=paste(pkgname, "RUnit Tests"),
-                             dirs=dir,
-                             testFileRegexp=pattern,
-                             rngKind="default",
-                             rngNormalKind="default")
-    result <- runTestSuite(suite)
+    suite <- RUnit::defineTestSuite(name=paste(pkgname, "RUnit Tests"),
+                                    dirs=dir,
+                                    testFileRegexp=pattern,
+                                    rngKind="default",
+                                    rngNormalKind="default")
+    result <- RUnit::runTestSuite(suite)
     cat("\n\n")
-    printTextProtocol(result, showDetails=FALSE)
+    RUnit::printTextProtocol(result, showDetails=FALSE)
     if (length(details <- .failure_details(result)) >0) {
         cat("\nTest files with failing tests\n")
         for (i in seq_along(details)) {
