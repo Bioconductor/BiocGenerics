@@ -177,6 +177,9 @@ export(
     ## from R/plotPCA.R:
     plotPCA,
 
+    ## from R/score.R:
+    score, "score<-",
+
     ## from R/strand.R:
     strand, "strand<-",
 

@@ -68,10 +68,16 @@ unstrand(x)
 strand
 showMethods("strand")
 
+`strand<-`
+showMethods("strand<-")
+
 library(GenomicRanges)
+
 showMethods("strand")
 selectMethod("strand", "missing")
 strand()
+
+showMethods("strand<-")
 }
 
 \keyword{methods}
