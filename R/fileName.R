@@ -2,5 +2,5 @@
 ### The fileName() generic
 ### -------------------------------------------------------------------------
 
-setGeneric("fileName", function(x, ...) standardGeneric("fileName"))
+setGeneric("fileName", function(object, ...) standardGeneric("fileName"))
 

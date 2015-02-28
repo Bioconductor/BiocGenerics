@@ -9,11 +9,11 @@
 }
 
 \usage{
-fileName(x, ...)
+fileName(object, ...)
 }
 
 \arguments{
-  \item{x}{
+  \item{object}{
     An object with a file name.
   }
   \item{...}{
