@@ -171,6 +171,10 @@ export(
     ## from R/normalize.R:
     normalize,
 
+    ## from R/organism_species.R:
+    organism, "organism<-",
+    species, "species<-",
+
     ## from R/plotMA.R:
     plotMA,
 

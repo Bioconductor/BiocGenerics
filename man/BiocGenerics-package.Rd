@@ -156,6 +156,11 @@
 
       \item \code{\link[BiocGenerics]{normalize}}
 
+      \item \code{\link[BiocGenerics]{organism}},
+            \code{\link[BiocGenerics]{organism<-}},
+            \code{\link[BiocGenerics]{species}},
+            \code{\link[BiocGenerics]{species<-}}
+
       \item \code{\link[BiocGenerics]{plotMA}}
       \item \code{\link[BiocGenerics]{plotPCA}}
 
