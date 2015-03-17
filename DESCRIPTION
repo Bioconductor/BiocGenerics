@@ -8,7 +8,8 @@ biocViews: Infrastructure
 Depends: methods, utils, graphics, stats, parallel
 Imports: methods, utils, graphics, stats, parallel
 Suggests: Biobase, S4Vectors, IRanges, GenomicRanges, AnnotationDbi,
-	oligoClasses, oligo, affyPLM, flowClust, affy, DESeq2, MSnbase, RUnit
+	oligoClasses, oligo, affyPLM, flowClust, affy, DESeq2, MSnbase,
+	annotate, RUnit
 License: Artistic-2.0
 Collate: S3-classes-as-S4-classes.R
 	normarg-utils.R
