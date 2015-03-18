@@ -12,19 +12,16 @@
 }
 
 \usage{
-organism(object, ...)
-organism(object, ...) <- value
+organism(object)
+organism(object) <- value
 
-species(object, ...)
-species(object, ...) <- value
+species(object)
+species(object) <- value
 }
 
 \arguments{
   \item{object}{
     An object to get or set the organism or species of.
-  }
-  \item{...}{
-    Additional arguments, for use in specific methods.
   }
   \item{value}{
     The organism or species to set on \code{object}.
