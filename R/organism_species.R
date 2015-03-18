@@ -2,15 +2,15 @@
 ### The organism(), `organism<-`(), species(), and `species<-`() generics
 ### -------------------------------------------------------------------------
 
-setGeneric("organism", function(x, ...) standardGeneric("organism"))
+setGeneric("organism", function(object, ...) standardGeneric("organism"))
 
-setGeneric("organism<-", signature="x",
-    function(x, ..., value) standardGeneric("organism<-")
+setGeneric("organism<-", signature="object",
+    function(object, ..., value) standardGeneric("organism<-")
 )
 
-setGeneric("species", function(x, ...) standardGeneric("species"))
+setGeneric("species", function(object, ...) standardGeneric("species"))
 
-setGeneric("species<-", signature="x",
-    function(x, ..., value) standardGeneric("species<-")
+setGeneric("species<-", signature="object",
+    function(object, ..., value) standardGeneric("species<-")
 )
 
