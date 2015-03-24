@@ -29,14 +29,33 @@ species(object) <- value
 }
 
 \value{
-  TODO: Clarify what \code{organism()} and \code{species()} are supposed
-  to return. See
-  \url{https://stat.ethz.ch/pipermail/bioc-devel/2015-March/007138.html}
-  for why this is needed.
+  \code{organism} should return the \emph{scientific name} (i.e. genus and
+  species, or genus and species and subspecies) of the organism. Preferably
+  in the format \code{"Genus species"} (e.g. \code{"Homo sapiens"})
+  or \code{"Genus species subspecies"} (e.g.
+  \code{"Homo sapiens neanderthalensis"}).
+
+  \code{species} should of course return the species of the organism.
+  Unfortunately there is a long history of misuse of this accessor in
+  Bioconductor so its usage is now discouraged (starting with BioC 3.1).
+}
+
+\note{
+  TO DEVELOPPERS:
+
+  \code{species} has been historically misused in many places in Bioconductor
+  and is redundant with \code{organism}. So implementing the \code{species}
+  accessor is now discouraged (starting with BioC 3.1). The \code{organism}
+  accessor (returning the \emph{scientific name}) should be implemented
+  instead.
 }
 
 \seealso{
   \itemize{
+    \item \url{http://bioconductor.org/packages/release/BiocViews.html#___Organism}
+          for browsing the annotation packages currently available in
+          Bioconductor by organism.
+
     \item \code{\link[methods]{showMethods}} for displaying a summary of the
           methods defined for a given generic function.
 
