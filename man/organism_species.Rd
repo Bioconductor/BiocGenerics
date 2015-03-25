@@ -1,5 +1,6 @@
 \name{organism_species}
 
+\alias{organism_species}
 \alias{organism}
 \alias{organism<-}
 \alias{species}
