@@ -1,4 +1,4 @@
-citEntry(entry="Bioconductor:2015",
+citEntry(entry="Article",
   author = "Huber, W.  and Carey, V. J.  and Gentleman, R.  and Anders, S.  and Carlson, M.  and Carvalho, B. S.  and Bravo, H. C.  and Davis, S.  and Gatto, L.  and Girke, T.  and Gottardo, R.  and Hahne, F.  and Hansen, K. D.  and Irizarry, R. A.  and Lawrence, M.  and Love, M. I.  and MacDonald, J.  and Obenchain, V.  and {Ole\'s}, A. K.  and {Pag\`es}, H.  and Reyes, A.  and Shannon, P.  and Smyth, G. K.  and Tenenbaum, D.  and Waldron, L.  and Morgan, M. ",
   title = "{O}rchestrating high-throughput genomic analysis with {B}ioconductor",
   journal = "Nature Methods",
