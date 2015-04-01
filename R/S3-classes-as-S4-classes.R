@@ -24,3 +24,5 @@ setOldClass("AsIs")
                                 # Warning: replacing previous import
                                 # ‘.__C__table’ when loading ‘BiocGenerics’
 
+setOldClass("dist")
+

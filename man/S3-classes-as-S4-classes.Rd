@@ -19,6 +19,7 @@
 \alias{AsIs-class}
 %\alias{table-class}
 %\alias{xtabs-class}
+\alias{dist-class}
 
 
 \title{S3 classes as S4 classes}
@@ -33,14 +34,14 @@
   S3 classes currently turned into S4 classes:
   \itemize{
     \item connection class and subclasses:
-          connection,
+          \link{connection},
           file, url, gzfile, bzfile, unz, pipe,
           fifo, sockconn, terminal, textConnection,
           gzcon.
           Addtitionally the characterORconnection S4 class is defined as
           the union of classes character and connection.
 
-    \item others: AsIs
+    \item others: \link{AsIs}, \link{dist}
   }
 }
 

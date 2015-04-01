@@ -11,8 +11,9 @@ exportClasses(
     fifo, sockconn, terminal, textConnection,
     gzcon,
     characterORconnection,
-    AsIs
-    #table, xtabs
+    AsIs,
+    #table, xtabs,
+    dist
 )
 
 
