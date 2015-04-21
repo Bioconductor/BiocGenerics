@@ -20,14 +20,15 @@ packageRoot <- function(path)
 
 packageInfo <- function(path)
 {
-    as.data.frame(read.dcf(file.path(path, "DESCRIPTION")), stringsAsFactors=FALSE)
+    as.data.frame(read.dcf(file.path(path, "DESCRIPTION")),
+                  stringsAsFactors=FALSE)
 }
 
 testPackage <- function(pkgname = NULL,
                         subdir="unitTests",
                         pattern="^test_.*\\.R$",
                         path = getwd(),
-                        useInstalled = !interactive())
+                        useSourceTests = interactive())
 {
     .failure_details <- function(result) {
         res <- result[[1L]]
@@ -41,29 +42,28 @@ testPackage <- function(pkgname = NULL,
         } else list()
     }
 
-    root <- packageRoot(path)
+    if (useSourceTests) {
+        root <- packageRoot(path)
+        if (is.null(root))
+            stop("could not find package root directory")
 
-    if (is.null(pkgname)) {
-        if (is.null(root)) {
-            stop("must specify a ", sQuote("pkgname"),
-                 " if the working directory is not within a package")
-        }
-        pkgname <- packageInfo(root)$Package
-    }
+        pkgname0 <- packageInfo(root)$Package
+        if (!is.null(pkgname) && !identical(pkgname, pkgname0))
+            stop("'pkgname' and inferred DESCRIPTION 'Package' differ")
+        pkgname <- pkgname0
 
-    dir <- ""
-    if (useInstalled) {
+        dir <- file.path(root, subdir)
+        if (!file.exists(dir))          # try inst/subdir
+            dir <- file.path(root, "inst", subdir)
+    } else {
+        if (is.null(pkgname))
+            stop("'pkgname' required when using installed tests")
         library(pkgname, character.only = TRUE, quietly=TRUE)
         dir <- system.file(subdir, package=pkgname)
     }
-    if (dir == "") {
-        if (!is.null(root)) {
-            ## try looking for the subdir in inst/subdir
-            dir <- file.path(root, "inst", subdir)
-        }
-    }
+
     if (!file.exists(dir)) {
-        stop("unable to find unit tests, no ", sQuote(subdir), " dir")
+        stop("unable to find unit tests, no subdir ", sQuote(subdir))
     }
 
     library("RUnit", quietly=TRUE)
@@ -71,7 +71,8 @@ testPackage <- function(pkgname = NULL,
     RUnit_opts$verbose <- 0L
     RUnit_opts$silent <- TRUE
     RUnit_opts$verbose_fail_msg <- TRUE
-    options(RUnit = RUnit_opts)
+    oopt <- options(RUnit = RUnit_opts)
+    on.exit(options(oopt))
     suite <- RUnit::defineTestSuite(name=paste(pkgname, "RUnit Tests"),
                                     dirs=dir,
                                     testFileRegexp=pattern,
