@@ -42,26 +42,27 @@ testPackage <- function(pkgname = NULL,
         } else list()
     }
 
-    if (useSourceTests) {
+    if (is.null(pkgname) || useSourceTests) {
         root <- packageRoot(path)
         if (is.null(root))
-            stop("could not find package root directory")
+            stop("could not infer package root directory")
 
         pkgname0 <- packageInfo(root)$Package
-        if (!is.null(pkgname) && !identical(pkgname, pkgname0))
+        if (is.null(pkgname)) {
+            pkgname <- pkgname0
+        } else if (!identical(pkgname, pkgname0)) {
             stop("'pkgname' and inferred DESCRIPTION 'Package' differ")
-        pkgname <- pkgname0
-
-        dir <- file.path(root, subdir)
-        if (!file.exists(dir))          # try inst/subdir
-            dir <- file.path(root, "inst", subdir)
+        }
     } else {
-        if (is.null(pkgname))
-            stop("'pkgname' required when using installed tests")
-        library(pkgname, character.only = TRUE, quietly=TRUE)
-        dir <- system.file(subdir, package=pkgname)
+        root <- system.file(package=pkgname)
     }
 
+    library(pkgname, character.only = TRUE, quietly=TRUE)
+
+    dir <- file.path(root, subdir)
+    if (!file.exists(dir)) {            # try inst/subdir
+        dir <- file.path(root, "inst", subdir)
+    }
     if (!file.exists(dir)) {
         stop("unable to find unit tests, no subdir ", sQuote(subdir))
     }
