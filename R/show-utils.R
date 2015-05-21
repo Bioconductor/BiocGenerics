@@ -3,14 +3,31 @@
 ### -------------------------------------------------------------------------
 ###
 
+padToAlign <- function(x) {
+    whitespace <- paste(rep(" ", getOption("width")), collapse="")
+    padlen <- max(nchar(x)) - nchar(x)
+    substring(whitespace, 1L, padlen)
+}
+
 labeledLine <-
-  function(label, els, count = TRUE, labelSep = ":", sep = " ", ellipsis = "...",
-           ellipsisPos = c("middle", "end", "start"))
+    function(label, els, count = TRUE, labelSep = ":", sep = " ",
+             ellipsis = "...", ellipsisPos = c("middle", "end", "start"),
+             vectorized = FALSE, pad = vectorized)
 {
-  if (count && !is.null(els))
-    label <- paste(label, "(", length(els), ")", sep = "")
+  if (!is.null(els)) {
+      label[count] <- paste(label, "(",
+                            if (vectorized) lengths(els) else length(els),
+                            ")", sep = "")[count]
+  }
   label <- paste(label, labelSep, sep, sep = "")
+  if (pad) {
+      label <- paste0(label, padToAlign(label))
+  }
   width <- getOption("width") - nchar(label)
+  ellipsisPos <- match.arg(ellipsisPos)
+  if (vectorized) {
+      ellipsize <- Vectorize(ellipsize)
+  }
   line <- ellipsize(els, width, sep, ellipsis, ellipsisPos)
   paste(label, line, "\n", sep = "")
 }
