@@ -57,6 +57,9 @@ export(
     ## from R/get.R:
     get, mget,
 
+    ## from R/grepl.R:
+    grep, grepl,
+
     ## from R/is.unsorted.R:
     is.unsorted,
     
