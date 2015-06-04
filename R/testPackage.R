@@ -27,8 +27,7 @@ packageInfo <- function(path)
 testPackage <- function(pkgname = NULL,
                         subdir="unitTests",
                         pattern="^test_.*\\.R$",
-                        path = getwd(),
-                        useSourceTests = interactive())
+                        path = getwd())
 {
     .failure_details <- function(result) {
         res <- result[[1L]]
@@ -42,7 +41,7 @@ testPackage <- function(pkgname = NULL,
         } else list()
     }
 
-    if (is.null(pkgname) || useSourceTests) {
+    if (is.null(pkgname)) {
         root <- packageRoot(path)
         if (is.null(root))
             stop("could not infer package root directory")
