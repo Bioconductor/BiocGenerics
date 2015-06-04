@@ -53,7 +53,7 @@ rbind(..., deparse.level=1)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[IRanges]{cbind,DataFrame-method} in the \pkg{IRanges}
+    \item \link[S4Vectors]{cbind,DataFrame-method} in the \pkg{S4Vectors}
           package for an example of a specific \code{cbind} method (defined
           for \link[S4Vectors]{DataFrame} objects).
 

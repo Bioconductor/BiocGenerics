@@ -18,7 +18,7 @@
 }
 
 \usage{
-unsplit(x, recursive=TRUE, use.names=TRUE)
+unsplit(value, f, drop=FALSE)
 }
 
 \arguments{
