@@ -9,7 +9,7 @@
 setGeneric("grep",
            function (pattern, x, ignore.case = FALSE, perl = FALSE,
                      value = FALSE, fixed = FALSE, useBytes = FALSE,
-                     invert = FALSe) standardGeneric("grep"),
+                     invert = FALSE) standardGeneric("grep"),
            signature = c("pattern", "x"))
 
 setGeneric("grepl",
