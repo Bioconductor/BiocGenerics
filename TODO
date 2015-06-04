@@ -43,6 +43,3 @@ o Functions defined in base R that would need to be explicitly promoted
     - runmed(): implicit generic dispatches on (x, k, endrule, algorithm,
       print.level). Explicit generic should dispatch on (x) only.
 
-o Move all the generics for count datasets defined in Biobase (and used by the
-  DESeq and DEXSeq packages) to BiocGenerics.
-
