@@ -1,5 +1,5 @@
 ### =========================================================================
-### Efficient update behavior for S4 objects
+### Efficient multiple slots replacement of an S4 object
 ### -------------------------------------------------------------------------
 ###
 ### NOTE: The stuff in this file (not exported) doesn't really belong to
@@ -8,7 +8,7 @@
 ### TODO: This stuff would need to be moved to a more appropriate place (when
 ### we have one).
 
-unsafe_updateS4 <- function(object, ..., .slotList = list()) {
+unsafe_replaceSlots <- function(object, ..., .slotList = list()) {
   valid_argnames <- slotNames(object)
   args <- extraArgsAsList(valid_argnames, ...)
   firstTime <- TRUE
@@ -34,14 +34,21 @@ unsafe_updateS4 <- function(object, ..., .slotList = list()) {
   listUpdate(listUpdate(object, args), .slotList)
 }
 
-### 'updateS4' is essentially a more efficient initialize for (value) S4
+### 'replaceSlots' is essentially a more efficient initialize for (value) S4
 ### objects.
-updateS4 <- function(object, ..., check = TRUE) {
+replaceSlots <- function(object, ..., check = TRUE) {
   if (!isTRUEorFALSE(check)) 
     stop("'check' must be TRUE or FALSE")
-  object <- unsafe_updateS4(object, ...)
+  object <- unsafe_replaceSlots(object, ...)
   if (check) {
     validObject(object)
   }
   object
 }
+
+updateS4 <- function(...)
+{
+    .Deprecated("replaceSlots")
+    replaceSlots(...)
+}
+

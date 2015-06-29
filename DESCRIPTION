@@ -1,7 +1,7 @@
 Package: BiocGenerics
 Title: S4 generic functions for Bioconductor
 Description: S4 generic functions needed by many Bioconductor packages.
-Version: 0.15.2
+Version: 0.15.3
 Author: The Bioconductor Dev Team
 Maintainer: Bioconductor Package Maintainer <maintainer@bioconductor.org>
 biocViews: Infrastructure
@@ -13,7 +13,7 @@ Suggests: Biobase, S4Vectors, IRanges, GenomicRanges, AnnotationDbi,
 License: Artistic-2.0
 Collate: S3-classes-as-S4-classes.R
 	normarg-utils.R
-	update-utils.R
+	replaceSlots.R
 	show-utils.R
 	append.R
 	as.data.frame.R
