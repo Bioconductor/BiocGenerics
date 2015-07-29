@@ -140,6 +140,12 @@ export(
     ## from R/density.R:
     density,
 
+    ## from R/IQR.R:
+    IQR,
+
+    ## from R/mad.R:
+    mad,
+
     ## from R/residuals.R:
     residuals,
 
