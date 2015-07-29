@@ -94,6 +94,8 @@
             \code{BiocGenerics::\link[BiocGenerics]{width}},
             \code{BiocGenerics::\link[BiocGenerics]{width<-}}
 
+      \item \code{BiocGenerics::\link[BiocGenerics]{subset}}
+
       \item \code{BiocGenerics::\link[BiocGenerics]{table}}
 
       \item \code{BiocGenerics::\link[BiocGenerics]{tapply}}

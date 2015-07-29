@@ -101,6 +101,9 @@ export(
     end, "end<-",
     width, "width<-",
 
+    ## from R/subset.R:
+    subset,
+
     ## from R/table.R:
     table,
 
