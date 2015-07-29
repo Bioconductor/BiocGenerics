@@ -9,6 +9,12 @@ padToAlign <- function(x) {
     substring(whitespace, 1L, padlen)
 }
 
+qualifyByName <- function(x, qualifier="=") {
+    aliased <- nzchar(names(x))
+    x[aliased] <- paste0(names(x)[aliased], qualifier, x[aliased])
+    x
+}
+
 labeledLine <-
     function(label, els, count = TRUE, labelSep = ":", sep = " ",
              ellipsis = "...", ellipsisPos = c("middle", "end", "start"),
@@ -18,8 +24,11 @@ labeledLine <-
       label[count] <- paste(label, "(",
                             if (vectorized) lengths(els) else length(els),
                             ")", sep = "")[count]
+      if (!is.null(names(els))) {
+          els <- qualifyByName(els)
+      }
   }
-  label <- paste(label, labelSep, sep, sep = "")
+  label <- paste(label, labelSep, " ", sep = "")
   if (pad) {
       label <- paste0(label, padToAlign(label))
   }
