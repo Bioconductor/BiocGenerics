@@ -10,8 +10,10 @@ padToAlign <- function(x) {
 }
 
 qualifyByName <- function(x, qualifier="=") {
-    aliased <- nzchar(names(x))
-    x[aliased] <- paste0(names(x)[aliased], qualifier, x[aliased])
+    nms <- names(x)
+    x <- as.character(x)
+    aliased <- nzchar(nms)
+    x[aliased] <- paste0(nms[aliased], qualifier, x[aliased])
     x
 }
 
