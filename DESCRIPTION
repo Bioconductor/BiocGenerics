@@ -14,7 +14,6 @@ License: Artistic-2.0
 Collate: S3-classes-as-S4-classes.R
 	normarg-utils.R
 	replaceSlots.R
-	show-utils.R
 	append.R
 	as.data.frame.R
 	as.list.R
