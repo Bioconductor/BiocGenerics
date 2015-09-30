@@ -65,7 +65,7 @@ lengths(x, use.names=TRUE)
 }
 
 \examples{
-lengths  # note the dispatch on the 'x' args only
+lengths  # note the dispatch on the 'x' arg only
 showMethods("lengths")
 selectMethod("lengths", "ANY")  # the default method
 }
