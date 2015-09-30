@@ -117,7 +117,10 @@ export(
     unlist,
 
     ## from R/unsplit.R:
-    unsplit
+    unsplit,
+
+    ## from R/lengths.R:
+    lengths 
 )
 
 ### Generics for functions defined in package utils:
