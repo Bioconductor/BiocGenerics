@@ -62,9 +62,12 @@ export(
 
     ## from R/is.unsorted.R:
     is.unsorted,
-    
+ 
     ## from R/lapply.R:
     lapply, sapply,
+
+    ## from R/lengths.R:
+    lengths,
 
     ## from R/mapply.R:
     mapply,
@@ -117,10 +120,7 @@ export(
     unlist,
 
     ## from R/unsplit.R:
-    unsplit,
-
-    ## from R/lengths.R:
-    lengths 
+    unsplit
 )
 
 ### Generics for functions defined in package utils:

@@ -58,6 +58,8 @@
       \item \code{BiocGenerics::\link[BiocGenerics]{lapply}},
             \code{BiocGenerics::\link[BiocGenerics]{sapply}}
 
+      \item \code{BiocGenerics::\link[BiocGenerics]{lengths}}
+
       \item \code{BiocGenerics::\link[BiocGenerics]{mapply}}
 
       \item \code{BiocGenerics::\link[BiocGenerics]{match}}
