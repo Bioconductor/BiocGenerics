@@ -40,7 +40,7 @@ rank(x, na.last=TRUE,
 }
 
 \note{
-  TO DEVELOPPERS:
+  TO DEVELOPERS:
 
   See note in \code{?BiocGenerics::\link[BiocGenerics]{order}} 
   about "stable" order.
