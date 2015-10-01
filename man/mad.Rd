@@ -17,7 +17,7 @@
 }
 
 \usage{
-mad(x, center = median(x, na.rm=na.rm), constant = 1.4826,
+mad(x, center = median(x), constant = 1.4826,
     na.rm = FALSE, low = FALSE, high = FALSE)
 }
 
