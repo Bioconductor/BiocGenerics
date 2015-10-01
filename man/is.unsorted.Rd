@@ -38,7 +38,7 @@ is.unsorted(x, na.rm=FALSE, strictly=FALSE)
 }
 
 \note{
-  TO DEVELOPPERS:
+  TO DEVELOPERS:
 
   The \code{is.unsorted} method for specific vector-like objects should
   adhere to the same underlying order used by the

@@ -49,6 +49,8 @@ lengths(x, use.names=TRUE)
   See \code{?base::\link[base]{NROW}} for the difference between
   \code{length()} and \code{NROW()}.
   This difference is illustrated in the Examples section below.
+
+  This is a temporary situation that will be addressed in BioC 3.3.
 }
 
 \seealso{
@@ -86,7 +88,7 @@ groups <- c("group1", "group2")
 df <- data.frame(
     a=letters[1:10],
     i=101:110,
-    group=rep(factor(groups, levels=groups), c(3, 7))
+    group=rep(factor(groups, levels=groups), c(6, 4))
 )
 x1 <- split(df, df$group)
 x2 <- split(DataFrame(df), df$group)

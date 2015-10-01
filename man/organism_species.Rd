@@ -42,7 +42,7 @@ species(object) <- value
 }
 
 \note{
-  TO DEVELOPPERS:
+  TO DEVELOPERS:
 
   \code{species} has been historically misused in many places in Bioconductor
   and is redundant with \code{organism}. So implementing the \code{species}

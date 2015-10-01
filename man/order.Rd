@@ -43,7 +43,7 @@ order(..., na.last=TRUE, decreasing=FALSE)
 }
 
 \note{
-  TO DEVELOPPERS:
+  TO DEVELOPERS:
 
   Specific \code{order} methods should preferably be made "stable" for
   consistent behavior across platforms and consistency with
