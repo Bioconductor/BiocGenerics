@@ -3,5 +3,4 @@
 ### -------------------------------------------------------------------------
 ###
 
-setGeneric("IQR", function(x, na.rm=FALSE, type = 7) standardGeneric("IQR"),
-           signature="x")
+setGeneric("IQR", signature="x")
