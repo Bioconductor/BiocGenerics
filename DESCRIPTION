@@ -26,11 +26,11 @@ Collate: S3-classes-as-S4-classes.R
 	funprog.R
 	get.R
 	grep.R
-  IQR.R
+	IQR.R
 	is.unsorted.R
 	lapply.R
         lengths.R
-  mad.R
+	mad.R
 	mapply.R
 	match.R
 	nrow.R
