@@ -181,6 +181,9 @@ export(
     ## from R/combine.R:
     combine,
 
+    ## from R/dbconn.R:
+    dbconn, dbfile,
+
     ## from R/fileName.R:
     fileName,
 
@@ -202,9 +205,6 @@ export(
 
     ## from R/strand.R:
     strand, "strand<-",
-
-    ## from R/dbconn.R:
-    dbconn, dbfile,
 
     ## from R/updateObject.R:
     updateObject,

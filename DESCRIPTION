@@ -58,6 +58,7 @@ Collate: S3-classes-as-S4-classes.R
 	clusterApply.R
 	annotation.R
 	combine.R
+	dbconn.R
 	dge.R
 	fileName.R
 	normalize.R
@@ -66,7 +67,6 @@ Collate: S3-classes-as-S4-classes.R
 	plotPCA.R
 	score.R
 	strand.R
-	dbconn.R
 	updateObject.R
 	testPackage.R
 	test_BiocGenerics_package.R

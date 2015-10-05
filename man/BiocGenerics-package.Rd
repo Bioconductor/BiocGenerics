@@ -156,6 +156,9 @@
 
       \item \code{\link[BiocGenerics]{combine}}
 
+      \item \code{\link[BiocGenerics]{dbconn}},
+            \code{\link[BiocGenerics]{dbfile}}
+
       \item \code{\link[BiocGenerics]{fileName}}
 
       \item \code{\link[BiocGenerics]{normalize}}
@@ -173,9 +176,6 @@
 
       \item \code{\link[BiocGenerics]{strand}},
             \code{\link[BiocGenerics]{strand<-}}
-
-      \item \code{\link[BiocGenerics]{dbconn}},
-            \code{\link[BiocGenerics]{dbfile}}
 
       \item \code{\link[BiocGenerics]{updateObject}}
     }
