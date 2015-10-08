@@ -16,18 +16,16 @@
 }
 
 \usage{
-## Unlike the standard rep.int() function defined in base (default method),
-## the generic function described here have a '...' argument (instead of
-## 'times').
-rep.int(x, ...)
+rep.int(x, times)
 }
 
 \arguments{
   \item{x}{
     The object to replicate (typically vector-like).
   }
-  \item{...}{
-    Additional arguments, for use in specific \code{rep.int} methods.
+  \item{times}{
+    See \code{?base::\link[base]{rep.int}} for a description of
+    this argument.
   }
 }
 
