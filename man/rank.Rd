@@ -18,7 +18,7 @@
 
 \usage{
 rank(x, na.last=TRUE,
-     ties.method=c("average", "first", "random", "max", "min"))
+     ties.method=c("average", "first", "last", "random", "max", "min"))
 }
 
 \arguments{

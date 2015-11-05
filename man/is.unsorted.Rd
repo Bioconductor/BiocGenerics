@@ -12,11 +12,11 @@
   See \code{?base::\link[base]{is.unsorted}} for the default method
   (defined in the \pkg{base} package).
   Bioconductor packages can define specific methods for objects
-  not supported by the default method.
+  (typically vector-like) not supported by the default method.
 }
 
 \usage{
-is.unsorted(x, na.rm=FALSE, strictly=FALSE)
+is.unsorted(x, na.rm=FALSE, strictly=FALSE, ...)
 }
 
 \arguments{
@@ -26,6 +26,12 @@ is.unsorted(x, na.rm=FALSE, strictly=FALSE)
   \item{na.rm, strictly}{
     See \code{?base::\link[base]{is.unsorted}} for a description of
     these arguments.
+  }
+  \item{...}{
+    Additional arguments, for use in specific methods.
+
+    Note that \code{base::\link[base]{is.unsorted}} (the default method) only
+    takes the \code{x}, \code{na.rm}, and \code{strictly} arguments.
   }
 }
 
@@ -57,9 +63,10 @@ is.unsorted(x, na.rm=FALSE, strictly=FALSE)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[S4Vectors]{is.unsorted,Rle-method} in the \pkg{S4Vectors}
-          package for an example of a specific \code{is.unsorted} method
-          (defined for \link[S4Vectors]{Rle} objects).
+    \item \link[GenomicRanges]{is.unsorted,GenomicRanges-method} in
+          the \pkg{GenomicRanges} package for an example of a specific
+          \code{is.unsorted} method (defined for
+          \link[GenomicRanges]{GenomicRanges} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
           in the \pkg{BiocGenerics} package.

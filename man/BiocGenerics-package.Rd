@@ -53,6 +53,9 @@
       \item \code{BiocGenerics::\link[BiocGenerics]{get}},
             \code{BiocGenerics::\link[BiocGenerics]{mget}}
 
+      \item \code{BiocGenerics::\link[BiocGenerics]{grep}},
+            \code{BiocGenerics::\link[BiocGenerics]{grepl}}
+
       \item \code{BiocGenerics::\link[BiocGenerics]{is.unsorted}}
 
       \item \code{BiocGenerics::\link[BiocGenerics]{lapply}},

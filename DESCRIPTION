@@ -1,7 +1,7 @@
 Package: BiocGenerics
 Title: S4 generic functions for Bioconductor
 Description: S4 generic functions needed by many Bioconductor packages.
-Version: 0.17.0
+Version: 0.17.1
 Author: The Bioconductor Dev Team
 Maintainer: Bioconductor Package Maintainer <maintainer@bioconductor.org>
 biocViews: Infrastructure
@@ -26,11 +26,9 @@ Collate: S3-classes-as-S4-classes.R
 	funprog.R
 	get.R
 	grep.R
-	IQR.R
 	is.unsorted.R
 	lapply.R
-        lengths.R
-	mad.R
+	lengths.R
 	mapply.R
 	match.R
 	nrow.R
@@ -52,6 +50,8 @@ Collate: S3-classes-as-S4-classes.R
 	boxplot.R
 	image.R
 	density.R
+	IQR.R
+	mad.R
 	residuals.R
 	weights.R
 	xtabs.R
