@@ -11,6 +11,15 @@
 ### Utilities.
 ###
 
+updateObjectFrom_errf <- function(..., verbose=FALSE) {
+    function(err) {
+        if (verbose)
+            message(..., ":\n    ", conditionMessage(err),
+                    "\n    trying next method...")
+        NULL
+    }
+}
+
 getObjectSlots <- function(object)  # object, rather than class defn, slots
 {
     if (!is.object(object) || isVirtualClass(class(object)))
@@ -45,15 +54,6 @@ updateObjectFromSlots <- function(object, objclass=class(object),
                     "returning original object")
         return(object)
     }
-    errf <- function(...)
-    {
-        function(err) {
-            if (verbose)
-                message(..., ":\n    ", conditionMessage(err),
-                        "\n    trying next method...")
-            NULL
-        }
-    }
     if (verbose)
         message("updateObjectFromSlots(object = '", class(object),
                 "' class = '", objclass, "')")
@@ -68,9 +68,9 @@ updateObjectFromSlots <- function(object, objclass=class(object),
                                     updateObject, ..., verbose=verbose)
     toDrop <- which(!names(objectSlots) %in% classSlots)
     if (length(toDrop) > 0L) {
-        warning("dropping slot(s) ",
-                paste(names(objectSlots)[toDrop],collapse=", "),
-                " from object = '", class(object), "'")
+        warning("dropping slot(s) '",
+                paste(names(objectSlots)[toDrop], collapse="', '"),
+                "' from object = '", class(object), "'")
         objectSlots <- objectSlots[-toDrop]
     }
     ## ad-hoc methods for creating new instances
@@ -80,8 +80,9 @@ updateObjectFromSlots <- function(object, objclass=class(object),
             message("heuristic updateObjectFromSlots, method 1")
         res <- tryCatch({
                    do.call(new, c(objclass, objectSlots[joint]))
-               }, error=errf("'new(\"", objclass,
-                             "\", ...)' from slots failed"))
+               }, error=updateObjectFrom_errf(
+                      "'new(\"", objclass, "\", ...)' from slots failed",
+                      verbose=verbose))
     }
     if (is.null(res)) {
         if (verbose)
@@ -92,9 +93,64 @@ updateObjectFromSlots <- function(object, objclass=class(object),
                        slot(obj, slt) <- updateObject(objectSlots[[slt]],
                                                       ..., verbose=verbose)
                    obj
-               }, error=errf("failed to add slots to 'new(\"", objclass,
-                             "\", ...)'"))
+               }, error=updateObjectFrom_errf(
+                      "failed to add slots to 'new(\"", objclass, "\", ...)'",
+                      verbose=verbose))
     }
+    if (is.null(res))
+        stop("could not updateObject to class '", objclass, "'",
+             "\nconsider defining an 'updateObject' method for class '",
+             class(object), "'")
+    res
+}
+
+getObjectFields <- function(object)
+{
+    value <- object$.refClassDef@fieldClasses
+    for (field in names(value))
+        value[[field]] <- object$field(field)
+    value
+}
+
+updateObjectFromFields <-
+    function(object, objclass=class(object), ..., verbose=FALSE)
+{
+    if (verbose)
+        message("updateObjectFromFields(object = '", class(object),
+                "' objclass = '", objclass, "')")
+
+    classFields <- names(getRefClass(objclass)$fields())
+    if (is.null(classFields)) {
+        if (verbose)
+            message("definition of '", objclass, "' has no fields; ",
+                    "regurning original object")
+        return(object)
+    }
+
+    objectFields <- getObjectFields(object)
+
+    toUpdate <- joint <- intersect(names(objectFields), classFields)
+    objectFields[toUpdate] <-
+        lapply(objectFields[toUpdate], updateObject, ..., verbose=verbose)
+    toDrop <- which(!names(objectFields) %in% classFields)
+    if (length(toDrop) > 0L) {
+        warning("dropping fields(s) '",
+                paste(names(objectFields)[toDrop], collapse="', '"),
+                "' from object = '", class(object), "'")
+        objectFields <- objectFields[-toDrop]
+    }
+
+        ## ad-hoc methods for creating new instances
+
+    if (verbose)
+        message("heuristic updateObjectFromFields, method 1")
+    res <- tryCatch({
+        do.call(new, c(objclass, objectFields[joint]))
+    }, error = updateObjectFrom_errf(
+           "'new(\"", objclass, "\", ...' from slots failed",
+           verbose=verbose)
+    )
+
     if (is.null(res))
         stop("could not updateObject to class '", objclass, "'",
              "\nconsider defining an 'updateObject' method for class '",
@@ -180,3 +236,20 @@ setMethod("updateObject", "environment",
     }
 )
 
+setMethod("updateObject", "formula",
+    function(object, ..., verbose=FALSE)
+{
+    if (verbose)
+        ## object@.Environment could be too general, e.g,. R_GlobalEnv
+        message("updateObject(object = 'formula'); ignoring .Environment")
+    object
+})
+
+setMethod("updateObject", "envRefClass",
+    function(object, ..., verbose=FALSE)
+{
+    msg <- sprintf("updateObject(object= '%s')", class(object))
+    if (verbose)
+        message(msg)
+    updateObjectFromFields(object, ..., verbose=verbose)
+})

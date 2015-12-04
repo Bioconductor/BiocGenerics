@@ -91,3 +91,31 @@ test_updateObject_setClass <- function()
     removeClass("A", where=.GlobalEnv)
 }
 
+test_updateObject_refClass <- function()
+{
+    cls <- ".__test_updateObject_refClassA"
+    .A <- setRefClass(cls, fields=list(x="numeric", y="numeric"),
+                      where=.GlobalEnv)
+
+    a <- .A()
+    checkTrue(all.equal(a, updateObject(a)))
+
+    a <- .A(x=1:5, y=5:1)
+    checkTrue(all.equal(a, updateObject(a)))
+
+    .A <- setRefClass(cls, fields=list(x="numeric", y="numeric", z="numeric"),
+                      where=.GlobalEnv)
+    checkTrue(all.equal(.A(x=1:5, y=5:1, z=numeric()), updateObject(a)))
+
+    .A <- setRefClass(cls, fields=list(x="numeric"))
+    warn <- FALSE
+    value <- withCallingHandlers(updateObject(a), warning=function(w) {
+        txt <- "dropping fields(s) 'y' from object = '.__test_updateObject_refClassA'"
+        warn <<- identical(txt, conditionMessage(w))
+        invokeRestart("muffleWarning")
+    })
+    checkTrue(warn)
+    checkTrue(all.equal(.A(x=1:5), value))
+    
+    removeClass(cls, where=.GlobalEnv)
+}

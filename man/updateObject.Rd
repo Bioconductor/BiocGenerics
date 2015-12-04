@@ -4,6 +4,8 @@
 \alias{updateObject,ANY-method}
 \alias{updateObject,list-method}
 \alias{updateObject,environment-method}
+\alias{updateObject,formula-method}
+\alias{updateObject,envRefClass-method}
 
 \alias{updateObjectFromSlots}
 \alias{getObjectSlots}
@@ -77,18 +79,25 @@ getObjectSlots(object)
       Visit each element in \code{environment}, applying
       \code{updateObject(environment[[elt]], \dots, verbose=verbose)}
     }
+    \item{\code{updateObject(formula, \dots, verbose=FALSE)}}{
+      Do nothing; the environment of the formula may be too general
+      (e.g., \code{R_GlobalEnv}) to attempt an update.
+    }
+    \item{\code{updateObject(envRefClass, \dots, verbose=FALSE)}}{
+      Attempt to update objects from fields using a strategy like
+      \code{updateObjectFromSlots} Method 1.
+    }
   }
 
-  \code{updateObjectFromSlots(object, objclass=class(object),
-                              \dots, verbose=FALSE)}
-  is a utility function that identifies the intersection of slots defined
-  in the \code{object} instance and \code{objclass} definition. The
-  corresponding elements in \code{object} are then updated (with
-  \code{updateObject(elt, \dots, verbose=verbose)}) and used as arguments to
-  a call to \code{new(class, \dots)}, with \code{\dots} replaced by slots
-  from the original object. If this fails, \code{updateObjectFromSlots}
-  then tries \code{new(class)} and assigns slots of \code{object} to
-  the newly created instance.
+  \code{updateObjectFromSlots(object, objclass=class(object), \dots,
+  verbose=FALSE)} is a utility function that identifies the intersection
+  of slots defined in the \code{object} instance and \code{objclass}
+  definition. Under Method 1, the corresponding elements in
+  \code{object} are then updated (with \code{updateObject(elt, \dots,
+  verbose=verbose)}) and used as arguments to a call to \code{new(class,
+  \dots)}, with \code{\dots} replaced by slots from the original
+  object. If this fails, then Method 2 tries \code{new(class)} and
+  assigns slots of \code{object} to the newly created instance.
 
   \code{getObjectSlots(object)} extracts the slot names and contents from
   \code{object}. This is useful when \code{object} was created by a class
