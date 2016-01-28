@@ -42,7 +42,7 @@ lengths(x, use.names=TRUE)
   IMPORTANT: The default method (\code{base::\link[base]{lengths}})
   is equivalent to \code{sapply(x, length)}. However, because the
   \code{lengths} method for \link[S4Vectors]{Vector} objects is currently
-  defined as an alias for \code{S4Vectors::\link[S4Vectors]{elementLengths}},
+  defined as an alias for \code{S4Vectors::\link[S4Vectors]{elementNROWS}},
   it's equivalent to \code{sapply(x, NROW)}, not to \code{sapply(x, length)}.
 
   This makes a difference if \code{x} has array-like list elements.
