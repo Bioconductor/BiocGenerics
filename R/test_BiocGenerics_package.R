@@ -1,1 +1,0 @@
-.test <- function() testPackage("BiocGenerics")
