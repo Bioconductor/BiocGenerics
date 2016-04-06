@@ -18,14 +18,14 @@
 }
 
 \usage{
-order(..., na.last=TRUE, decreasing=FALSE)
+order(..., na.last=TRUE, decreasing=FALSE, method=c("shell", "radix"))
 }
 
 \arguments{
   \item{...}{
     One or more vector-like objects, all of the same length.
   }
-  \item{na.last, decreasing}{
+  \item{na.last, decreasing, method}{
     See \code{?base::\link[base]{order}} for a description of
     these arguments.
   }
