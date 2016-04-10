@@ -172,13 +172,15 @@
             \code{\link[BiocGenerics]{species<-}}
 
       \item \code{\link[BiocGenerics]{plotMA}}
+
       \item \code{\link[BiocGenerics]{plotPCA}}
 
       \item \code{\link[BiocGenerics]{score}},
             \code{\link[BiocGenerics]{score<-}}
 
       \item \code{\link[BiocGenerics]{strand}},
-            \code{\link[BiocGenerics]{strand<-}}
+            \code{\link[BiocGenerics]{strand<-}},
+            \code{\link[BiocGenerics]{invertStrand}}
 
       \item \code{\link[BiocGenerics]{updateObject}}
     }

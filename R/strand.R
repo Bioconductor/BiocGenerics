@@ -12,3 +12,13 @@ unstrand <- function(x)
     x
 }
 
+setGeneric("invertStrand", function(x) standardGeneric("invertStrand"))
+
+setMethod("invertStrand", "ANY",
+    function(x)
+    {
+        strand(x) <- invertStrand(strand(x))
+        x
+    }
+)
+

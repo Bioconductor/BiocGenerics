@@ -204,7 +204,7 @@ export(
     score, "score<-",
 
     ## from R/strand.R:
-    strand, "strand<-",
+    strand, "strand<-", invertStrand,
 
     ## from R/updateObject.R:
     updateObject,
@@ -229,7 +229,10 @@ exportMethods(
     estimateDispersions,
     plotDispEsts,
     plotMA,
-    plotPCA
+    plotPCA,
+
+    ## from R/strand.R:
+    invertStrand
 )
 
 

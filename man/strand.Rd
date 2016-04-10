@@ -3,6 +3,8 @@
 \alias{strand}
 \alias{strand<-}
 \alias{unstrand}
+\alias{invertStrand}
+\alias{invertStrand,ANY-method}
 
 \title{Accessing strand information}
 
@@ -13,7 +15,11 @@
 \usage{
 strand(x, ...)
 strand(x, ...) <- value
+
 unstrand(x)
+
+invertStrand(x)
+\S4method{invertStrand}{ANY}(x)
 }
 
 \arguments{
@@ -35,15 +41,28 @@ unstrand(x)
   \code{*} is used when the exact strand of the location is unknown,
   or irrelevant, or when the "feature" at that location belongs to
   both strands.
-}
 
-\note{
-  \code{unstrand} is not a generic function, just a convenience wrapper to
-  the generic strand setter (\code{strand<-}) that simply does:
-\preformatted{
-  strand(x) <- "*"
+  Note that \code{unstrand} is not a generic function, just a convenience
+  wrapper to the generic strand setter (\code{strand<-}) that does:
+\preformatted{  strand(x) <- "*"
   x
 }
+  The default method for \code{invertStrand} does:
+\preformatted{  strand(x) <- invertStrand(strand(x))
+  x
+}
+}
+
+\value{
+  If \code{x} is a vector-like object, \code{strand(x)} will typically
+  return a vector-like object \emph{parallel} to \code{x}, that is, an
+  object of the same length as \code{x} where the i-th element describes
+  the strand of the i-th element in \code{x}.
+
+  \code{unstrand(x)} and \code{invertStrand(x)} return a copy of \code{x}
+  with the strand set to \code{"*"} for \code{unstrand} or inverted for
+  \code{invertStrand} (i.e. \code{"+"} and \code{"-"} switched, and
+  \code{"*"} untouched).
 }
 
 \seealso{
@@ -70,6 +89,12 @@ showMethods("strand")
 
 `strand<-`
 showMethods("strand<-")
+
+unstrand
+
+invertStrand
+showMethods("invertStrand")
+selectMethod("invertStrand", "ANY")  # the default method
 
 library(GenomicRanges)
 
