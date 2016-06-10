@@ -120,7 +120,10 @@ export(
     unlist,
 
     ## from R/unsplit.R:
-    unsplit
+    unsplit,
+
+    ## from R/which.R:
+    which, which.max, which.min
 )
 
 ### Generics for functions defined in package utils:
