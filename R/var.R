@@ -2,9 +2,9 @@
 ### The var() and sd() generics
 ### -------------------------------------------------------------------------
 ###
-### Dispatches only on 'x'
+### Dispatches only on 'x' (and 'y' for var)
 ###
 
-setGeneric("var", signature="x")
+setGeneric("var", signature=c("x", "y"))
 
 setGeneric("sd", signature="x")
