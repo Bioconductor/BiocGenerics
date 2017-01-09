@@ -7,7 +7,7 @@
 ### the 'ignore.strand' argument for the method for GenomicRanges objects).
 
 .is.unsorted.useAsDefault <- function(x, na.rm=FALSE, strictly=FALSE, ...)
-    base::is.unsorted(x, na.rm, strictly, ...)
+    base::is.unsorted(x, na.rm=na.rm, strictly=strictly, ...)
 
 setGeneric("is.unsorted", signature="x",
     function(x, na.rm=FALSE, strictly=FALSE, ...)

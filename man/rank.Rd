@@ -18,7 +18,8 @@
 
 \usage{
 rank(x, na.last=TRUE,
-     ties.method=c("average", "first", "last", "random", "max", "min"))
+     ties.method=c("average", "first", "last", "random", "max", "min"),
+     ...)
 }
 
 \arguments{
@@ -28,6 +29,12 @@ rank(x, na.last=TRUE,
   \item{na.last, ties.method}{
     See \code{?base::\link[base]{rank}} for a description of
     these arguments.
+  }
+  \item{...}{
+    Additional arguments, for use in specific methods.
+
+    Note that \code{base::\link[base]{rank}} (the default method) only
+    takes the \code{x}, \code{na.last}, and \code{ties.method} arguments.
   }
 }
 
