@@ -54,9 +54,9 @@ setdiff(x, y, ...)
   binary operation, this typically allows methods to add extra arguments
   for controlling/altering the behavior of the operation.
   Like for example the \code{ignore.strand} argument supported by the
-  \code{setdiff} method for \link[GenomicRanges]{GRanges} objects (defined
-  in the \pkg{GenomicRanges} package). (Note that the \code{union} and
-  \code{intersect} methods for those objects also support the
+  \code{setdiff} method for \link[GenomicRanges]{GenomicRanges} objects
+  (defined in the \pkg{GenomicRanges} package). (Note that the \code{union}
+  and \code{intersect} methods for those objects also support the
   \code{ignore.strand} argument.)
 }
 
@@ -71,9 +71,10 @@ setdiff(x, y, ...)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[GenomicRanges]{union,GRanges,GRanges-method} in the
-          \pkg{GenomicRanges} package for an example of a specific \code{union}
-          method (defined for \link[GenomicRanges]{GRanges} objects).
+    \item \link[GenomicRanges]{union,GenomicRanges,GenomicRanges-method} in
+          the \pkg{GenomicRanges} package for examples of specific
+          \code{union}, \code{intersect}, and \code{setdiff} methods (defined
+          for \link[GenomicRanges]{GenomicRanges} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
           in the \pkg{BiocGenerics} package.

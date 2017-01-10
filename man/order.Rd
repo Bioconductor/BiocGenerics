@@ -18,7 +18,7 @@
 }
 
 \usage{
-order(..., na.last=TRUE, decreasing=FALSE, method=c("shell", "radix"))
+order(..., na.last=TRUE, decreasing=FALSE, method=c("auto", "shell", "radix"))
 }
 
 \arguments{
