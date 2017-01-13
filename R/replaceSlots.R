@@ -45,7 +45,7 @@ unsafe_replaceSlots <- function(object, ..., .slotList=list())
         if (first_time) {
             ## Triggers a copy.
             slot(object, slot_name, check=FALSE) <- slot_val
-            first_time <<- FALSE
+            first_time <- FALSE
         } else {
             ## In-place modification (i.e. no copy).
             `slot<-`(object, slot_name, check=FALSE, slot_val)
