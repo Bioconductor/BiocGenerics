@@ -166,6 +166,8 @@
 
       \item \code{\link[BiocGenerics]{normalize}}
 
+      \item \code{\link[BiocGenerics]{Ontology}}
+
       \item \code{\link[BiocGenerics]{organism}},
             \code{\link[BiocGenerics]{organism<-}},
             \code{\link[BiocGenerics]{species}},

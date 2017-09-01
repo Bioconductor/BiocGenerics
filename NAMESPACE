@@ -206,6 +206,9 @@ export(
     ## from R/normalize.R:
     normalize,
 
+    ## from R/Ontology.R:
+    Ontology,
+
     ## from R/organism_species.R:
     organism, "organism<-",
     species, "species<-",
