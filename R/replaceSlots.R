@@ -12,46 +12,22 @@
 ### we have one).
 ###
 
-unsafe_replaceSlots <- function(object, ..., .slotList=list())
-{
-    slots <- c(list(...), .slotList)
-    slots_names <- names(slots)
-    ## This is too slow. See further down for a much faster way to check
-    ## that the supplied slots exist.
-    #invalid_idx <- which(!(slots_names %in% slotNames(object)))
-    #if (length(invalid_idx) != 0L) {
-    #    in1string <- paste0(slots_names[invalid_idx], collapse=", ")
-    #    stop(wmsg("invalid slot(s) for ", class(object), " instance: ",
-    #              in1string))
-    #}
-    first_time <- TRUE
-    for (i in seq_along(slots)) {
-        slot_name <- slots_names[[i]]
-        if (slot_name == "mcols")
-            slot_name <- "elementMetadata"
-        ## Even if we won't make any use of 'old_slot_val', this is a very
-        ## efficient way to check that the supplied slot exists.
-        ## We need to check this because the slot setter won't raise an error
-        ## in case of invalid slot name when used with 'check=FALSE'. It will
-        ## silently be a no-op!
-        old_slot_val <- slot(object, slot_name) # just a 
-        slot_val <- slots[[i]]
-        ## Too risky! identical() is not reliable enough e.g. with objects
-        ## that contain external pointers. For example, DNAStringSet("A")
-        ## and DNAStringSet("T") are considered to be identical! identical()
-        ## would first need to be fixed.
-        #if (identical(old_slot_val, slot_val))
-        #    next
-        if (first_time) {
-            ## Triggers a copy.
-            slot(object, slot_name, check=FALSE) <- slot_val
-            first_time <- FALSE
-        } else {
-            ## In-place modification (i.e. no copy).
-            `slot<-`(object, slot_name, check=FALSE, slot_val)
+unsafe_replaceSlots <- function(object, ..., .slotList = list()) {
+    valid_argnames <- slotNames(object)
+    args <- extraArgsAsList(valid_argnames, ...)
+    listUpdate <- function(object, l) {
+        for (nm in names(l)) {
+            ## Too risky! identical() is not reliable enough e.g. with objects
+            ## that contain external pointers. For example, DNAStringSet("A") and
+            ## DNAStringSet("T") are considered to be identical! identical() needs
+            ## to be fixed first.
+            ##if (identical(slot(object, nm), l[[nm]]))
+            ##  next
+            slot(object, nm, check=FALSE) <- l[[nm]]
         }
+        object
     }
-    object
+    listUpdate(listUpdate(object, args), .slotList)
 }
 
 ### replaceSlots() is essentially a more efficient initialize(), especially
