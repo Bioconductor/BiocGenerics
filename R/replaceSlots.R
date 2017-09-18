@@ -12,7 +12,8 @@
 ### we have one).
 ###
 
-unsafe_replaceSlots <- function(object, ..., .slotList = list()) {
+unsafe_replaceSlots <- function(object, ..., .slotList = list()) 
+{
   valid_argnames <- slotNames(object)
   args <- extraArgsAsList(valid_argnames, ...)
   listUpdate <- function(object, l) {
@@ -26,6 +27,7 @@ unsafe_replaceSlots <- function(object, ..., .slotList = list()) {
       slot(object, nm, check=FALSE) <- l[[nm]]
     }
     object
+  }
 }
 
 ### replaceSlots() is essentially a more efficient initialize(), especially
