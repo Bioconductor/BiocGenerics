@@ -14,6 +14,9 @@
 
 unsafe_replaceSlots <- function(object, ..., .slotList=list())
 {
+    ## This function is no longer 'unsafe', in that it does not do
+    ## in-place modification via `slot<-()`; see
+    ## https://github.com/Bioconductor/BiocGenerics/pull/1
     slots <- c(list(...), .slotList)
     slots_names <- names(slots)
     ## This is too slow. See further down for a much faster way to check
@@ -24,7 +27,6 @@ unsafe_replaceSlots <- function(object, ..., .slotList=list())
     #    stop(wmsg("invalid slot(s) for ", class(object), " instance: ",
     #              in1string))
     #}
-    first_time <- TRUE
     for (i in seq_along(slots)) {
         slot_name <- slots_names[[i]]
         if (slot_name == "mcols")
@@ -34,7 +36,7 @@ unsafe_replaceSlots <- function(object, ..., .slotList=list())
         ## We need to check this because the slot setter won't raise an error
         ## in case of invalid slot name when used with 'check=FALSE'. It will
         ## silently be a no-op!
-        old_slot_val <- slot(object, slot_name) # just a 
+        old_slot_val <- slot(object, slot_name) # check slot existence
         slot_val <- slots[[i]]
         ## Too risky! identical() is not reliable enough e.g. with objects
         ## that contain external pointers. For example, DNAStringSet("A")
@@ -42,14 +44,7 @@ unsafe_replaceSlots <- function(object, ..., .slotList=list())
         ## would first need to be fixed.
         #if (identical(old_slot_val, slot_val))
         #    next
-        if (first_time) {
-            ## Triggers a copy.
-            slot(object, slot_name, check=FALSE) <- slot_val
-            first_time <- FALSE
-        } else {
-            ## In-place modification (i.e. no copy).
-            `slot<-`(object, slot_name, check=FALSE, slot_val)
-        }
+        slot(object, slot_name, check=FALSE) <- slot_val
     }
     object
 }
