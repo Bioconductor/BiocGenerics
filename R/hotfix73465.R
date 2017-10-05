@@ -31,7 +31,7 @@
 ###
 ### The apply_hotfix73465() utility function below can be used to fix the
 ### generics with dispatch on the ellipsis for users running R 3.4.2 or
-### R 3.4.2 Patched <= r73465.
+### R 3.4.2 Patched < r73465.
 ###
 
 .patch_standardGenericsDots <- function(standardGenericDots)
@@ -52,7 +52,7 @@
 }
 
 ### Fix order() generic with apply_hotfix73465(getGeneric("order")). Will
-### apply the fix only to users running R 3.4.2 or R 3.4.2 Patched <= r73465.
+### apply the fix only to users running R 3.4.2 or R 3.4.2 Patched < r73465.
 apply_hotfix73465 <- function(FUN)
 {
     if (R.Version()[["major"]] != "3" || R.Version()[["minor"]] != "4.2")
