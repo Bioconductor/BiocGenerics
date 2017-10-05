@@ -8,6 +8,8 @@
 ### Note that dispatching on '...' is supported starting with R 2.8.0 only.
 
 setGeneric("cbind", signature="...")
+apply_hotfix73465(getGeneric("cbind"))
 
 setGeneric("rbind", signature="...")
+apply_hotfix73465(getGeneric("rbind"))
 
