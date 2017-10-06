@@ -19,7 +19,7 @@
 }
 
 \usage{
-tapply(X, INDEX, FUN=NULL, ..., simplify=TRUE)
+tapply(X, INDEX, FUN=NULL, ..., default=NA, simplify=TRUE)
 }
 
 \arguments{
@@ -39,7 +39,7 @@ tapply(X, INDEX, FUN=NULL, ..., simplify=TRUE)
     Specific methods can support other objects (typically list-like).
     Please refer to the documentation of a particular method for the details.
   }
-  \item{FUN, ..., simplify}{
+  \item{FUN, ..., default, simplify}{
     See \code{?base::\link[base]{tapply}} for a description of
     these arguments.
   }
