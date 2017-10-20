@@ -63,7 +63,10 @@ apply_hotfix73465 <- function(FUN)
     stopifnot(is(FUN, "standardGeneric"))
     envir <- environment(FUN)
     standardGenericsDots <- get("standardGeneric", envir=envir)
-    standardGenericsDots <- .patch_standardGenericsDots(standardGenericsDots)
+    standardGenericsDots <-
+        try(.patch_standardGenericsDots(standardGenericsDots))
+    if (inherits(standardGenericsDots, "try-error"))
+        stop("hotfix failed for generic function ", FUN@generic, "()")
     assign("standardGeneric", standardGenericsDots, envir=envir)
 }
 
