@@ -159,6 +159,10 @@ dirname(a)
 setReplaceMethod("path", "A",
     function(object, ..., value)
     {
+        if (length(list(...)) != 0L) {
+            dots <- match.call(expand.dots=FALSE)[[3L]]
+            stop(BiocGenerics:::unused_arguments_msg(dots))
+        }
         object@path <- value
         object
     }

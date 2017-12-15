@@ -12,6 +12,7 @@ Suggests: Biobase, S4Vectors, IRanges, GenomicRanges, Rsamtools,
 	DESeq2, MSnbase, annotate, RUnit
 License: Artistic-2.0
 Collate: S3-classes-as-S4-classes.R
+	utils.R
 	normarg-utils.R
 	hotfix73465.R
 	replaceSlots.R
