@@ -36,44 +36,54 @@ dirname(path, ...) <- value
 ## The purpose of the following methods is to make the basename() and
 ## dirname() getters work out-of-the-box on any object for which the
 ## path() getter works.
+
 \S4method{basename}{ANY}(path, ...)
+
 \S4method{dirname}{ANY}(path, ...)
 
-## The purpose of the following methods is to make the basename() and
-## dirname() setters work out-of-the-box on any object for which the
-## path() getter and setter work.
+## The purpose of the following replacement methods is to make the
+## basename() and dirname() setters work out-of-the-box on any object
+## for which the path() getter and setter work.
+
 \S4method{basename}{character}(path, ...) <- value
+
 \S4method{basename}{ANY}(path, ...) <- value
+
 \S4method{dirname}{character}(path, ...) <- value
+
 \S4method{dirname}{ANY}(path, ...) <- value
 }
 
 \arguments{
   \item{object}{
     An object containing paths. Even though it will typically contain
-    one path, it can actually contain an arbitrary number of paths.
+    a single path, \code{object} can actually contain an arbitrary
+    number of paths.
   }
   \item{...}{
     Additional arguments, for use in specific methods.
   }
   \item{value}{
-    The path or basename or dirname to set on \code{object}.
+    For \code{path<-}, the paths to set on \code{object}.
+
+    For \code{basename<-} or \code{dirname<-}, the basenames or dirnames
+    to set on \code{path}.
   }
   \item{path}{
-    A character vector or an object containing paths.
+    A character vector \emph{or an object containing paths}.
   }
 }
 
 \value{
   A character vector for \code{path(object)}, \code{basename(path)},
   and \code{dirname(path)}. Typically of length 1 but not necessarily.
-  With possibly names on it for \code{path(object)}.
+  Possibly with names on it for \code{path(object)}.
 }
 
 \seealso{
   \itemize{
-    \item \code{base::\link[base]{basename}} for the default \code{basename}
-          and \code{dirname} methods.
+    \item \code{base::\link[base]{basename}} for the functions the
+          \code{basename} and \code{dirname} generics are based on.
 
     \item \code{\link[methods]{showMethods}} for displaying a summary of the
           methods defined for a given generic function.

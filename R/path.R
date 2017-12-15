@@ -81,8 +81,8 @@ setMethod("dirname", "ANY",
 ### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ### Default basename() and dirname() setters
 ###
-### The purpose of these methods is to make the basename() and dirname()
-### setters work out-of-the-box on any object for which the path()
+### The purpose of these replacement methods is to make the basename() and
+### dirname() setters work out-of-the-box on any object for which the path()
 ### getter and setter work.
 ###
 
