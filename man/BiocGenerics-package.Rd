@@ -173,6 +173,13 @@
             \code{\link[BiocGenerics]{species}},
             \code{\link[BiocGenerics]{species<-}}
 
+      \item \code{\link[BiocGenerics]{path}},
+            \code{\link[BiocGenerics]{path<-}},
+            \code{\link[BiocGenerics]{basename}},
+            \code{\link[BiocGenerics]{basename<-}},
+            \code{\link[BiocGenerics]{dirname}},
+            \code{\link[BiocGenerics]{dirname<-}}
+
       \item \code{\link[BiocGenerics]{plotMA}}
 
       \item \code{\link[BiocGenerics]{plotPCA}}

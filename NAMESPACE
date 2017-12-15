@@ -213,6 +213,11 @@ export(
     organism, "organism<-",
     species, "species<-",
 
+    ## from R/path.R:
+    path, "path<-",
+    basename, "basename<-",
+    dirname, "dirname<-",
+
     ## from R/plotMA.R:
     plotMA,
 
