@@ -87,7 +87,7 @@ combine(x, y, ...)
           and \link[Biobase]{combine,eSet,eSet-method} in the \pkg{Biobase}
           package for additional \code{combine} methods.
 
-    \item \code{\link{merge}} for merging two data frames (or data.frame-like)
+    \item \code{\link{merge}} for merging two data frames (or data-frame-like)
           objects.
 
     \item \code{\link[methods]{showMethods}} for displaying a summary of the
