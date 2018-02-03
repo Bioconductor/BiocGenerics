@@ -73,9 +73,9 @@ order(..., na.last=TRUE, decreasing=FALSE, method=c("auto", "shell", "radix"))
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[IRanges]{order,Ranges-method} in the \pkg{IRanges} package
-          for an example of a specific \code{order} method (defined for
-          \link[IRanges]{Ranges} objects).
+    \item \link[IRanges]{order,IntegerRanges-method} in the \pkg{IRanges}
+          package for an example of a specific \code{order} method (defined
+          for \link[IRanges]{IntegerRanges} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
           in the \pkg{BiocGenerics} package.
