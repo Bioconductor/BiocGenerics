@@ -6,15 +6,17 @@
 \alias{end<-}
 \alias{width}
 \alias{width<-}
+\alias{pos}
 
-\title{Start, end, width generic getters and setters}
+\title{The start(), end(), width(), and pos() generic getters and setters}
 
 \description{
-  Get or set the start, end, or width of an object.
+  Get or set the start, end, width, or single positions stored in an object.
 
   NOTE: This man page is for the \code{start}, \code{`start<-`},
-  \code{end}, \code{`end<-`}, \code{width}, and \code{`width<-`}
-  \emph{S4 generic functions} defined in the \pkg{BiocGenerics} package.
+  \code{end}, \code{`end<-`}, \code{width}, \code{`width<-`}, and
+  \code{pos} \emph{S4 generic functions} defined in the \pkg{BiocGenerics}
+  package.
   See \code{?stats::\link[stats]{start}} for the \code{start} and \code{end}
   S3 generics defined in the \pkg{stats} package.
 }
@@ -28,11 +30,16 @@ end(x, ...) <- value
 
 width(x)
 width(x, ...) <- value
+
+pos(x)
 }
 
 \arguments{
   \item{x}{
-    An object containing start, end, and width values.
+    For the \code{start()}, \code{end()}, and \code{width()} getters/setters:
+    an object containing start, end, and width values.
+
+    For the \code{pos{}} getter: an object containing single positions.
   }
   \item{...}{
     Additional arguments, for use in specific methods.
@@ -61,44 +68,53 @@ width(x, ...) <- value
           package for examples of specific \code{start}, \code{end}, and
           \code{width} methods (defined for \link[IRanges]{IRanges} objects).
 
+    \item \link[IRanges]{pos,Pos-method} in the \pkg{IRanges}
+          package for an example of a specific \code{pos} method
+          (defined for \link[IRanges]{Pos} objects).
+
     \item \link{BiocGenerics} for a summary of all the generics defined
           in the \pkg{BiocGenerics} package.
   }
 }
 
 \examples{
-## start getter:
+## start() getter:
 start
 showMethods("start")
 
 library(IRanges)
 showMethods("start")
-selectMethod("start", "IRanges")  # start getter for IRanges objects
+selectMethod("start", "IRanges")  # start() getter for IRanges objects
 
-## start setter:
+## start() setter:
 `start<-`
 showMethods("start<-")
-selectMethod("start<-", "IRanges")  # start setter for IRanges objects
+selectMethod("start<-", "IRanges")  # start() setter for IRanges objects
 
-## end getter:
+## end() getter:
 end
 showMethods("end")
-selectMethod("end", "IRanges")  # end getter for IRanges objects
+selectMethod("end", "IRanges")  # end() getter for IRanges objects
 
-## end setter:
+## end() setter:
 `end<-`
 showMethods("end<-")
-selectMethod("end<-", "IRanges")  # end setter for IRanges objects
+selectMethod("end<-", "IRanges")  # end() setter for IRanges objects
 
-## width getter:
+## width() getter:
 width
 showMethods("width")
-selectMethod("width", "IRanges")  # width getter for IRanges objects
+selectMethod("width", "IRanges")  # width() getter for IRanges objects
 
-## width setter:
+## width() setter:
 `width<-`
 showMethods("width<-")
-selectMethod("width<-", "IRanges")  # width setter for IRanges objects
+selectMethod("width<-", "IRanges")  # width() setter for IRanges objects
+
+## pos() getter:
+pos
+showMethods("pos")
+selectMethod("pos", "Pos")  # pos() getter for Pos objects
 }
 
 \keyword{methods}

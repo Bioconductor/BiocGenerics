@@ -76,22 +76,22 @@ colnames(x) <- value
 }
 
 \examples{
-## rownames getter:
+## rownames() getter:
 rownames  # note the dispatch on the 'x' arg only
 showMethods("rownames")
 selectMethod("rownames", "ANY")  # the default method
 
-## rownames setter:
+## rownames() setter:
 `rownames<-`
 showMethods("rownames<-")
 selectMethod("rownames<-", "ANY")  # the default method
 
-## colnames getter:
+## colnames() getter:
 colnames  # note the dispatch on the 'x' arg only
 showMethods("colnames")
 selectMethod("colnames", "ANY")  # the default method
 
-## colnames setter:
+## colnames() setter:
 `colnames<-`
 showMethods("colnames<-")
 selectMethod("colnames<-", "ANY")  # the default method

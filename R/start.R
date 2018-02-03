@@ -1,9 +1,9 @@
 ### =========================================================================
-### The start(), `start<-`(), end(), `end<-`(), width(), and `width<-`()
-### generics
+### The start(), end(), width(), and pos() generic getters and setters
 ### -------------------------------------------------------------------------
 ###
 ### stats::start and stats::end are S3 generics.
+###
 
 setGeneric("start")
 
@@ -22,4 +22,7 @@ setGeneric("width", function(x) standardGeneric("width"))
 setGeneric("width<-", signature="x",
     function(x, ..., value) standardGeneric("width<-")
 )
+
+### No pos() setter for now.
+setGeneric("pos", function(x) standardGeneric("pos"))
 

@@ -33,7 +33,7 @@ unsafe_replaceSlots <- function(object, ..., .slotList=list())
             slot_name <- "elementMetadata"
         ## Even if we won't make any use of 'old_slot_val', this is a very
         ## efficient way to check that the supplied slot exists.
-        ## We need to check this because the slot setter won't raise an error
+        ## We need to check this because the slot() setter won't raise an error
         ## in case of invalid slot name when used with 'check=FALSE'. It will
         ## silently be a no-op!
         old_slot_val <- slot(object, slot_name) # check slot existence

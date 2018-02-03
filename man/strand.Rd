@@ -43,7 +43,7 @@ invertStrand(x)
   both strands.
 
   Note that \code{unstrand} is not a generic function, just a convenience
-  wrapper to the generic strand setter (\code{strand<-}) that does:
+  wrapper to the generic \code{strand()} setter (\code{strand<-}) that does:
 \preformatted{  strand(x) <- "*"
   x
 }

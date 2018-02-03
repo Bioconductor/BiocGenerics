@@ -97,7 +97,8 @@
             \code{BiocGenerics::\link[BiocGenerics]{end}},
             \code{BiocGenerics::\link[BiocGenerics]{end<-}},
             \code{BiocGenerics::\link[BiocGenerics]{width}},
-            \code{BiocGenerics::\link[BiocGenerics]{width<-}}
+            \code{BiocGenerics::\link[BiocGenerics]{width<-}},
+            \code{BiocGenerics::\link[BiocGenerics]{pos}}
 
       \item \code{BiocGenerics::\link[BiocGenerics]{subset}}
 

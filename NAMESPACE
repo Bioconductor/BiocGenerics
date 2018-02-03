@@ -110,6 +110,7 @@ export(
     start, "start<-",
     end, "end<-",
     width, "width<-",
+    pos,
 
     ## from R/subset.R:
     subset,

@@ -80,7 +80,7 @@ species(object) <- value
 }
 
 \examples{
-## organism getter:
+## organism() getter:
 organism
 showMethods("organism")
 
@@ -89,18 +89,18 @@ showMethods("organism")
 selectMethod("organism", "character")
 selectMethod("organism", "chromLocation")
 
-## organism setter:
+## organism() setter:
 `organism<-`
 showMethods("organism<-")
 
-## species getter:
+## species() getter:
 species
 showMethods("species")
 
 library(AnnotationDbi)
 selectMethod("species", "AnnotationDb")
 
-## species setter:
+## species() setter:
 `species<-`
 showMethods("species<-")
 }
