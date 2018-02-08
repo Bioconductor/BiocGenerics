@@ -163,11 +163,19 @@ updateObjectFromFields <-
 ### updateObject()
 ###
 
+### TODO: Would be cleaner if 'check' was a formal argument.
 setGeneric("updateObject", signature="object",
     function(object, ..., verbose=FALSE)
     {
         result <- standardGeneric("updateObject")
-        validObject(result)
+        check <- list(...)$check
+        if (is.null(check)) {
+            check <- TRUE
+        } else if (!isTRUEorFALSE(check)) {
+            stop("'check' must be TRUE or FALSE")
+        }
+        if (check)
+            validObject(result)
         result
     }
 )
