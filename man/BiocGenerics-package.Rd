@@ -163,6 +163,8 @@
       \item \code{\link[BiocGenerics]{dbconn}},
             \code{\link[BiocGenerics]{dbfile}}
 
+      \item \code{\link[BiocGenerics]{dims}}
+
       \item \code{\link[BiocGenerics]{fileName}}
 
       \item \code{\link[BiocGenerics]{normalize}}

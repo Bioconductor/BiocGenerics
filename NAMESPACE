@@ -201,6 +201,9 @@ export(
     ## from R/dbconn.R:
     dbconn, dbfile,
 
+    ## from R/dims.R:
+    dims,
+
     ## from R/fileName.R:
     fileName,
 
