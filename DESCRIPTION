@@ -1,11 +1,11 @@
 Package: BiocGenerics
 Title: S4 generic functions for Bioconductor
 Description: S4 generic functions needed by many Bioconductor packages.
-Version: 0.29.0
+Version: 0.29.1
 Author: The Bioconductor Dev Team
 Maintainer: Bioconductor Package Maintainer <maintainer@bioconductor.org>
 biocViews: Infrastructure
-Depends: methods, utils, graphics, stats, parallel
+Depends: R (>= 3.6.0), methods, utils, graphics, stats, parallel
 Imports: methods, utils, graphics, stats, parallel
 Suggests: Biobase, S4Vectors, IRanges, GenomicRanges, Rsamtools,
 	AnnotationDbi, oligoClasses, oligo, affyPLM, flowClust, affy,
@@ -30,7 +30,6 @@ Collate: S3-classes-as-S4-classes.R
 	grep.R
 	is.unsorted.R
 	lapply.R
-	lengths.R
 	mapply.R
 	match.R
 	matrix-summary.R
