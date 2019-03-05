@@ -44,6 +44,9 @@ as.data.frame(x, row.names=NULL, optional=FALSE, ...)
     \item \code{base::\link[base]{as.data.frame}} for the default
           \code{as.data.frame} method.
 
+    \item \code{\link[BiocGenerics]{toTable}} for an alternative to
+          \code{as.data.frame}.
+
     \item \code{\link[methods]{showMethods}} for displaying a summary of the
           methods defined for a given generic function.
 

@@ -231,6 +231,9 @@ export(
     ## from R/strand.R:
     strand, "strand<-", invertStrand,
 
+    ## from R/toTable.R:
+    toTable,
+
     ## from R/updateObject.R:
     updateObject,
     updateObjectFromSlots,

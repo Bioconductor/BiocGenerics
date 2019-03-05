@@ -192,6 +192,8 @@
             \code{\link[BiocGenerics]{strand<-}},
             \code{\link[BiocGenerics]{invertStrand}}
 
+      \item \code{\link[BiocGenerics]{toTable}}
+
       \item \code{\link[BiocGenerics]{updateObject}}
     }
   }
