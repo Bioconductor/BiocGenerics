@@ -44,14 +44,16 @@ clusterMap(cl=NULL, fun, ..., MoreArgs=NULL, RECYCLE=TRUE,
            .scheduling=c("static", "dynamic"))
 clusterSplit(cl=NULL, seq)
 
-parLapply(cl=NULL, X, fun, ...)
-parSapply(cl=NULL, X, FUN, ..., simplify=TRUE, USE.NAMES=TRUE) 
-parApply(cl=NULL, X, MARGIN, FUN, ...)
-parRapply(cl=NULL, x, FUN, ...)
-parCapply(cl=NULL, x, FUN, ...)
-     
-parLapplyLB(cl=NULL, X, fun, ...)
-parSapplyLB(cl=NULL, X, FUN, ..., simplify=TRUE, USE.NAMES=TRUE) 
+parLapply(cl=NULL, X, fun, ..., chunk.size=NULL)
+parSapply(cl=NULL, X, FUN, ..., simplify=TRUE,
+          USE.NAMES=TRUE, chunk.size=NULL)
+parApply(cl=NULL, X, MARGIN, FUN, ..., chunk.size=NULL)
+parRapply(cl=NULL, x, FUN, ..., chunk.size=NULL)
+parCapply(cl=NULL, x, FUN, ..., chunk.size=NULL)
+
+parLapplyLB(cl=NULL, X, fun, ..., chunk.size=NULL)
+parSapplyLB(cl=NULL, X, FUN, ..., simplify=TRUE,
+            USE.NAMES=TRUE, chunk.size=NULL)
 }
 
 \arguments{
@@ -70,8 +72,8 @@ parSapplyLB(cl=NULL, X, FUN, ..., simplify=TRUE, USE.NAMES=TRUE)
     \code{parLapplyLB}, and \code{parSapplyLB}.
     An array-like object for \code{parApply}.
   }
-  \item{fun, ..., expr, varlist, envir, MoreArgs, RECYCLE,
-        SIMPLIFY, USE.NAMES, .scheduling, FUN, simplify, MARGIN}{
+  \item{fun, ..., expr, varlist, envir, MoreArgs, RECYCLE, SIMPLIFY,
+        USE.NAMES, .scheduling, chunk.size, FUN, simplify, MARGIN}{
     See \code{?parallel::\link[parallel]{clusterApply}} for a description of
     these arguments.
   }
