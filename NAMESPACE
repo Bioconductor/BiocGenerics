@@ -72,13 +72,6 @@ export(
     ## from R/match.R:
     match,
 
-    ## from R/matrix-summary.R:
-    rowSums, rowMeans,
-    colSums, colMeans,
-
-    ## from R/mean.R:
-    mean,
-
     ## from R/nrow.R:
     nrow, ncol, NROW, NCOL,
 
@@ -111,9 +104,6 @@ export(
 
     ## from R/subset.R:
     subset,
-
-    ## from R/t.R:
-    t,
 
     ## from R/table.R:
     table,
