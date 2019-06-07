@@ -30,6 +30,11 @@
       \item \code{BiocGenerics::\link[BiocGenerics]{cbind}},
             \code{BiocGenerics::\link[BiocGenerics]{rbind}}
 
+      \item \code{BiocGenerics::\link[BiocGenerics]{colSums}},
+            \code{BiocGenerics::\link[BiocGenerics]{rowSums}},
+            \code{BiocGenerics::\link[BiocGenerics]{colMeans}},
+            \code{BiocGenerics::\link[BiocGenerics]{rowMeans}}
+
       \item \code{BiocGenerics::\link[BiocGenerics]{do.call}}
 
       \item \code{BiocGenerics::\link[BiocGenerics]{duplicated}},

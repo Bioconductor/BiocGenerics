@@ -39,6 +39,10 @@ export(
     ## from R/cbind.R:
     cbind, rbind,
 
+    ## from R/colSums.R:
+    colSums, rowSums,
+    colMeans, rowMeans,
+
     ## from R/do.call.R:
     do.call,
 
@@ -71,10 +75,6 @@ export(
 
     ## from R/match.R:
     match,
-
-    ## from R/matrix-summary.R:
-    rowSums, rowMeans,
-    colSums, colMeans,
 
     ## from R/mean.R:
     mean,

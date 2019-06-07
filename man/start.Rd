@@ -68,9 +68,9 @@ pos(x)
           package for examples of specific \code{start}, \code{end}, and
           \code{width} methods (defined for \link[IRanges]{IRanges} objects).
 
-    \item \link[IRanges]{pos,IPos-method} in the \pkg{IRanges}
+    \item \link[IRanges]{pos,UnstitchedIPos-method} in the \pkg{IRanges}
           package for an example of a specific \code{pos} method
-          (defined for \link[IRanges]{IPos} objects).
+          (defined for \link[IRanges]{UnstitchedIPos} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
           in the \pkg{BiocGenerics} package.
@@ -114,7 +114,8 @@ selectMethod("width<-", "IRanges")  # width() setter for IRanges objects
 ## pos() getter:
 pos
 showMethods("pos")
-selectMethod("pos", "IPos")  # pos() getter for IPos objects
+selectMethod("pos", "UnstitchedIPos")  # pos() getter for UnstitchedIPos
+                                       # objects
 }
 
 \keyword{methods}
