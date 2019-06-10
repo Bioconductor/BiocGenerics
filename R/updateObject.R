@@ -167,6 +167,8 @@ updateObjectFromFields <-
 setGeneric("updateObject", signature="object",
     function(object, ..., verbose=FALSE)
     {
+        if (!isTRUEorFALSE(verbose))
+            stop("'verbose' must be TRUE or FALSE")
         result <- standardGeneric("updateObject")
         check <- list(...)$check
         if (is.null(check)) {
@@ -174,8 +176,14 @@ setGeneric("updateObject", signature="object",
         } else if (!isTRUEorFALSE(check)) {
             stop("'check' must be TRUE or FALSE")
         }
-        if (check)
+        if (check) {
+            if (verbose)
+                message("[updateObject] Validating the updated object ... ",
+                        appendLF=FALSE)
             validObject(result)
+            if (verbose)
+                message("OK")
+        }
         result
     }
 )
