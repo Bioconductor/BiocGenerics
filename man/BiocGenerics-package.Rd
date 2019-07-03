@@ -199,6 +199,9 @@
 
       \item \code{\link[BiocGenerics]{toTable}}
 
+      \item \code{\link[BiocGenerics]{type}},
+            \code{\link[BiocGenerics]{type<-}}
+
       \item \code{\link[BiocGenerics]{updateObject}}
     }
   }

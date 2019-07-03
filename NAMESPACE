@@ -234,6 +234,9 @@ export(
     ## from R/toTable.R:
     toTable,
 
+    ## from R/type.R:
+    type, "type<-",
+
     ## from R/updateObject.R:
     updateObject,
     updateObjectFromSlots,
