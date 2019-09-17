@@ -66,6 +66,12 @@ testPackage <- function(pkgname = NULL,
         stop("unable to find unit tests, no subdir ", sQuote(subdir))
     }
 
+    ## If we only load RUnit's namespace without attaching the package to
+    ## the search path, then many tests in many packages will fail with
+    ## errors like: could not find function "checkIdentical"
+    #if (!requireNamespace("RUnit", quietly=TRUE))
+    #    stop("Couldn't load the RUnit package. You need to ",
+    #         "install it before\n  you can use testPackage().")
     library("RUnit", quietly=TRUE)
     RUnit_opts <- getOption("RUnit", list())
     RUnit_opts$verbose <- 0L
