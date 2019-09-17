@@ -68,7 +68,8 @@
 
       \item \code{BiocGenerics::\link[BiocGenerics]{mapply}}
 
-      \item \code{BiocGenerics::\link[BiocGenerics]{match}}
+      \item \code{BiocGenerics::\link[BiocGenerics]{match}},
+            \code{BiocGenerics::\link[BiocGenerics]{\%in\%}}
 
       \item \code{BiocGenerics::\link[BiocGenerics]{nrow}},
             \code{BiocGenerics::\link[BiocGenerics]{ncol}},

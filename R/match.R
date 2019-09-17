@@ -16,3 +16,5 @@ setGeneric("match", signature=c("x", "table"),
     useAsDefault=.match.useAsDefault
 )
 
+setGeneric("%in%", function(x, table) standardGeneric("%in%"))
+
