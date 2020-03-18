@@ -41,7 +41,7 @@ test_combine_df <- function()
                          data.frame(x=c(1:2, NA),
                                     y=letters[1:3],
                                     z=c(NA, 2:3),
-                                    row.names=letters[1:3]))
+                                    row.names=letters[1:3], stringsAsFactors=TRUE))
 }
 
 test_combine_df_preserveNumericRows <- function()
