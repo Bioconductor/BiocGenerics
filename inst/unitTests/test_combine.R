@@ -16,6 +16,12 @@ test_combine_df <- function()
     checkDataFramesEqual(x, z[1:5, colnames(x)])
     checkDataFramesEqual(y, z[3:7, colnames(y)])
 
+    x <- data.frame(x=1:2, y=letters[1:2], row.names=letters[1:2])
+    y <- data.frame(z=2:3, y=letters[2:3], row.names=letters[2:3])
+    z <- combine(x,y)
+    checkDataFramesEqual(x, z[1:2, colnames(x)])
+    checkDataFramesEqual(y, z[2:3, colnames(y)])
+
     ## an error -- content mismatch
     x <- data.frame(x=1:3, y=letters[1:3], row.names=letters[1:3])
     y <- data.frame(z=2:4, y=letters[1:3], row.names=letters[2:4])
@@ -25,8 +31,10 @@ test_combine_df <- function()
     oldw <- options("warn")
     options(warn=2)
     on.exit(options(oldw))
-    x <- data.frame(x=1:2, y=letters[1:2], row.names=letters[1:2])
-    y <- data.frame(z=2:3, y=letters[2:3], row.names=letters[2:3])
+    x <- data.frame(x=1:2, y=letters[1:2], row.names=letters[1:2],
+                    stringsAsFactors=TRUE)
+    y <- data.frame(z=2:3, y=letters[2:3], row.names=letters[2:3],
+                    stringsAsFactors=TRUE)
     checkException(combine(x,y), silent=TRUE)
     options(oldw)
     checkDataFramesEqual(suppressWarnings(combine(x,y)),
@@ -150,7 +158,7 @@ test_combine_3df <- function()
     res <- combine(w, x, y)
 
     e <- data.frame(w=c(4:8, rep(NA, 3)),
-                    y=c(letters[c(4:8, 1:3)]),
+                    y=factor(c(letters[c(4:8, 1:3)])),
                     x=c(4:5, rep(NA, 3), 1:3),
                     z=as.integer(c(4:7, rep(NA, 3), 3)),
                     row.names=letters[c(4:8, 1:3)])
