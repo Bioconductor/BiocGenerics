@@ -1,15 +1,15 @@
 \name{cbind}
 
-\alias{cbind}
 \alias{rbind}
+\alias{cbind}
 
 \title{Combine objects by rows or columns}
 
 \description{
-  \code{cbind} and \code{rbind} take one or more objects and combine them
+  \code{rbind} and \code{cbind} take one or more objects and combine them
   by columns or rows, respectively.
 
-  NOTE: This man page is for the \code{cbind} and \code{rbind}
+  NOTE: This man page is for the \code{rbind} and \code{cbind}
   \emph{S4 generic functions} defined in the \pkg{BiocGenerics} package.
   See \code{?base::\link[base]{cbind}} for the default methods
   (defined in the \pkg{base} package).
@@ -19,8 +19,8 @@
 }
 
 \usage{
-cbind(..., deparse.level=1)
 rbind(..., deparse.level=1)
+cbind(..., deparse.level=1)
 }
 
 \arguments{
@@ -44,8 +44,8 @@ rbind(..., deparse.level=1)
 
 \seealso{
   \itemize{
-    \item \code{base::\link[base]{cbind}} for the default \code{cbind} and
-          \code{rbind} methods.
+    \item \code{base::\link[base]{cbind}} for the default \code{rbind} and
+          \code{cbind} methods.
 
     \item \code{\link[methods]{showMethods}} for displaying a summary of the
           methods defined for a given generic function.
@@ -53,9 +53,11 @@ rbind(..., deparse.level=1)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[S4Vectors]{cbind,DataFrame-method} in the \pkg{S4Vectors}
-          package for an example of a specific \code{cbind} method (defined
-          for \link[S4Vectors]{DataFrame} objects).
+    \item \link[S4Vectors]{rbind,DataTable-method} and
+          \link[S4Vectors]{cbind,DataFrame-method} in the \pkg{S4Vectors}
+          package for examples of specific \code{rbind} and \code{cbind}
+          methods (defined for \link[S4Vectors]{DataTable} and
+          \link[S4Vectors]{DataFrame} objects, respectively).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
           in the \pkg{BiocGenerics} package.
@@ -63,13 +65,13 @@ rbind(..., deparse.level=1)
 }
 
 \examples{
-cbind  # note the dispatch on the '...' arg only
-showMethods("cbind")
-selectMethod("cbind", "ANY")  # the default method
-
 rbind  # note the dispatch on the '...' arg only
 showMethods("rbind")
 selectMethod("rbind", "ANY")  # the default method
+
+cbind  # note the dispatch on the '...' arg only
+showMethods("cbind")
+selectMethod("cbind", "ANY")  # the default method
 }
 
 \keyword{methods}

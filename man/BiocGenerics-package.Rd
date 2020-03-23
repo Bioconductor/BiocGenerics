@@ -27,8 +27,8 @@
 
       \item \code{BiocGenerics::\link[BiocGenerics]{as.vector}}
 
-      \item \code{BiocGenerics::\link[BiocGenerics]{cbind}},
-            \code{BiocGenerics::\link[BiocGenerics]{rbind}}
+      \item \code{BiocGenerics::\link[BiocGenerics]{rbind}},
+            \code{BiocGenerics::\link[BiocGenerics]{cbind}}
 
       \item \code{BiocGenerics::\link[BiocGenerics]{colSums}},
             \code{BiocGenerics::\link[BiocGenerics]{rowSums}},
