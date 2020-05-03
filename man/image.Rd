@@ -46,9 +46,9 @@ image(x, ...)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[oligo]{image,FeatureSet-method} in the \pkg{oligo} package
+    \item \link[affy]{image,AffyBatch-method} in the \pkg{affy} package
           for an example of a specific \code{image} method (defined for
-          \link[oligoClasses]{FeatureSet} objects).
+          \link[affy]{AffyBatch} objects).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
           in the \pkg{BiocGenerics} package.
@@ -59,6 +59,11 @@ image(x, ...)
 image
 showMethods("image")
 selectMethod("image", "ANY")  # the default method
+
+library(affy)
+showMethods("image")
+## The image() method for AffyBatch objects:
+selectMethod("image", "AffyBatch")
 }
 
 \keyword{methods}

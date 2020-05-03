@@ -53,11 +53,11 @@ cbind(..., deparse.level=1)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[S4Vectors]{rbind,DataTable-method} and
+    \item \link[S4Vectors]{rbind,RectangularData-method} and
           \link[S4Vectors]{cbind,DataFrame-method} in the \pkg{S4Vectors}
           package for examples of specific \code{rbind} and \code{cbind}
-          methods (defined for \link[S4Vectors]{DataTable} and
-          \link[S4Vectors]{DataFrame} objects, respectively).
+          methods (defined for \link[S4Vectors]{RectangularData} derivatives
+          and \link[S4Vectors]{DataFrame} objects, respectively).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
           in the \pkg{BiocGenerics} package.
@@ -72,6 +72,13 @@ selectMethod("rbind", "ANY")  # the default method
 cbind  # note the dispatch on the '...' arg only
 showMethods("cbind")
 selectMethod("cbind", "ANY")  # the default method
+
+library(S4Vectors)
+showMethods("rbind")
+## The rbind() method for RectangularData derivatives:
+selectMethod("rbind", "RectangularData")
+## The cbind() method for DataFrame objects:
+selectMethod("cbind", "DataFrame")
 }
 
 \keyword{methods}

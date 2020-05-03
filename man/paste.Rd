@@ -18,14 +18,14 @@
 }
 
 \usage{
-paste(..., sep=" ", collapse=NULL)
+paste(..., sep=" ", collapse=NULL, recycle0=FALSE)
 }
 
 \arguments{
   \item{...}{
     One or more vector-like objects containing strings.
   }
-  \item{sep, collapse}{
+  \item{sep, collapse, recycle0}{
     See \code{?base::\link[base]{paste}} for a description of
     these arguments.
   }

@@ -46,9 +46,9 @@ subset(x, ...)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[S4Vectors]{subset,DataTable-method} in the \pkg{S4Vectors}
+    \item \link[S4Vectors]{subset,RectangularData-method} in the \pkg{S4Vectors}
           package for an example of a specific \code{subset} method (defined
-          for \link[S4Vectors]{DataTable} objects).
+          for \link[S4Vectors]{RectangularData} derivatives).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
           in the \pkg{BiocGenerics} package.
@@ -62,8 +62,8 @@ selectMethod("subset", "ANY")  # the default method
 
 library(S4Vectors)
 showMethods("subset")
-selectMethod("subset", "DataTable")  # the "subset" method for
-                                     # DataTable objects
+## The subset() method for RectangularData derivatives:
+selectMethod("subset", "RectangularData")
 }
 
 \keyword{methods}
