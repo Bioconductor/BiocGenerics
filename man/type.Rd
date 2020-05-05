@@ -71,6 +71,7 @@ selectMethod("type", "ANY")  # the default "type" method
 
 library(Biostrings)
 showMethods("type")
+## The type() method for PairwiseAlignments objects:
 selectMethod("type", "PairwiseAlignments")
 }
 
