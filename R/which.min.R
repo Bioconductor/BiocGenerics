@@ -1,0 +1,27 @@
+### =========================================================================
+### The which.min() and which.max() generics
+### -------------------------------------------------------------------------
+###
+### Michael, June 2016 (commit 860cce0ec85b94ebca190802be95e61c4f469d6b):
+###
+### The default methods (defined in the base package) only take 1 argument.
+### We add the ... argument to the generic functions defined here so they
+### can be called with an arbitrary number of effective arguments. This was
+### motivated by the desire to optionally return global subscripts from
+### methods on List.
+### These generics are slated to be internalized in base R. When that
+### happens, these calls will effectively be no-ops.
+
+.which.min.useAsDefault <- function(x, ...) base::which.min(x, ...)
+.which.max.useAsDefault <- function(x, ...) base::which.max(x, ...)
+
+setGeneric("which.min",
+    function(x, ...) standardGeneric("which.min"),
+    useAsDefault=.which.min.useAsDefault
+)
+
+setGeneric("which.max",
+    function(x, ...) standardGeneric("which.max"),
+    useAsDefault=.which.max.useAsDefault
+)
+

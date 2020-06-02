@@ -113,6 +113,13 @@
       \item \code{BiocGenerics::\link[BiocGenerics]{unique}}
 
       \item \code{BiocGenerics::\link[BiocGenerics]{unlist}}
+
+      \item \code{BiocGenerics::\link[BiocGenerics]{unsplit}}
+
+      \item \code{BiocGenerics::\link[BiocGenerics]{which}}
+
+      \item \code{BiocGenerics::\link[BiocGenerics]{which.min}},
+            \code{BiocGenerics::\link[BiocGenerics]{which.max}}
     }
 
     Generics for functions defined in package \pkg{utils}:

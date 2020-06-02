@@ -131,7 +131,10 @@ export(
     unsplit,
 
     ## from R/which.R:
-    which, which.max, which.min
+    which,
+
+    ## from R/which.min.R:
+    which.min, which.max
 )
 
 ### Generics for functions defined in package utils:
