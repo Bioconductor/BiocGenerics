@@ -10,7 +10,7 @@ exportClasses(
     file, url, gzfile, bzfile, unz, pipe,
     fifo, sockconn, terminal, textConnection,
     gzcon,
-    characterORconnection,
+    character_OR_connection,
     AsIs,
     #table, xtabs,
     dist

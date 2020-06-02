@@ -14,7 +14,7 @@
 \alias{terminal-class}
 \alias{textConnection-class}
 \alias{gzcon-class}
-\alias{characterORconnection-class}
+\alias{character_OR_connection-class}
 
 \alias{AsIs-class}
 %\alias{table-class}
@@ -38,8 +38,8 @@
           file, url, gzfile, bzfile, unz, pipe,
           fifo, sockconn, terminal, textConnection,
           gzcon.
-          Addtitionally the characterORconnection S4 class is defined as
-          the union of classes character and connection.
+          Addtitionally the character_OR_connection S4 class is
+          defined as the union of classes character and connection.
 
     \item others: \link{AsIs}, \link{dist}
   }

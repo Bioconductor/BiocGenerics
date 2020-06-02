@@ -14,7 +14,7 @@
 apply(cbind(.connectionClasses, "connection"), 1, setOldClass,
       where = environment())
 
-setClassUnion("characterORconnection", c("character", "connection"))
+setClassUnion("character_OR_connection", c("character", "connection"))
 
 ### others
 setOldClass("AsIs")
