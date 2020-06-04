@@ -2,10 +2,10 @@
 
 \alias{as.data.frame}
 
-\title{Coerce an object into a data frame}
+\title{Coerce to a data frame}
 
 \description{
-  Function to coerce to a data frame, if possible.
+  Generic function to coerce to a data frame, if possible.
 
   NOTE: This man page is for the \code{as.data.frame}
   \emph{S4 generic function} defined in the \pkg{BiocGenerics} package.
@@ -30,7 +30,7 @@ as.data.frame(x, row.names=NULL, optional=FALSE, ...)
 }
 
 \value{
-  A data frame.
+  An ordinary data frame.
 
   See \code{?base::\link[base]{as.data.frame}} for the value returned
   by the default method.

@@ -2,6 +2,7 @@
 ### The as.list() generic
 ### -------------------------------------------------------------------------
 ###
+### base::as.list is an S3 generic.
 
 setGeneric("as.list")
 
