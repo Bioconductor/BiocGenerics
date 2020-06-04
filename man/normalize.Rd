@@ -38,12 +38,11 @@ normalize(object, ...)
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[affy]{normalize,AffyBatch-method} in the \pkg{affy} package
-          and \link[scater]{normalize,SingleCellExperiment-method} in the
-          \pkg{scater} package for examples of specific \code{normalize}
+    \item \link[affy]{normalize,AffyBatch-method} in the \pkg{affy}
+          package and \link[MSnbase]{normalize,MSnExp-method} in the
+          \pkg{MSnbase} package for examples of specific \code{normalize}
           methods (defined for \link[affy]{AffyBatch} and
-          \link[SingleCellExperiment]{SingleCellExperiment} objects,
-          respectively).
+          \link[MSnbase]{MSnExp} objects, respectively).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
           in the \pkg{BiocGenerics} package.
