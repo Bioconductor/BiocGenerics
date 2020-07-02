@@ -2,5 +2,5 @@
 
 _BiocGenerics_ is an R/Bioconductor package that defines S4 generic functions used in Bioconductor.
 
-See https://bioconductor.org/packages/BiocGenerics for more information including how to install the release version of the package (please refrain from installing directly from GitHub).
+See https://bioconductor.org/packages/release/bioc/html/BiocGenerics.html for more information including how to install the release version of the package (please refrain from installing directly from GitHub).
 
