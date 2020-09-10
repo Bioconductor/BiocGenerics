@@ -2,7 +2,7 @@
 
 \alias{t}
 
-\title{Matrix Transponse}
+\title{Matrix Transpose}
 
 \description{
   Given a rectangular object \code{x}, \code{t} returns the
