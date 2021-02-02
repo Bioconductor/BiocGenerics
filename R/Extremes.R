@@ -16,14 +16,10 @@
 #setGeneric("min", signature="...")
 
 setGeneric("pmax", signature="...")
-apply_hotfix73465(getGeneric("pmax"))
 
 setGeneric("pmin", signature="...")
-apply_hotfix73465(getGeneric("pmin"))
 
 setGeneric("pmax.int", signature="...")
-apply_hotfix73465(getGeneric("pmax.int"))
 
 setGeneric("pmin.int", signature="...")
-apply_hotfix73465(getGeneric("pmin.int"))
 

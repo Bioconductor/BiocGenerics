@@ -9,5 +9,4 @@
 ### Note that dispatching on '...' is supported starting with R 2.8.0 only.
 
 setGeneric("mapply", signature="...")
-apply_hotfix73465(getGeneric("mapply"))
 
