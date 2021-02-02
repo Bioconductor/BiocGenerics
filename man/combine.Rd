@@ -5,7 +5,10 @@
 \alias{combine,data.frame,data.frame-method}
 \alias{combine,matrix,matrix-method}
 
-\title{Combining or merging different Bioconductor data structures}
+\alias{combineRows}
+\alias{combineCols}
+
+\title{Combining/merging different Bioconductor data structures}
 
 \description{
   The \code{combine} generic function handles methods for combining
@@ -16,16 +19,30 @@
   ignoring \code{...} in the argument list; because Bioconductor
   data structures are complicated, check carefully that \code{combine}
   does as you intend).
+
+  The \code{combineRows} and \code{combineCols} generic functions are
+  similar to \code{combine} but specific to rectangular objects like
+  data frames or matrices.
 }
 
 \usage{
 combine(x, y, ...)
+
+combineRows(x, y, ...)
+combineCols(x, y, ...)
 }
 
 \arguments{
   \item{x}{One of the values.}
   \item{y}{A second value.}
-  \item{...}{Any other objects of the same class as \code{x} and \code{y}.}
+  \item{...}{
+    For \code{combine}: Any other objects of the same class as \code{x}
+    and \code{y}.
+
+    For \code{combineRows} and \code{combineCols}: Additional arguments,
+    for use in specific methods. These arguments will typically control
+    how the combining/merging operates.
+  }
 }
 
 \details{
