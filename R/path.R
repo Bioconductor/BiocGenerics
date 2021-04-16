@@ -52,7 +52,11 @@ setGeneric("dirname<-", signature="path",
 setMethod("basename", "ANY",
     function(path, ...)
     {
-        if (is.object(path)) {
+        ## If 'path' inherits from character (e.g. 'path' is a glue object
+        ## as returned by something like 'glue::glue("some/path")'), we must
+        ## return 'base::basename(path)'.
+        ## See https://github.com/Bioconductor/BiocGenerics/issues/10
+        if (!is.character(path) && is.object(path)) {
             path <- path(path, ...)
             base::basename(path)
         } else {
@@ -66,7 +70,11 @@ setMethod("basename", "ANY",
 setMethod("dirname", "ANY",
     function(path, ...)
     {
-        if (is.object(path)) {
+        ## If 'path' inherits from character (e.g. 'path' is a glue object
+        ## as returned by something like 'glue::glue("some/path")'), we must
+        ## return 'base::basename(path)'.
+        ## See https://github.com/Bioconductor/BiocGenerics/issues/10
+        if (!is.character(path) && is.object(path)) {
             path <- path(path, ...)
             base::dirname(path)
         } else {
