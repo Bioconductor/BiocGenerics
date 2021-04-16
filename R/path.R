@@ -56,13 +56,12 @@ setMethod("basename", "ANY",
         ## as returned by something like 'glue::glue("some/path")'), we must
         ## return 'base::basename(path)'.
         ## See https://github.com/Bioconductor/BiocGenerics/issues/10
-        if (!is.character(path) && is.object(path)) {
-            path <- path(path, ...)
-            base::basename(path)
-        } else {
+        if (is.character(path) || !is.object(path)) {
             ## We intentionally pass ... to cause failure if additional
             ## arguments were supplied.
             base::basename(path, ...)
+        } else {
+            base::basename(path(path, ...))
         }
     }
 )
@@ -72,15 +71,13 @@ setMethod("dirname", "ANY",
     {
         ## If 'path' inherits from character (e.g. 'path' is a glue object
         ## as returned by something like 'glue::glue("some/path")'), we must
-        ## return 'base::basename(path)'.
-        ## See https://github.com/Bioconductor/BiocGenerics/issues/10
-        if (!is.character(path) && is.object(path)) {
-            path <- path(path, ...)
-            base::dirname(path)
-        } else {
+        ## return 'base::dirname(path)'.
+        if (is.character(path) || !is.object(path)) {
             ## We intentionally pass ... to cause failure if additional
             ## arguments were supplied.
             base::dirname(path, ...)
+        } else {
+            base::dirname(path(path, ...))
         }
     }
 )
