@@ -197,8 +197,6 @@ export(
 
     ## from R/combine.R:
     combine,
-    combineRows,
-    combineCols,
 
     ## from R/dbconn.R:
     dbconn, dbfile,

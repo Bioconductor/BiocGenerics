@@ -166,11 +166,3 @@ setMethod("combine", c("matrix", "matrix"),
     }
 )
 
-setGeneric("combineRows", signature=c("x", "y"),
-    function(x, y, ...) standardGeneric("combineRows")
-)
-
-setGeneric("combineCols", signature=c("x", "y"),
-    function(x, y, ...) standardGeneric("combineCols")
-)
-
