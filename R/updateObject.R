@@ -194,7 +194,8 @@ setMethod("updateObject", "ANY",
         if (verbose)
             message("updateObject(object=\"ANY\") default for object ",
                     "of class '", class(object), "'")
-        if (isS4(object) && length(getObjectSlots(object)) > 0L) {
+        if (length(getObjectSlots(object)) > 0L &&
+            !any(class(object) %in% c("data.frame", "factor"))) {
             updateObjectFromSlots(object, ..., verbose=verbose)
         } else {
             object
