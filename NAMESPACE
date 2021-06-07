@@ -2,7 +2,6 @@ import(methods)
 import(utils)
 import(graphics)
 import(stats)
-import(parallel)
 
 exportClasses(
     ## from R/S3-classes-as-S4-classes.R:
@@ -174,16 +173,6 @@ export(
 
     ## from R/xtabs.R:
     xtabs
-)
-
-### Generics for functions defined in package parallel:
-export(
-    ## from R/clusterApply.R:
-    clusterCall, clusterApply, clusterApplyLB,
-    clusterEvalQ, clusterExport,
-    clusterMap, clusterSplit,
-    parLapply, parSapply, parApply, parRapply, parCapply,
-    parLapplyLB, parSapplyLB
 )
 
 

@@ -8,8 +8,8 @@ Version: 0.39.1
 License: Artistic-2.0
 Author: The Bioconductor Dev Team
 Maintainer: Bioconductor Package Maintainer <maintainer@bioconductor.org>
-Depends: R (>= 4.0.0), methods, utils, graphics, stats, parallel
-Imports: methods, utils, graphics, stats, parallel
+Depends: R (>= 4.0.0), methods, utils, graphics, stats
+Imports: methods, utils, graphics, stats
 Suggests: Biobase, S4Vectors, IRanges, GenomicRanges, DelayedArray,
 	Biostrings, Rsamtools, AnnotationDbi, affy, affyPLM, DESeq2,
 	flowClust, MSnbase, annotate, RUnit
@@ -63,7 +63,6 @@ Collate: S3-classes-as-S4-classes.R
 	residuals.R
 	weights.R
 	xtabs.R
-	clusterApply.R
 	annotation.R
 	combine.R
 	dbconn.R

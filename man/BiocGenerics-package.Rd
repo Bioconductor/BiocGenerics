@@ -146,24 +146,6 @@
 
       \item \code{BiocGenerics::\link[BiocGenerics]{xtabs}}
     }
-
-    Generics for functions defined in package \pkg{parallel}:
-    \itemize{
-      \item \code{BiocGenerics::\link[BiocGenerics]{clusterCall}},
-            \code{BiocGenerics::\link[BiocGenerics]{clusterApply}},
-            \code{BiocGenerics::\link[BiocGenerics]{clusterApplyLB}},
-            \code{BiocGenerics::\link[BiocGenerics]{clusterEvalQ}},
-            \code{BiocGenerics::\link[BiocGenerics]{clusterExport}},
-            \code{BiocGenerics::\link[BiocGenerics]{clusterMap}},
-            \code{BiocGenerics::\link[BiocGenerics]{clusterSplit}},
-            \code{BiocGenerics::\link[BiocGenerics]{parLapply}},
-            \code{BiocGenerics::\link[BiocGenerics]{parSapply}},
-            \code{BiocGenerics::\link[BiocGenerics]{parApply}},
-            \code{BiocGenerics::\link[BiocGenerics]{parRapply}},
-            \code{BiocGenerics::\link[BiocGenerics]{parCapply}},
-            \code{BiocGenerics::\link[BiocGenerics]{parLapplyLB}},
-            \code{BiocGenerics::\link[BiocGenerics]{parSapplyLB}}
-    }
   }
 
   \subsection{(2) Bioconductor specific generics}{
