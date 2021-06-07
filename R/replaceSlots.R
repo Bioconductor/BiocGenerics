@@ -63,7 +63,6 @@ replaceSlots <- function(object, ..., check=TRUE)
 
 updateS4 <- function(...)
 {
-    .Deprecated("replaceSlots")
-    replaceSlots(...)
+    .Defunct("replaceSlots")
 }
 
