@@ -158,7 +158,9 @@
       \item \code{\link[BiocGenerics]{dbconn}},
             \code{\link[BiocGenerics]{dbfile}}
 
-      \item \code{\link[BiocGenerics]{dims}}
+      \item \code{\link[BiocGenerics]{dims}},
+            \code{\link[BiocGenerics]{nrows}},
+            \code{\link[BiocGenerics]{ncols}},
 
       \item \code{\link[BiocGenerics]{fileName}}
 

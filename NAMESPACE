@@ -191,7 +191,7 @@ export(
     dbconn, dbfile,
 
     ## from R/dims.R:
-    dims,
+    dims, nrows, ncols,
 
     ## from R/fileName.R:
     fileName,
