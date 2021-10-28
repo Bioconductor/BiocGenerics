@@ -61,8 +61,3 @@ replaceSlots <- function(object, ..., check=TRUE)
     object
 }
 
-updateS4 <- function(...)
-{
-    .Defunct("replaceSlots")
-}
-
