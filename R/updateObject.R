@@ -22,7 +22,7 @@ updateObjectFrom_errf <- function(..., verbose=FALSE) {
 
 getObjectSlots <- function(object)  # object, rather than class defn, slots
 {
-    if (!is.object(object) || isVirtualClass(class(object)))
+    if (!is.object(object) || isVirtualClass(class(object)[[1L]]))
         return(NULL)
     value <- attributes(object)
     value$class <- NULL
@@ -39,7 +39,7 @@ getObjectSlots <- function(object)  # object, rather than class defn, slots
     value
 }
 
-updateObjectFromSlots <- function(object, objclass=class(object),
+updateObjectFromSlots <- function(object, objclass=class(object)[[1L]],
                                   ..., verbose=FALSE)
 {
     if (is(object, "environment")) {
@@ -55,7 +55,7 @@ updateObjectFromSlots <- function(object, objclass=class(object),
         return(object)
     }
     if (verbose)
-        message("updateObjectFromSlots(object = '", class(object),
+        message("updateObjectFromSlots(object = '", class(object)[[1L]],
                 "' class = '", objclass, "')")
     objectSlots <- getObjectSlots(object)
     ## de-mangle and remove NULL
@@ -70,7 +70,7 @@ updateObjectFromSlots <- function(object, objclass=class(object),
     if (length(toDrop) > 0L) {
         warning("dropping slot(s) '",
                 paste(names(objectSlots)[toDrop], collapse="', '"),
-                "' from object = '", class(object), "'")
+                "' from object = '", class(object)[[1L]], "'")
         objectSlots <- objectSlots[-toDrop]
     }
     ## ad-hoc methods for creating new instances
@@ -100,7 +100,7 @@ updateObjectFromSlots <- function(object, objclass=class(object),
     if (is.null(res))
         stop("could not updateObject to class '", objclass, "'",
              "\nconsider defining an 'updateObject' method for class '",
-             class(object), "'")
+             class(object)[[1L]], "'")
     res
 }
 
@@ -113,10 +113,10 @@ getObjectFields <- function(object)
 }
 
 updateObjectFromFields <-
-    function(object, objclass=class(object), ..., verbose=FALSE)
+    function(object, objclass=class(object)[[1L]], ..., verbose=FALSE)
 {
     if (verbose)
-        message("updateObjectFromFields(object = '", class(object),
+        message("updateObjectFromFields(object = '", class(object)[[1L]],
                 "' objclass = '", objclass, "')")
 
     classFields <- names(getRefClass(objclass)$fields())
@@ -136,7 +136,7 @@ updateObjectFromFields <-
     if (length(toDrop) > 0L) {
         warning("dropping fields(s) '",
                 paste(names(objectFields)[toDrop], collapse="', '"),
-                "' from object = '", class(object), "'")
+                "' from object = '", class(object)[[1L]], "'")
         objectFields <- objectFields[-toDrop]
     }
 
@@ -154,7 +154,7 @@ updateObjectFromFields <-
     if (is.null(res))
         stop("could not updateObject to class '", objclass, "'",
              "\nconsider defining an 'updateObject' method for class '",
-             class(object), "'")
+             class(object)[[1L]], "'")
     res
 }
 
@@ -193,7 +193,7 @@ setMethod("updateObject", "ANY",
     {
         if (verbose)
             message("updateObject(object=\"ANY\") default for object ",
-                    "of class '", class(object), "'")
+                    "of class '", class(object)[[1L]], "'")
         if (length(getObjectSlots(object)) > 0L &&
             !any(class(object) %in% c("data.frame", "factor")))
         {
@@ -264,7 +264,7 @@ setMethod("updateObject", "formula",
 setMethod("updateObject", "envRefClass",
     function(object, ..., verbose=FALSE)
 {
-    msg <- sprintf("updateObject(object= '%s')", class(object))
+    msg <- sprintf("updateObject(object= '%s')", class(object)[[1L]])
     if (verbose)
         message(msg)
     updateObjectFromFields(object, ..., verbose=verbose)
