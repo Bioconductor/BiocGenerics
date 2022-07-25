@@ -21,7 +21,8 @@
 updateObject(object, ..., verbose=FALSE)
 
 ## Related utilities:
-updateObjectFromSlots(object, objclass=class(object), ..., verbose=FALSE)
+updateObjectFromSlots(object, objclass=class(object)[[1L]], ...,
+                      verbose=FALSE)
 getObjectSlots(object)
 }
 

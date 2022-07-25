@@ -158,6 +158,20 @@
       \item \code{\link[BiocGenerics]{dbconn}},
             \code{\link[BiocGenerics]{dbfile}}
 
+      \item \code{\link[BiocGenerics]{counts}},
+            \code{\link[BiocGenerics]{counts<-}},
+            \code{\link[BiocGenerics]{design}},
+            \code{\link[BiocGenerics]{design<-}},
+            \code{\link[BiocGenerics]{dispTable}},
+            \code{\link[BiocGenerics]{dispTable<-}},
+            \code{\link[BiocGenerics]{sizeFactors}},
+            \code{\link[BiocGenerics]{sizeFactors<-}},
+            \code{\link[BiocGenerics]{conditions}},
+            \code{\link[BiocGenerics]{conditions<-}},
+            \code{\link[BiocGenerics]{estimateSizeFactors}},
+            \code{\link[BiocGenerics]{estimateDispersions}},
+            \code{\link[BiocGenerics]{plotDispEsts}}
+
       \item \code{\link[BiocGenerics]{dims}},
             \code{\link[BiocGenerics]{nrows}},
             \code{\link[BiocGenerics]{ncols}},

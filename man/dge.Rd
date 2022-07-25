@@ -1,14 +1,17 @@
 \name{dge}
-\alias{conditions}
-\alias{conditions<-}
-\alias{design}
-\alias{design<-}
+
+\alias{dge}
+
 \alias{counts}
 \alias{counts<-}
+\alias{design}
+\alias{design<-}
 \alias{dispTable}
 \alias{dispTable<-}
 \alias{sizeFactors}
 \alias{sizeFactors<-}
+\alias{conditions}
+\alias{conditions<-}
 \alias{estimateSizeFactors}
 \alias{estimateDispersions}
 \alias{plotDispEsts}
@@ -21,14 +24,14 @@ and data access to count datasets.}
 \usage{
 counts(object, ...)
 counts(object, ...) <- value
+design(object, ...)
+design(object, ...) <- value
 dispTable(object, ...)
 dispTable(object, ...)  <- value
 sizeFactors(object, ...)
 sizeFactors(object, ...) <- value
 conditions(object, ...)
 conditions(object, ...) <- value
-design(object, ...)
-design(object, ...) <- value
 estimateSizeFactors(object, ...)
 estimateDispersions(object, ...)
 plotDispEsts(object, ...)
@@ -47,5 +50,18 @@ plotDispEsts(object, ...)
   vignettes.}
 
 \author{W. Huber, S. Anders}
+
+\seealso{
+  \itemize{
+    \item \code{\link[methods]{showMethods}} for displaying a summary of the
+          methods defined for a given generic function.
+
+    \item \code{\link[methods]{selectMethod}} for getting the definition of
+          a specific method.
+
+    \item \link{BiocGenerics} for a summary of all the generics defined
+          in the \pkg{BiocGenerics} package.
+  }
+}
 
 \keyword{manip}

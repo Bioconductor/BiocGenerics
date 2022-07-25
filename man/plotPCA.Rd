@@ -1,7 +1,6 @@
 \name{plotPCA}
 
 \alias{plotPCA}
-\alias{plotPCA,ANY-method}
 
 \title{PCA-plot: Principal Component Analysis plot}
 

@@ -65,7 +65,7 @@ export(
 
     ## from R/is.unsorted.R:
     is.unsorted,
- 
+
     ## from R/lapply.R:
     lapply, sapply,
 
@@ -190,6 +190,16 @@ export(
     ## from R/dbconn.R:
     dbconn, dbfile,
 
+    ## from R/dge.R:
+    counts, "counts<-",
+    design, "design<-",
+    dispTable, "dispTable<-",
+    sizeFactors, "sizeFactors<-",
+    conditions, "conditions<-",
+    estimateSizeFactors,
+    estimateDispersions,
+    plotDispEsts,
+
     ## from R/dims.R:
     dims, nrows, ncols,
 
@@ -239,23 +249,18 @@ exportMethods(
     ## from R/combine.R:
     combine,
 
-    ## from R/updateObject.R:
-    updateObject,
+    ## from R/path.R:
+    basename, "basename<-",
+    dirname, "dirname<-",
 
-    ## from R/dge.R:
-    counts, "counts<-",
-    design, "design<-",
-    dispTable, "dispTable<-",
-    sizeFactors, "sizeFactors<-",
-    conditions, "conditions<-",
-    estimateSizeFactors, 
-    estimateDispersions,
-    plotDispEsts,
+    ## from R/plotMA.R:
     plotMA,
-    plotPCA,
 
     ## from R/strand.R:
-    invertStrand
+    invertStrand,
+
+    ## from R/updateObject.R:
+    updateObject
 )
 
 
