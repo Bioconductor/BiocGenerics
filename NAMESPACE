@@ -259,6 +259,9 @@ exportMethods(
     ## from R/strand.R:
     invertStrand,
 
+    ## from R/type.R:
+    type, "type<-",
+
     ## from R/updateObject.R:
     updateObject
 )

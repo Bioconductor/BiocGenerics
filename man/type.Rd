@@ -2,6 +2,10 @@
 
 \alias{type}
 \alias{type<-}
+\alias{type,vector-method}
+\alias{type,array-method}
+\alias{type<-,vector-method}
+\alias{type<-,array-method}
 
 \title{Accessing the type of an object}
 
@@ -17,6 +21,14 @@
 \usage{
 type(x)
 type(x) <- value
+
+## Methods defined in the BiocGenerics package:
+
+\S4method{type}{vector}(x)
+\S4method{type}{array}(x)
+
+\S4method{type}{vector}(x) <- value
+\S4method{type}{array}(x) <- value
 }
 
 \arguments{
@@ -64,6 +76,20 @@ showMethods("type")
 
 `type<-`
 showMethods("type<-")
+
+## The BiocGenerics package defines methods for ordinary vector
+## and array objects:
+m <- matrix(11:22, nrow=3)
+type(m)           # equivalent to 'typeof(m)' or 'storage.mode(m)'
+type(m) <- "raw"  # equivalent to 'storage.mode(m) <- "raw"'
+m
+type(m)
+
+selectMethod("type", "array")
+
+selectMethod("type<-", "array")
+
+## Examples of methods defined in other packages:
 
 library(DelayedArray)
 showMethods("type")
