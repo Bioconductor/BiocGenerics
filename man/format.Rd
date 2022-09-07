@@ -2,7 +2,6 @@
 
 \alias{format}
 \alias{format.list}
-\alias{format,list-method}
 
 \title{Format an R object for pretty printing}
 

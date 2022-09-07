@@ -139,11 +139,6 @@ export(
     which.min, which.max
 )
 
-exportMethods(
-    ## from R/format.R:
-    format
-)
-
 S3method(format, list)
 export(format.list)
 

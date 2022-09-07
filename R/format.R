@@ -25,9 +25,6 @@ setGeneric("format")
 ###   > format.AsIs(list(IRanges(1, 8:9)))
 ###   [1] "1-8, 1-9"
 ###
-### So we define a format() method for list objects that does that.
-
-### S3/S4 combo for format.list
-format.list <- format.AsIs
-setMethod("format", "list", format.list)
+### So we define a format() **S3** method for list objects that does that.
+format.list <- base::format.AsIs
 
