@@ -50,6 +50,8 @@
             \code{BiocGenerics::\link[BiocGenerics]{pmax.int}},
             \code{BiocGenerics::\link[BiocGenerics]{pmin.int}}
 
+      \item \code{BiocGenerics::\link[BiocGenerics]{format}}
+
       \item funprog:
             \code{BiocGenerics::\link[BiocGenerics]{Reduce}},
             \code{BiocGenerics::\link[BiocGenerics]{Filter}},

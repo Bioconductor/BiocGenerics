@@ -54,6 +54,9 @@ export(
     ## from R/Extremes.R:
     pmax, pmin, pmax.int, pmin.int,
 
+    ## from R/format.R:
+    format,
+
     ## from R/funprog.R:
     Reduce, Filter, Find, Map, Position,
 
@@ -135,6 +138,14 @@ export(
     ## from R/which.min.R:
     which.min, which.max
 )
+
+exportMethods(
+    ## from R/format.R:
+    format
+)
+
+S3method(format, list)
+export(format.list)
 
 ### Generics for functions defined in package utils:
 export(
