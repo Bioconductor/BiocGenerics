@@ -2,7 +2,7 @@
 ### The subset() generic
 ### -------------------------------------------------------------------------
 ###
-### base::subset is an S3 generic.
+### Note that base::subset is an S3 generic.
 
 setGeneric("subset")
 

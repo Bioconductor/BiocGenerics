@@ -22,7 +22,7 @@ t(x)
 
 \arguments{
   \item{x}{
-    a rectangular object, like a matrix or data frame
+    A matrix-like or other rectangular object.
   }
 }
 

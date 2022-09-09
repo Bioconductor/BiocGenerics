@@ -2,7 +2,7 @@
 ### The start(), end(), width(), and pos() generic getters and setters
 ### -------------------------------------------------------------------------
 ###
-### stats::start and stats::end are S3 generics.
+### Note that stats::start and stats::end are S3 generics.
 ###
 
 setGeneric("start")

@@ -2,7 +2,7 @@
 ### The density() generic
 ### -------------------------------------------------------------------------
 ###
-### stats::density is an S3 generic.
+### Note that stats::density is an S3 generic.
 
 setGeneric("density")
 

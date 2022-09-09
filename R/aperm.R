@@ -1,12 +1,12 @@
 ### =========================================================================
-### The as.data.frame() generic
+### The aperm() generic
 ### -------------------------------------------------------------------------
 ###
-### Note that base::as.data.frame is an S3 generic.
+### Note that base::aperm is an S3 generic.
 ###
 ### Need to explicitly define this generic otherwise the implicit generic in
-### package "base" would dispatch on all its arguments. Here we set dispatch
-### on the 1st arg (the 'x' arg) only!
+### package "base" would dispatch on ('a', 'perm'). Here we set dispatch on
+### the 1st arg (the 'a' arg) only!
 
-setGeneric("as.data.frame", signature="x")
+setGeneric("aperm", signature="a")
 

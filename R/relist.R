@@ -2,7 +2,7 @@
 ### The relist() generic
 ### -------------------------------------------------------------------------
 ###
-### utils::relist is an S3 generic.
+### Note that utils::relist is an S3 generic.
 
 setGeneric("relist")
 

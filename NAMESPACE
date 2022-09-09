@@ -23,6 +23,9 @@ exportClasses(
 
 ### Generics for functions defined in package base:
 export(
+    ## from R/aperm.R:
+    aperm,
+
     ## from R/append.R:
     append,
 

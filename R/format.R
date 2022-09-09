@@ -2,7 +2,7 @@
 ### The format() generic
 ### -------------------------------------------------------------------------
 ###
-### base::format is an S3 generic.
+### Note that base::format is an S3 generic.
 
 setGeneric("format")
 

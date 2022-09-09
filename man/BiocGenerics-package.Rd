@@ -21,6 +21,8 @@
 
     Generics for functions defined in package \pkg{base}:
     \itemize{
+      \item \code{BiocGenerics::\link[BiocGenerics]{aperm}}
+
       \item \code{BiocGenerics::\link[BiocGenerics]{append}}
 
       \item \code{BiocGenerics::\link[BiocGenerics]{as.data.frame}}
@@ -109,6 +111,8 @@
             \code{BiocGenerics::\link[BiocGenerics]{pos}}
 
       \item \code{BiocGenerics::\link[BiocGenerics]{subset}}
+
+      \item \code{BiocGenerics::\link[BiocGenerics]{t}}
 
       \item \code{BiocGenerics::\link[BiocGenerics]{table}}
 
