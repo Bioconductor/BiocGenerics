@@ -4,10 +4,11 @@ Description: The package defines many S4 generic functions used in Bioconductor.
 biocViews: Infrastructure
 URL: https://bioconductor.org/packages/BiocGenerics
 BugReports: https://github.com/Bioconductor/BiocGenerics/issues
-Version: 0.43.4
+Version: 0.43.5
 License: Artistic-2.0
+Encoding: UTF-8
 Author: The Bioconductor Dev Team
-Maintainer: Bioconductor Package Maintainer <maintainer@bioconductor.org>
+Maintainer: Hervé Pagès <hpages.on.github@gmail.com>
 Depends: R (>= 4.0.0), methods, utils, graphics, stats
 Imports: methods, utils, graphics, stats
 Suggests: Biobase, S4Vectors, IRanges, GenomicRanges, DelayedArray,
