@@ -53,11 +53,11 @@ as.vector(x, mode="any")
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
 
-    \item \link[S4Vectors]{as.vector,Rle-method} and
-          \link[IRanges]{as.vector,AtomicList-method} in the \pkg{S4Vectors}
-          and \pkg{IRanges} packages, respectively, for examples of specific
-          \code{as.vector} methods (defined for \link[S4Vectors]{Rle} and
-          \link[IRanges]{AtomicList} objects, respectively).
+    \item \link[S4Vectors]{as.vector,Rle-method} in the \pkg{S4Vectors}
+          package, and \link[IRanges]{as.vector,AtomicList-method} in
+          the \pkg{IRanges} packages, for examples of specific
+          \code{as.vector} methods (defined for \link[S4Vectors]{Rle}
+          and \link[IRanges]{AtomicList} objects, respectively).
 
     \item \link{BiocGenerics} for a summary of all the generics defined
           in the \pkg{BiocGenerics} package.

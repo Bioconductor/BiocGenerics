@@ -59,8 +59,8 @@ eval(expr, envir=parent.frame(),
           a specific method.
 
     \item \link[IRanges]{eval,expression,Vector-method} in the \pkg{IRanges}
-          package for an example of a specific \code{eval} method (defined for
-          when the \code{expr} and \code{envir} arguments are an
+          package for an example of a specific \code{eval} method (defined
+          for when the \code{expr} and \code{envir} arguments are an
           \link[base]{expression} and a \link[S4Vectors]{Vector} object,
           respectively).
 
