@@ -41,10 +41,6 @@ export(
     ## from R/cbind.R:
     rbind, cbind,
 
-    ## from R/colSums.R:
-    colSums, rowSums,
-    colMeans, rowMeans,
-
     ## from R/do.call.R:
     do.call,
 
