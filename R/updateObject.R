@@ -160,6 +160,67 @@ updateObjectFromFields <-
 
 
 ### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+### attach_classdef_pkg()
+###
+
+### Known invalid packages found in 'attr(class(x), "package")' as of
+### Nov 17, 2021.
+.KNOWN_INVALID_CLASSDEF_PKGS <- c(
+  ## For some serialized S4 instances in the hubs 'attr(class(x), "package")'
+  ## is set to ".GlobalEnv"! This is the case for example for CellMapperList
+  ## instances EH170 to EH175 in ExperimentHub. Not sure how that's allowed
+  ## but let's just deal with it.
+    ".GlobalEnv",
+  ## SimResults class (e.g.
+  ## "iCOBRA/inst/extdata/cobradata_example_simres.Rdata") is defined in the
+  ## benchmarkR package which is not part of CRAN or Bioconductor (GitHub-only
+  ## package).
+    "benchmarkR",
+  ## The galgo.Obj class (e.g. "GSgalgoR/inst/extdata/results/final_1.rda")
+  ## used to be defined in galgoR but this package no longer exists (has
+  ## been renamed GSgalgoR).
+    "galgoR",
+  ## The MutationFeatureData class (e.g.
+  ## decompTumor2Sig/inst/extdata/Nik-Zainal_PMID_22608084-pmsignature-G.Rdata)
+  ## is defined in the pmsignature package which is not part of CRAN or
+  ## Bioconductor (GitHub-only package).
+    "pmsignature",
+  ## The QCStats class (e.g. "arrayMvout/inst/simpleaffy/afxsubQC.rda")
+  ## was defined in simpleaffy which got removed in BioC 3.13.
+    "simpleaffy",
+  ## The YAQCStats class (e.g. "qcmetrics/inst/extdata/yqc.rda")
+  ## was defined in yaqcaffy which got removed in BioC 3.14.
+    "yaqcaffy"
+)
+
+### A wrapper around attachNamespace() that tries to attach the package only
+### if it's not already attached.
+.attach_namespace <- function(pkg)
+{
+    if (!(paste0("package:", pkg) %in% search())) {
+        suppressMessages(suppressWarnings(suppressPackageStartupMessages(
+            attachNamespace(pkg)
+        )))
+    }
+}
+
+### For some unclear reasons, updateObject(x) will fail sometimes if the
+### package where class(x) is defined is loaded but not attached. This happens
+### for example if 'x' is of class enrichResult (the enrichResult class is
+### defined in the DOSE package) and if the DOSE package was indirectly loaded
+### with library(TimiRGeN).
+### This helper function will make sure that the package gets attached.
+### NOT exported but used in the updateObject package.
+attach_classdef_pkg <- function(x_class)
+{
+    classdef_pkg <- attr(x_class, "package")
+    if (is.null(classdef_pkg) || classdef_pkg %in% .KNOWN_INVALID_CLASSDEF_PKGS)
+        return()
+    .attach_namespace(classdef_pkg)  # do NOT use loadNamespace()
+}
+
+
+### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ### updateObject()
 ###
 
@@ -169,6 +230,9 @@ setGeneric("updateObject", signature="object",
     {
         if (!isTRUEorFALSE(verbose))
             stop("'verbose' must be TRUE or FALSE")
+        ## We silently try to **attach** (loaded is not enough) the package
+        ## where class(object) is defined.
+        try(attach_classdef_pkg(class(object)), silent=TRUE)
         result <- standardGeneric("updateObject")
         check <- list(...)$check
         if (is.null(check)) {
