@@ -232,7 +232,17 @@ setGeneric("updateObject", signature="object",
             stop("'verbose' must be TRUE or FALSE")
         ## We silently try to **attach** (loaded is not enough) the package
         ## where class(object) is defined.
-        try(attach_classdef_pkg(class(object)), silent=TRUE)
+        ## Oops! Nope, let's not do this. Problem with doing this is that
+        ## many packages call updateObject() internally e.g. analyzeSNPhood()
+        ## in the SNPhood package calls the estimateSizeFactors() method
+        ## for DESeqDataSet objects, which in turn calls updateObject().
+        ## As a result, calling analyzeSNPhood() will attach DESeq2 to the
+        ## search path if it's not already attached. This is not good. See
+        ## https://stat.ethz.ch/pipermail/bioc-devel/2023-October/020024.html
+        ## for the full story.
+        ## Generally speaking, package functionalities should not have the
+        ## side effect of altering the search path.
+        #try(attach_classdef_pkg(class(object)), silent=TRUE)
         result <- standardGeneric("updateObject")
         check <- list(...)$check
         if (is.null(check)) {
