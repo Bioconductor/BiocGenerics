@@ -50,8 +50,7 @@ showMethods("longForm")
 
 library(MultiAssayExperiment)
 showMethods("MultiAssayExperiment")
-## Method not ready yet (2025/01/21), uncomment when it's ready
-#selectMethod("longForm", "MultiAssayExperiment")
+selectMethod("longForm", "MultiAssayExperiment")
 }
 
 \keyword{methods}
