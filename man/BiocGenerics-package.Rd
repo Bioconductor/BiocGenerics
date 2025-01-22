@@ -192,6 +192,8 @@
 
       \item \code{\link[BiocGenerics]{fileName}}
 
+      \item \code{\link[BiocGenerics]{longForm}}
+
       \item \code{\link[BiocGenerics]{normalize}}
 
       \item \code{\link[BiocGenerics]{Ontology}}

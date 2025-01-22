@@ -1,8 +1,8 @@
 ### =========================================================================
-### The normalize() generic
+### The longForm() generic
 ### -------------------------------------------------------------------------
 
-setGeneric("normalize",
-    function(object, ...) standardGeneric("normalize")
+setGeneric("longForm",
+    function(object, ...) standardGeneric("longForm")
 )
 

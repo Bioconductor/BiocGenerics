@@ -225,6 +225,9 @@ export(
     ## from R/fileName.R:
     fileName,
 
+    ## from R/longForm.R:
+    longForm,
+
     ## from R/normalize.R:
     normalize,
 
