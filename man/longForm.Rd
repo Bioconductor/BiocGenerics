@@ -49,7 +49,7 @@ longForm
 showMethods("longForm")
 
 library(MultiAssayExperiment)
-showMethods("MultiAssayExperiment")
+showMethods("longForm")
 selectMethod("longForm", "MultiAssayExperiment")
 }
 
