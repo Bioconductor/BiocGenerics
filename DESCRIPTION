@@ -59,7 +59,6 @@ Collate: S3-classes-as-S4-classes.R
 	rep.R
 	row_colnames.R
 	saveRDS.R
-	setops.R
 	sort.R
 	start.R
 	subset.R
@@ -69,18 +68,19 @@ Collate: S3-classes-as-S4-classes.R
 	unique.R
 	unlist.R
 	unsplit.R
-	relist.R
-	var.R
 	which.R
 	which.min.R
+	relist.R
 	boxplot.R
 	image.R
 	density.R
 	IQR.R
 	mad.R
 	residuals.R
+	var.R
 	weights.R
 	xtabs.R
+	setops.R
 	annotation.R
 	combine.R
 	containsOutOfMemoryData.R
