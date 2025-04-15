@@ -1,3 +1,26 @@
+CHANGES IN VERSION 0.54.0
+-------------------------
+
+NEW FEATURES
+
+    o Add longForm() S4 generic.
+      See https://github.com/waldronlab/MultiAssayExperiment/issues/333 for
+      some context.
+
+    o Add paste2() S4 generic, with methods defined for ordinary vectors
+      and arrays. Also add add_prefix() and add_suffix(), two simple wrappers
+      around paste2() provided for convenience and code readability.
+
+    o Define setequal() S4 generic with generics::setequal as default method.
+
+SIGNIFICANT USER-VISIBLE CHANGES
+
+    o Add CRAN package generics to Depends field. The default methods for
+      S4 generics union(), intersect(), and setdiff() now are
+      generics::union(), generics::intersect(), and generics::setdiff(),
+      respectively. See '?BiocGenerics::setops' for more information.
+
+
 CHANGES IN VERSION 0.52.0
 -------------------------
 
