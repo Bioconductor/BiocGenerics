@@ -2,7 +2,6 @@
 
 \alias{updateObject}
 \alias{updateObject,ANY-method}
-\alias{updateObject,list-method}
 \alias{updateObject,environment-method}
 \alias{updateObject,formula-method}
 \alias{updateObject,envRefClass-method}
@@ -71,10 +70,6 @@ getObjectSlots(object)
       The optional named argument \code{verbose} causes a message to be
       printed describing the action.
       Arguments \code{\dots} are passed to \code{updateObjectFromSlots}.
-    }
-    \item{\code{updateObject(list, \dots, verbose=FALSE)}}{
-      Visit each element in \code{list}, applying
-      \code{updateObject(list[[elt]], \dots, verbose=verbose)}.
     }
     \item{\code{updateObject(environment, \dots, verbose=FALSE)}}{
       Visit each element in \code{environment}, applying

@@ -5,6 +5,9 @@
 ### An "updateObject" default method + methods for some standard types are
 ### also provided.
 ###
+### Most of the code in this file originally by Martin Morgan in Biobase,
+### and moved to BiocGenerics in November 2011.
+###
 
 
 ### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -274,12 +277,18 @@ setGeneric("updateObject", signature="object",
             stop("'check' must be TRUE or FALSE")
         }
         if (check) {
-            if (verbose)
-                message("[updateObject] Validating the updated object ... ",
-                        appendLF=FALSE)
-            validObject(result)
-            if (verbose)
-                message("OK")
+            if (inherits(object, "S7_object")) {
+                ## validObject() is broken on S7 objects!
+                if (verbose)
+                    message("[updateObject] Skipping validation of S7 object")
+            } else {
+                if (verbose)
+                    message("[updateObject] Validating the updated object ... ",
+                            appendLF=FALSE)
+                validObject(result)
+                if (verbose)
+                    message("OK")
+            }
         }
         result
     }
@@ -294,25 +303,14 @@ setMethod("updateObject", "ANY",
         if (length(getObjectSlots(object)) > 0L &&
             !any(class(object) %in% c("data.frame", "factor")))
         {
-            updateObjectFromSlots(object, ..., verbose=verbose)
-        } else {
-            object
+            return(updateObjectFromSlots(object, ..., verbose=verbose))
         }
-    }
-)
-
-setMethod("updateObject", "list",
-    function(object, ..., verbose=FALSE)
-    {
-        if (verbose)
-            message("updateObject(object = 'list')")
-        if ("class" %in% names(attributes(object)))
-            callNextMethod() # old-style S4
-        else {
-            result <- lapply(object, updateObject, ..., verbose=verbose)
-            attributes(result) <- attributes(object)
-            result
+        if (is.list(object)) {
+            ans <- lapply(object, updateObject, ..., verbose=verbose)
+            attributes(ans) <- attributes(object)
+            return(ans)
         }
+        object
     }
 )
 
@@ -321,6 +319,12 @@ setMethod("updateObject", "environment",
     {
         if (verbose)
             message("updateObject(object = 'environment')")
+        ## This is a trick to avoid infinite recursion. See comment below
+        ## for more information.
+        attrname <- "__updateObject_please_dont_touch_me__"
+        dont_touch <- isTRUE(attr(object, attrname, exact=TRUE))
+        if (dont_touch)
+            return(object)
         envLocked <- environmentIsLocked(object)
         if (verbose) {
             if (envLocked)
@@ -328,24 +332,29 @@ setMethod("updateObject", "environment",
             else
                 warning("updateObject modifying environment")
         }
-        env <- if (envLocked) new.env() else object
-        lapply(ls(object, all.names=TRUE),
-               function(elt) {    # side-effect!
-                   bindingLocked <- bindingIsLocked(elt, object)
-                   if (!envLocked && bindingLocked)
-                       stop("updateObject object = 'environment' ",
-                            "cannot modify locked binding '", elt, "'")
-                   else {
-                       env[[elt]] <<- updateObject(object[[elt]],
-                                                   ..., verbose=verbose)
-                       if (bindingLocked) lockBinding(elt, env)
-                   }
-                   NULL
-               })
-        attributes(env) <- attributes(object)
+        if (envLocked) {
+            ans <- new.env()
+            attributes(ans) <- attributes(object)
+        } else {
+            ans <- object
+        }
+        ## Note that an environment can contain itself so we temporarily set
+        ## an attribute on 'object' to mark it as being under the process of
+        ## being updated. This allows us to avoid infinite recursion
+        ## if 'object' contains itself.
+        attr(object, attrname) <- TRUE
+        on.exit({attr(object, attrname) <- NULL})
+        for (elt in ls(object, all.names=TRUE)) {
+            bindingLocked <- bindingIsLocked(elt, object)
+            if (!envLocked && bindingLocked)
+                stop("updateObject object = 'environment' ",
+                     "cannot modify locked binding '", elt, "'")
+            ans[[elt]] <- updateObject(object[[elt]], ..., verbose=verbose)
+            if (bindingLocked) lockBinding(elt, ans)
+        }
         if (envLocked)
-            lockEnvironment(env)
-        env
+            lockEnvironment(ans)
+        ans
     }
 )
 
