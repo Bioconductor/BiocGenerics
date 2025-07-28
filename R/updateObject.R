@@ -294,25 +294,14 @@ setMethod("updateObject", "ANY",
         if (length(getObjectSlots(object)) > 0L &&
             !any(class(object) %in% c("data.frame", "factor")))
         {
-            updateObjectFromSlots(object, ..., verbose=verbose)
-        } else {
-            object
+            return(updateObjectFromSlots(object, ..., verbose=verbose))
         }
-    }
-)
-
-setMethod("updateObject", "list",
-    function(object, ..., verbose=FALSE)
-    {
-        if (verbose)
-            message("updateObject(object = 'list')")
-        if ("class" %in% names(attributes(object)))
-            callNextMethod() # old-style S4
-        else {
-            result <- lapply(object, updateObject, ..., verbose=verbose)
-            attributes(result) <- attributes(object)
-            result
+        if (is.list(object)) {
+            ans <- lapply(object, updateObject, ..., verbose=verbose)
+            attributes(ans) <- attributes(object)
+            return(ans)
         }
+        object
     }
 )
 
