@@ -274,7 +274,7 @@ setGeneric("updateObject", signature="object",
             stop("'check' must be TRUE or FALSE")
         }
         if (check) {
-            if (inherits(myplot, "S7_object")) {
+            if (inherits(object, "S7_object")) {
                 ## validObject() is broken on S7 objects!
                 if (verbose)
                     message("[updateObject] Skipping validation of S7 object")
