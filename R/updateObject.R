@@ -274,12 +274,18 @@ setGeneric("updateObject", signature="object",
             stop("'check' must be TRUE or FALSE")
         }
         if (check) {
-            if (verbose)
-                message("[updateObject] Validating the updated object ... ",
-                        appendLF=FALSE)
-            validObject(result)
-            if (verbose)
-                message("OK")
+            if (inherits(myplot, "S7_object")) {
+                ## validObject() is broken on S7 objects!
+                if (verbose)
+                    message("[updateObject] Skipping validation of S7 object")
+            } else {
+                if (verbose)
+                    message("[updateObject] Validating the updated object ... ",
+                            appendLF=FALSE)
+                validObject(result)
+                if (verbose)
+                    message("OK")
+            }
         }
         result
     }
@@ -296,6 +302,14 @@ setMethod("updateObject", "ANY",
         {
             return(updateObjectFromSlots(object, ..., verbose=verbose))
         }
+        ## Hervé 2025/10/08: Some old serialized ggplot instances are found
+        ## in ExperimentHub (e.g. in EH5376). These objects contain an
+        ## environment that contains itself, which breaks updateObject() (see
+        ## updateObject() method for environment below).
+        ## The temporary workaround is to special-case these objects and
+        ## return them as-is. Until we come up with something better.
+        if (inherits(object, "ggplot"))
+            return(object)  # do nothing
         if (is.list(object)) {
             ans <- lapply(object, updateObject, ..., verbose=verbose)
             attributes(ans) <- attributes(object)
@@ -305,6 +319,11 @@ setMethod("updateObject", "ANY",
     }
 )
 
+### BUG: This method is broken if the environment contains itself:
+###     e <- new.env()
+###     e[["aa"]] <- e
+###     updateObject(e)
+###     # Error: C stack usage  7969396 is too close to the limit
 setMethod("updateObject", "environment",
     function(object, ..., verbose=FALSE)
     {
