@@ -1,4 +1,5 @@
-###
+### Most of the code in this file originally by Martin Morgan in Biobase,
+### and moved to BiocGenerics in November 2011.
 
 test_updateObject_list <- function()
 {
@@ -51,6 +52,14 @@ test_updateObject_env <- function()
     checkTrue(TRUE==bindingIsLocked("x", obj)) # R bug, 14 May, 2006, fixed
     checkTrue(FALSE==bindingIsLocked(".x", obj))
     options(opts)
+
+    ## With an environment that contains itself.
+    e <- new.env()
+    attr(e, "titi") <- 11:13
+    e$x <- e
+    obj <- updateObject(e)
+    checkIdentical(obj, e)
+    checkIdentical(attributes(obj), list(titi=11:13))
 }
 
 test_updateObject_defaults <- function()
@@ -116,6 +125,6 @@ test_updateObject_refClass <- function()
     })
     checkTrue(warn)
     checkTrue(all.equal(.A(x=1:5), value))
-    
+
     removeClass(cls, where=.GlobalEnv)
 }

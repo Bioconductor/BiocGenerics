@@ -5,6 +5,9 @@
 ### An "updateObject" default method + methods for some standard types are
 ### also provided.
 ###
+### Most of the code in this file originally by Martin Morgan in Biobase,
+### and moved to BiocGenerics in November 2011.
+###
 
 
 ### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -302,14 +305,6 @@ setMethod("updateObject", "ANY",
         {
             return(updateObjectFromSlots(object, ..., verbose=verbose))
         }
-        ## Hervé 2025/10/08: Some old serialized ggplot instances are found
-        ## in ExperimentHub (e.g. in EH5376). These objects contain an
-        ## environment that contains itself, which breaks updateObject() (see
-        ## updateObject() method for environment below).
-        ## The temporary workaround is to special-case these objects and
-        ## return them as-is. Until we come up with something better.
-        if (inherits(object, "ggplot"))
-            return(object)  # do nothing
         if (is.list(object)) {
             ans <- lapply(object, updateObject, ..., verbose=verbose)
             attributes(ans) <- attributes(object)
@@ -319,16 +314,17 @@ setMethod("updateObject", "ANY",
     }
 )
 
-### BUG: This method is broken if the environment contains itself:
-###     e <- new.env()
-###     e[["aa"]] <- e
-###     updateObject(e)
-###     # Error: C stack usage  7969396 is too close to the limit
 setMethod("updateObject", "environment",
     function(object, ..., verbose=FALSE)
     {
         if (verbose)
             message("updateObject(object = 'environment')")
+        ## This is a trick to avoid infinite recursion. See comment below
+        ## for more information.
+        attrname <- "__updateObject_please_dont_touch_me__"
+        dont_touch <- isTRUE(attr(object, attrname, exact=TRUE))
+        if (dont_touch)
+            return(object)
         envLocked <- environmentIsLocked(object)
         if (verbose) {
             if (envLocked)
@@ -336,24 +332,29 @@ setMethod("updateObject", "environment",
             else
                 warning("updateObject modifying environment")
         }
-        env <- if (envLocked) new.env() else object
-        lapply(ls(object, all.names=TRUE),
-               function(elt) {    # side-effect!
-                   bindingLocked <- bindingIsLocked(elt, object)
-                   if (!envLocked && bindingLocked)
-                       stop("updateObject object = 'environment' ",
-                            "cannot modify locked binding '", elt, "'")
-                   else {
-                       env[[elt]] <<- updateObject(object[[elt]],
-                                                   ..., verbose=verbose)
-                       if (bindingLocked) lockBinding(elt, env)
-                   }
-                   NULL
-               })
-        attributes(env) <- attributes(object)
+        if (envLocked) {
+            ans <- new.env()
+            attributes(ans) <- attributes(object)
+        } else {
+            ans <- object
+        }
+        ## Note that an environment can contain itself so we temporarily set
+        ## an attribute on 'object' to mark it as being under the process of
+        ## being updated. This allows us to avoid infinite recursion
+        ## if 'object' contains itself.
+        attr(object, attrname) <- TRUE
+        on.exit({attr(object, attrname) <- NULL})
+        for (elt in ls(object, all.names=TRUE)) {
+            bindingLocked <- bindingIsLocked(elt, object)
+            if (!envLocked && bindingLocked)
+                stop("updateObject object = 'environment' ",
+                     "cannot modify locked binding '", elt, "'")
+            ans[[elt]] <- updateObject(object[[elt]], ..., verbose=verbose)
+            if (bindingLocked) lockBinding(elt, ans)
+        }
         if (envLocked)
-            lockEnvironment(env)
-        env
+            lockEnvironment(ans)
+        ans
     }
 )
 
