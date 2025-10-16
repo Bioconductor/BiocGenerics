@@ -294,6 +294,22 @@ setGeneric("updateObject", signature="object",
     }
 )
 
+### We replicate the hack that base R uses to internally represent automatic
+### row names in a compact way. See base::.set_row_names for what they use
+### exactly. Note that this internal hack is revealed by dput() e.g.
+###   > dput(data.frame(a=6:2))
+###   structure(list(a=6:2), class="data.frame", row.names=c(NA, -5L))
+.hack_row.names_attr <- function(x)
+{
+    row.names <- attr(x, "row.names")
+    if (is.integer(row.names)) {
+        rn_len <- length(row.names)
+        if (rn_len != 0L && identical(row.names, seq_len(rn_len)))
+            attr(x, "row.names") <- c(NA, -rn_len)
+    }
+    x
+}
+
 setMethod("updateObject", "ANY",
     function(object, ..., verbose=FALSE)
     {
@@ -308,7 +324,7 @@ setMethod("updateObject", "ANY",
         if (is.list(object)) {
             ans <- lapply(object, updateObject, ..., verbose=verbose)
             attributes(ans) <- attributes(object)
-            return(ans)
+            return(.hack_row.names_attr(ans))
         }
         object
     }
