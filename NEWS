@@ -1,3 +1,14 @@
+CHANGES IN VERSION 0.56.0
+-------------------------
+
+BUG FIXES
+
+    o Fix updateObject() infinite recursion on an environment that contains
+      itself.
+
+    o Small tweak to updateObject(<data.frame>).
+
+
 CHANGES IN VERSION 0.54.0
 -------------------------
 
