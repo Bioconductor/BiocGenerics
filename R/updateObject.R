@@ -277,7 +277,12 @@ setGeneric("updateObject", signature="object",
             stop("'check' must be TRUE or FALSE")
         }
         if (check) {
-            if (inherits(object, "S7_object")) {
+            if (inherits(object, "numeric_version")) {
+                ## validObject() is broken on numeric_version objects!
+                if (verbose)
+                    message("[updateObject] Skipping validation ",
+                            "of numeric_version object")
+            } else if (inherits(object, "S7_object")) {
                 ## validObject() is broken on S7 objects!
                 if (verbose)
                     message("[updateObject] Skipping validation of S7 object")
@@ -316,12 +321,14 @@ setMethod("updateObject", "ANY",
         if (verbose)
             message("updateObject(object=\"ANY\") default for object ",
                     "of class '", class(object)[[1L]], "'")
-        if (length(getObjectSlots(object)) > 0L &&
-            !any(class(object) %in% c("data.frame", "factor")))
-        {
+        use_updateObjectFromSlots <-
+            length(getObjectSlots(object)) > 0L &&
+            length(intersect(class(object), c("data.frame", "factor"))) == 0L
+        if (use_updateObjectFromSlots)
             return(updateObjectFromSlots(object, ..., verbose=verbose))
-        }
-        if (is.list(object)) {
+        apply_cursively <- is.list(object) &&
+            length(intersect(class(object), "numeric_version")) == 0L
+        if (apply_cursively) {
             ans <- lapply(object, updateObject, ..., verbose=verbose)
             attributes(ans) <- attributes(object)
             return(.hack_row.names_attr(ans))

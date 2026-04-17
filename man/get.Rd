@@ -17,8 +17,11 @@
 }
 
 \usage{
-get(x, pos=-1, envir=as.environment(pos), mode="any", inherits=TRUE)
-mget(x, envir, mode="any", ifnotfound, inherits=FALSE)
+get(x, pos=-1, envir=as.environment(pos), mode="any",
+    inherits=TRUE)
+
+mget(x, envir=as.environment(pos), mode="any", ifnotfound,
+     inherits=FALSE, pos=-1L)
 }
 
 \arguments{
