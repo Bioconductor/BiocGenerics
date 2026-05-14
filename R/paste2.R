@@ -4,18 +4,21 @@
 ###
 
 
-### A binary paste0() that follows the same rules as arithmetic operations
-### (+, *, etc...) for recycling and propagation of names, dimensions, and
-### dimnames.
+### A binary paste0() that behaves like the arithmetic binary operations
+### (+, *, etc...) in terms of:
+###   1. recycling;
+###   2. propagation of NAs;
+###   3. propagation of names;
+###   4. propagation of dimensions and dimnames.
 ### Recycling: The longer argument wins i.e. the shorter argument is
 ### recycled to the length of the longer with a warning if the length of the
 ### latter is not a multiple of the length of the former. Exception: if one
 ### of the two arguments has length 0 then no recycling is performed and a
 ### zero-length vector is returned.
 ### Name propagation: The longer argument also wins. If the 2 arguments
-### have the same length then the names on the first argument are propagated,
-### if any. Otherwise the names on the second argument are propagated, if
-### any.
+### have the same length, then:
+### - the names on the first argument are propagated, if any;
+### - otherwise the names on the second argument are propagated, if any.
 setGeneric("paste2", function(x, y) standardGeneric("paste2"))
 
 .paste2_vector_vector <- function(x, y)
@@ -36,15 +39,10 @@ setGeneric("paste2", function(x, y) standardGeneric("paste2"))
 
     ## Non zero-length case.
     ans <- paste0(x, y)
-    warn_msg <- c("longer object length is not a ",
-                  "multiple of shorter object length")
+    ans[is.na(x) | is.na(y)] <- NA_character_
     if (x_len > y_len) {
-        if (x_len %% y_len != 0L)
-            warning(warn_msg)
         ans_names <- names(x)
     } else if (x_len < y_len) {
-        if (y_len %% x_len != 0L)
-            warning(warn_msg)
         ans_names <- names(y)
     } else {
         ans_names <- names(x)
@@ -76,10 +74,7 @@ setGeneric("paste2", function(x, y) standardGeneric("paste2"))
     if (y_len > x_len)
         stop("non-array object is longer than array object")
     ans <- if (switch) paste0(y, x) else paste0(x, y)
-    warn_msg <- c("longer object length is not a ",
-                  "multiple of shorter object length")
-    if (x_len %% y_len != 0L)
-        warning(warn_msg)
+    ans[is.na(x) | is.na(y)] <- NA_character_
     dim(ans) <- dim(x)
     dimnames(ans) <- dimnames(x)
     ans
@@ -107,6 +102,7 @@ setGeneric("paste2", function(x, y) standardGeneric("paste2"))
 
     ## Non zero-length case.
     ans <- paste0(x, y)
+    ans[is.na(x) | is.na(y)] <- NA_character_
     dim(ans) <- x_dim
     ans_dimnames <- dimnames(x)
     if (is.null(ans_dimnames))
