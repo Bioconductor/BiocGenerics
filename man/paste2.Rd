@@ -13,9 +13,14 @@
 
 \description{
   \code{paste2()} is a simplified version of \code{paste0()} that takes
-  only two arguments and follows the same rules as arithmetic operations
-  (\code{+}, \code{*}, etc...) for recycling and propagation of names,
-  dimensions, and dimnames.
+  only two arguments and behaves like the arithmetic binary operations
+  (+, *, etc...) in terms of:
+  \enumerate{
+    \item recycling;
+    \item propagation of \code{NA}s;
+    \item propagation of names;
+    \item propagation of dimensions and dimnames.
+  }
 
   \code{add_prefix()} and \code{add_suffix()} are simple wrappers around
   \code{paste2()} provided for convenience and code readability.
@@ -42,23 +47,29 @@ add_suffix(x, suffix="")
   array-like objects that contain strings.
 
   \code{paste2()} follows the same rules as arithmetic operations (\code{+},
-  \code{*}, etc...) for recycling and propagation of names, dimensions, and
-  dimnames:
-  \itemize{
+  \code{*}, etc...) with regard to:
+  \enumerate{
     \item Recycling: The longer argument "wins" i.e. the shorter argument
           is recycled to the length of the longer (with a warning if the
           length of the latter is not a multiple of the length of the former).
           There's one important exception to this rule: if one of the two
-          arguments has length 0 then no recycling is performed and a
+          arguments has length 0, then no recycling is performed and a
           zero-length vector is returned.
+
+    \item Propagation of \code{NA}s.
+
     \item Propagation of names: The longer argument also wins. If the two
-          arguments have the same length then the names on the first argument
-          are propagated, if any. Otherwise the names on the second argument
-          are propagated, if any.
+          arguments have the same length, then:
+          \itemize{
+            \item the names on the first argument are propagated, if any;
+            \item otherwise the names on the second argument are propagated,
+                  if any.
+          }
+
     \item Propagation of dimensions and dimnames: If \code{x} and \code{y}
           are both arrays, then they must be \emph{conformable} i.e. have
           the same dimensions. In this case the result of \code{paste2(x, y)}
-          is a also an array of same dimensions. Furthermore it will have
+          is also an array of same dimensions. Furthermore it will have
           \code{dimnames(x)} on it if \code{dimnames(x)} is not \code{NULL},
           otherwise it will have \code{dimnames(y)} on it.
   }
@@ -112,10 +123,10 @@ showMethods("paste2")
 ## paste0() vs paste2()
 ## ---------------------------------------------------------------------
 
-## Propagation of names:
-x <- c(A="foo", B="bar")
-paste0(x, "XX")  # names are lost
-paste2(x, "XX")  # names are propagated
+## Propagation of NAs and names:
+x <- c(A="foo", B="bar", C=NA)
+paste0(x, "XX")  # NAs are not propagated, names are lost
+paste2(x, "XX")  # NAs and names are propagated
 paste2(x, setNames(1:6, letters[1:6]))  # longer argument "wins"
 
 ## If 'x' or 'y' has length 0:
@@ -124,9 +135,9 @@ paste2(x, character(0))  # character(0)
 
 ## Propagation of dimensions and dimnames:
 m <- matrix(1:12, ncol=3, dimnames=list(NULL, LETTERS[1:3]))
-paste0(m, letters[1:4])  # dimensions and dimnames are lost
-paste2(m, letters[1:4])  # dimensions are preserved and dimnames are
-                         # propagated
+y <- c("a", NA, "c")
+paste0(m, y)  # dimensions and dimnames are lost
+paste2(m, y)  # dimensions are preserved and dimnames are propagated
 
 ## ---------------------------------------------------------------------
 ## add_prefix() and add_suffix()
