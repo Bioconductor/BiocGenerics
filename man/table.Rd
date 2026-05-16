@@ -1,6 +1,8 @@
 \name{table}
 
 \alias{table}
+\alias{table,ANY-method}
+\alias{table,missing-method}
 
 \title{Cross tabulation and table creation}
 
@@ -17,14 +19,17 @@
 }
 
 \usage{
-table(...)
+table(x, ...)
 }
 
 \arguments{
-  \item{...}{
-    One or more objects which can be interpreted as factors
-    (including character strings), or a list (or data frame)
+  \item{x}{
+    An object which can be interpreted as a factor
+    (including a character vector), or a list (or data frame)
     whose components can be so interpreted.
+  }
+  \item{...}{
+    Additional arguments, for use in specific methods.
   }
 }
 
@@ -56,7 +61,7 @@ table(...)
 }
 
 \examples{
-table
+table  # note the dispatch on the 'x' arg only
 showMethods("table")
 selectMethod("table", "ANY")  # the default method
 }

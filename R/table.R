@@ -2,26 +2,53 @@
 ### The table() generic
 ### -------------------------------------------------------------------------
 
-### base::table() has a broken signature (list.names() is a function
-### defined *inside* the body of base::table() so the default value for the
-### 'dnn' arg is an expression that cannot be evaluated *outside* the
-### base::table environment, this is poor design), we cannot keep all the
-### extra arguments in the table() generic (those extra arguments are ugly
-### and nobody uses them anyway).
-#setGeneric("table", signature="...",
-#    function(..., exclude = if (useNA == "no") c(NA, NaN),
-#                  useNA = c("no", "ifany", "always"),
-#                  dnn = list.names(...),
-#                  deparse.level = 1)
-#        standardGeneric("table")
-#)
 
-### So we use this instead.
+### It's... complicated! and ugly :-(
 
-.table.useAsDefault <- function(...) base::table(...)
+setGeneric("table", signature="x", function(x, ...) standardGeneric("table"))
 
-setGeneric("table", signature="...",
-    function(...) standardGeneric("table"),
-    useAsDefault=.table.useAsDefault
+.default_table <- function(x, ...)
+{
+    sys_call <- sys.call()
+    sys_call[[1L]] <- quote(base::table)
+    base::eval(sys_call, envir=parent.frame())
+}
+
+setMethod("table", "ANY", .default_table)
+
+### EXPERIMENTAL! Not exported yet.
+setGeneric("nary_table", function(...) standardGeneric("nary_table"))
+setMethod("nary_table", "ANY",
+    function(...) {
+        stop("passing more than one S4 object to table() only works ",
+             "for S4 objects that are supported via a dedicated ",
+             "BiocGenerics:::nary_table() method")
+    }
+)
+
+setMethod("table", "missing",
+    function(x, ...)
+    {
+        dotargs <- list(...)
+        dotargs_names <- names(dotargs)
+        if (is.null(dotargs_names)) {
+            ## Should never happen when the "missing" method is called thru
+            ## method dispatch. Can only happen when method dispatch is
+            ## bypassed and the method called directly with something like:
+            ##   FUN <- selectMethod("table", "missing")
+            ##   FUN(-5, sample(4, 99, replace=TRUE))
+            return(base::table(...))
+        }
+        S4_idx <- which(vapply(dotargs, isS4, logical(1)))
+        if (length(S4_idx) == 0L)
+            return(base::table(...))
+        if (length(S4_idx) == 1L) {
+            ## Forward to appropriate method.
+            x <- dotargs[[S4_idx]]
+            args <- c(list(x), dotargs[-S4_idx])
+            return(do.call("table", args))
+        }
+        nary_table(...)
+    }
 )
 
