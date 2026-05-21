@@ -19,11 +19,10 @@ setMethod("table", "ANY", .default_table)
 ### EXPERIMENTAL! Not exported yet.
 setGeneric("nary_table", function(...) standardGeneric("nary_table"))
 setMethod("nary_table", "ANY",
-    function(...) {
-        stop("passing more than one S4 object to table() only works ",
-             "for S4 objects that are supported via a dedicated ",
-             "BiocGenerics:::nary_table() method")
-    }
+    function(...)
+        stop("Passing more than one S4 object to BiocGenerics::table() ",
+             "only works if the S4 objects are supported via a dedicated ",
+             "BiocGenerics:::nary_table() method. Couldn't find such method.")
 )
 
 setMethod("table", "missing",

@@ -35,7 +35,7 @@ test_table <- function()
     checkIdentical(table(a=X, dnn=NULL, b=Y), base::table(a=X, dnn=NULL, b=Y))
     checkIdentical(table(dnn=NULL, a=X, b=Y), base::table(dnn=NULL, a=X, b=Y))
 
-    ## --- Define and call method for an S4 class ---
+    ## --- Define method for S4 objects and test dispatch ---
 
     setClass("A", slots=c(stuff="ANY"))
     setMethod("table", "A", function(x, ...) "ok")

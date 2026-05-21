@@ -4,7 +4,7 @@ Description: The package defines many S4 generic functions used in Bioconductor.
 biocViews: Infrastructure
 URL: https://bioconductor.org/packages/BiocGenerics
 BugReports: https://github.com/Bioconductor/BiocGenerics/issues
-Version: 0.59.2
+Version: 0.59.3
 License: Artistic-2.0
 Encoding: UTF-8
 Authors@R: c(
@@ -70,6 +70,7 @@ Collate: S3-classes-as-S4-classes.R
 	unsplit.R
 	which.R
 	which.min.R
+	data.R
 	relist.R
 	boxplot.R
 	image.R

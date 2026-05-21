@@ -129,6 +129,8 @@
 
     Generics for functions defined in package \pkg{utils}:
     \itemize{
+      \item \code{BiocGenerics::\link[BiocGenerics]{data}}
+
       \item \code{BiocGenerics::\link[BiocGenerics]{relist}}
     }
 

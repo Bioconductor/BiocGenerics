@@ -148,6 +148,9 @@ export(format.list)
 
 ### S4 generics for functions defined in package utils:
 export(
+    ## from R/data.R:
+    data,
+
     ## from R/relist.R:
     relist
 )

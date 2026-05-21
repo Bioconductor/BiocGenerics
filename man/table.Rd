@@ -37,8 +37,9 @@ table(x, ...)
   See \code{?base::\link[base]{table}} for the value returned by the
   default method.
 
-  Specific methods defined in Bioconductor packages should also
-  return the type of object returned by the default method.
+  Specific methods defined in Bioconductor packages are typically expected
+  to also return the type of object returned by the default method, although
+  there are some known exceptions to this rule.
 }
 
 \seealso{
