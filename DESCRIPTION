@@ -25,10 +25,10 @@ Authors@R: c(
 	person("Valerie", "Obenchain", role="ctb"))
 Depends: R (>= 4.0.0), methods, utils, graphics, stats, generics
 Imports: methods, utils, graphics, stats
-Suggests: Biobase, S4Vectors, IRanges, S4Arrays, SparseArray, DelayedArray,
-	HDF5Array, GenomicRanges, pwalign, Rsamtools, AnnotationDbi, affy,
-	affyPLM, DESeq2, flowClust, MSnbase, annotate, MultiAssayExperiment,
-	RUnit
+Suggests: datasets, Biobase, S4Vectors, IRanges, S4Arrays, SparseArray,
+	DelayedArray, HDF5Array, GenomicRanges, pwalign, Rsamtools,
+	AnnotationDbi, affy, affyPLM, DESeq2, flowClust, MSnbase, annotate,
+	MultiAssayExperiment, RUnit
 Collate: S3-classes-as-S4-classes.R
 	utils.R
 	normarg-utils.R

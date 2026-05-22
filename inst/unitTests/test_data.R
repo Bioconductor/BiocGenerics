@@ -13,6 +13,7 @@ test_data <- function()
 
     ## --- Call default method ---
 
+    library(datasets)
     library(Biobase)
 
     res <- data(SW, envir=envir)
