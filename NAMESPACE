@@ -109,6 +109,9 @@ export(
     ## from R/scale.R:
     scale,
 
+    ## from R/sequence.R:
+    sequence,
+
     ## from R/sort.R:
     sort,
 
@@ -129,6 +132,9 @@ export(
 
     ## from R/tapply.R:
     tapply,
+
+    ## from R/transform.R:
+    transform,
 
     ## from R/unique.R:
     unique,

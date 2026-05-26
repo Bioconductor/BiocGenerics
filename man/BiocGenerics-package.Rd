@@ -99,6 +99,8 @@
 
       \item \code{BiocGenerics::\link[BiocGenerics]{scale}}
 
+      \item \code{BiocGenerics::\link[BiocGenerics]{sequence}}
+
       \item \code{BiocGenerics::\link[BiocGenerics]{sort}}
 
       \item \code{BiocGenerics::\link[BiocGenerics]{start}},
@@ -116,6 +118,8 @@
       \item \code{BiocGenerics::\link[BiocGenerics]{table}}
 
       \item \code{BiocGenerics::\link[BiocGenerics]{tapply}}
+
+      \item \code{BiocGenerics::\link[BiocGenerics]{transform}}
 
       \item \code{BiocGenerics::\link[BiocGenerics]{unique}}
 
