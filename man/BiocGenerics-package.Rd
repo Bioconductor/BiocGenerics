@@ -97,6 +97,8 @@
 
       \item \code{BiocGenerics::\link[BiocGenerics]{saveRDS}}
 
+      \item \code{BiocGenerics::\link[BiocGenerics]{scale}}
+
       \item \code{BiocGenerics::\link[BiocGenerics]{sort}}
 
       \item \code{BiocGenerics::\link[BiocGenerics]{start}},

@@ -106,6 +106,9 @@ export(
     ## from R/saveRDS.R:
     saveRDS,
 
+    ## from R/scale.R:
+    scale,
+
     ## from R/sort.R:
     sort,
 
