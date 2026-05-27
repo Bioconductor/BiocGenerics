@@ -224,6 +224,8 @@
 
       \item \code{\link[BiocGenerics]{plotPCA}}
 
+      \item \code{\link[BiocGenerics]{rotate}}
+
       \item \code{\link[BiocGenerics]{score}},
             \code{\link[BiocGenerics]{score<-}}
 

@@ -264,6 +264,9 @@ export(
     ## from R/plotPCA.R:
     plotPCA,
 
+    ## from R/rotate.R:
+    rotate,
+
     ## from R/score.R:
     score, "score<-",
 
