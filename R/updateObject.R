@@ -225,6 +225,15 @@ attach_classdef_and_updateobjdef_pkgs <- function(x_class)
     if (is.null(classdef_pkg) || classdef_pkg %in% .KNOWN_INVALID_CLASSDEF_PKGS)
         return()
     .attach_namespace(classdef_pkg)
+
+    ## The MultipleAlignment classes were moved from Biostrings to
+    ## the MultipleAlignment package in BioC 3.24.
+    attach_MultipleAlignment <-
+        classdef_pkg == "Biostrings" &&
+        x_class %in% paste0(c("DNA", "RNA", "AA"), "MultipleAlignment")
+    if (attach_MultipleAlignment)
+        .attach_namespace("MultipleAlignment")
+
     updateobjdef <- selectMethod(updateObject, x_class)
     updateobjdef_pkg <- environmentName(environment(updateobjdef))
     if (updateobjdef_pkg == "R_GlobalEnv")
