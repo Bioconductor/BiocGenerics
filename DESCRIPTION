@@ -24,7 +24,6 @@ Authors@R: c(
 		comment=c(ORCID="0000-0002-5874-8148")),
 	person("Valerie", "Obenchain", role="ctb"))
 Depends: R (>= 4.0.0), methods, utils, graphics, stats, generics
-Imports: methods, utils, graphics, stats
 Suggests: datasets, Biobase, S4Vectors, IRanges, S4Arrays, SparseArray,
 	DelayedArray, HDF5Array, GenomicRanges, pwalign, Rsamtools,
 	AnnotationDbi, affy, affyPLM, DESeq2, flowClust, MSnbase, annotate,
