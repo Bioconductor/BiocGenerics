@@ -221,6 +221,9 @@ export(
     ## from R/dbconn.R:
     dbconn, dbfile,
 
+    ## from R/detail.R:
+    detail,
+
     ## from R/dge.R:
     counts, "counts<-",
     design, "design<-",
@@ -291,6 +294,9 @@ exportMethods(
 
     ## from R/containsOutOfMemoryData.R:
     containsOutOfMemoryData,
+
+    ## from R/detail.R:
+    detail,
 
     ## from R/paste2.R:
     paste2,

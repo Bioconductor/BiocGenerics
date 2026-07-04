@@ -180,6 +180,8 @@
       \item \code{\link[BiocGenerics]{dbconn}},
             \code{\link[BiocGenerics]{dbfile}}
 
+      \item \code{\link[BiocGenerics]{detail}}
+
       \item \code{\link[BiocGenerics]{counts}},
             \code{\link[BiocGenerics]{counts<-}},
             \code{\link[BiocGenerics]{design}},
