@@ -11,16 +11,22 @@
 }
 
 \usage{
-detail(object)
+detail(object, ...)
 
 ## Default method that simply invokes show():
 
-\S4method{detail}{ANY}(object)
+\S4method{detail}{ANY}(object, ...)
 }
 
 \arguments{
   \item{object}{
     The object to display.
+  }
+  \item{...}{
+    Additional arguments, for use in specific methods.
+
+    Note that trying to pass additional arguments to the default method
+    will trigger an error.
   }
 }
 
@@ -50,9 +56,11 @@ detail(object)
 \examples{
 detail
 showMethods("detail")
+selectMethod("detail", "ANY")  # the default method
 
 library(MultipleAlignment)
 showMethods("detail")
+## The detail() method for MultipleAlignment objects:
 selectMethod("detail", "MultipleAlignment")
 }
 

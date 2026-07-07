@@ -3,7 +3,9 @@
 ### -------------------------------------------------------------------------
 
 
-setGeneric("detail", function(object) standardGeneric("detail"))
+setGeneric("detail", function(object, ...) standardGeneric("detail"))
 
-setMethod("detail", "ANY", function(object) show(object))
+### Passing extra arguments should trigger an error. We don't want them to be
+### silently ignored. Passing them to show() achieves that.
+setMethod("detail", "ANY", function(object, ...) show(object, ...))
 
