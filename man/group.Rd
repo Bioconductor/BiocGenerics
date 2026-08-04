@@ -5,13 +5,13 @@
 \title{Accessing the "group" of an object}
 
 \description{
-  Get the "group" of an object.
+  An S4 generic function to get the "group" of an object.
   
   Note that the "group" of an object is only defined for some types of
-  objects e.g. for \link[HDF5Array]{H5SparseMatrixSeed} objects from the
-  \pkg{HDF5Array} package or \link[ZarrArray]{ZarrSparseMatrixSeed} objects
-  from the \pkg{ZarrArray} package. Also the exact meaning of "group" depends
-  on the type of object that is considered.
+  objects e.g. for \link[HDF5Array]{H5SparseMatrix} objects from the
+  \pkg{HDF5Array} package or \link[ZarrArray]{ZarrSparseMatrix} objects
+  from the \pkg{ZarrArray} package. Also the exact meaning of "group"
+  depends on the type of object that is considered.
 }
 
 \usage{
