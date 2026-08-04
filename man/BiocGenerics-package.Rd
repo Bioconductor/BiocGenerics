@@ -198,9 +198,11 @@
 
       \item \code{\link[BiocGenerics]{dims}},
             \code{\link[BiocGenerics]{nrows}},
-            \code{\link[BiocGenerics]{ncols}},
+            \code{\link[BiocGenerics]{ncols}}
 
       \item \code{\link[BiocGenerics]{fileName}}
+
+      \item \code{\link[BiocGenerics]{group}}
 
       \item \code{\link[BiocGenerics]{longForm}}
 
