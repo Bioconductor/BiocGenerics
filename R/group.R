@@ -3,5 +3,5 @@
 ### -------------------------------------------------------------------------
 ###
 
-setGeneric("group", function(object) standardGeneric("group"))
+setGeneric("group", function(object, ...) standardGeneric("group"))
 

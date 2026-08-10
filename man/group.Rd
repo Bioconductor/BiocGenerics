@@ -15,12 +15,15 @@
 }
 
 \usage{
-group(object)
+group(object, ...)
 }
 
 \arguments{
   \item{object}{
     An object for which the notion of "group" is defined.
+  }
+  \item{...}{
+    Additional arguments, for use in specific methods.
   }
 }
 
