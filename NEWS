@@ -1,3 +1,28 @@
+CHANGES IN VERSION 0.60.0
+-------------------------
+
+NEW FEATURES
+
+    o Add the following S4 generics:
+      - data()       -- commit 93a0f55
+      - detail()     -- commit 0c73da8
+      - group()      -- commit 9f6939f
+      - rotate()     -- commit fab8ae0
+      - scale()      -- commit b221557
+      - sequence()   -- commit 54579af
+      - transform()  -- commit 54579af
+      - version()    -- commit 9263b0b
+
+SIGNIFICANT USER-VISIBLE CHANGES
+
+    o Change interface of table() generic to table(x, ...).
+      See commit 235a41a
+
+BUG FIXES
+
+    o paste2() now propagates NAs, as it should.
+
+
 CHANGES IN VERSION 0.58.0
 -------------------------
 
